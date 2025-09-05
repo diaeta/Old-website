@@ -1,0 +1,24 @@
+EN/home.html|NL/home.html
+EN/contact.html|NL/contact.html
+EN/cookies.html|NL/cookies.html
+EN/privacy.html|NL/privacy.html
+EN/legal.html|NL/juridische-kennisgeving.html
+EN/terms.html|NL/algemene-voorwaarden.html
+EN/diabetes.html|NL/diabetes.html
+EN/medicale.html|NL/medicale.html
+EN/Dietitian dietician nutritionist and dietetics/Consultation.html|NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html
+EN/Dietitian dietician nutritionist and dietetics/working method.html|NL/dietist-voedingsdeskundige-en-dietetiek/werkwijze.html
+EN/Dietitian dietician nutritionist and dietetics/The dietitian and dietetics.html|NL/dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html
+EN/dietitian-dietician-nutritionist/appointment.html|NL/dietist-voedingsdeskundige/afspraak.html
+EN/dietitian-dietician-nutritionist/irritable bowel syndrome/low FODMAP diet.html|NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html
+EN/dietitian-dietician-nutritionist/weight loss/losing weight and weight loss.html|NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html
+EN/nutrigenomics nutrigenetics/genetic test.html|NL/nutrigenomica-nutrigenetica/genetische-test.html
+EN/dietitian dietician nutritionist Berchem-Sainte-Agathe/dietitian dietician nutritionist Berchem-Sainte-Agathe.html|NL/dietist-voedingsdeskundige-sint-agatha-berchem/dietist-voedingsdeskundige-sint-agatha-berchem.html
+EN/dietitian-dietician-nutritionist-Etterbeek/saint-michel-medical-center.html|NL/dietist-voedingsdeskundige-etterbeek/saint-michel-medisch-centrum.html
+EN/dietitian dietician nutritionist Ixelles/Tenbosch-Châtelain medical center.html|NL/dietist-voedingsdeskundige-elsene/tenbosch-chatelain-medisch-centrum.html
+EN/dietitian dietician nutritionist Koekelberg/BSK.html|NL/dietist-voedingsdeskundige-koekelberg/bsk.html
+EN/dietitian dietician nutritionist Uccle/espacepluridys.html|NL/dietist-voedingsdeskundige-ukkel/espacepluridys.html
+EN/dietitian dietician nutritionist laken/niveole-medical-center.html|NL/dietist-voedingsdeskundige-laken/niveole-medisch-centrum.html
+EN/dietitian dietician nutritionist Woluwe Saint Lambert/Dietitian Woluwe Saint Lambert.html|NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/dietist-voedingsdeskundige-sint-lambrechts-woluwe.html
+EN/dietitian dietician nutritionist Woluwe Saint Pierre/Dietitian Woluwe Saint Pierre.html|NL/dietist-voedingsdeskundige-sint-pieters-woluwe/dietist-voedingsdeskundige-sint-pieters-woluwe.html
+EN/dietitian dietician nutritionist Woluwe Saint Pierre/dietitian woluwe saint pierre Medic Alix.html|NL/dietist-voedingsdeskundige-sint-pieters-woluwe/medic-alix.html
