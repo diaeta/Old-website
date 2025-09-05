@@ -1,0 +1,8 @@
+{
+  "useSmtp": false,
+  "host": " smtp-auth.mailprotect.be",              
+  "port": 465,													 
+  "username": "info@diaeta.be",					 
+  "password": "Pierre@291272",						 
+  "recipientEmail":  "info@diaeta.be"		 
+}

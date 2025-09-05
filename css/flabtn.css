@@ -1,0 +1,1738 @@
+/* ========= INFORMATION ============================
+  - document:  Floating Action Buttons
+  - author:    Dmytro Lobov
+  - version:   1.0
+  - email:     i@lobov.dev
+ ==================================================== */
+
+
+/* ========================
+    Reset
+========================= */
+
+.flabtn,
+.flabtn * {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    line-height: 1;
+}
+
+
+/* ========================
+    Basic style
+========================= */
+
+.flabtn {
+    position: fixed;
+    z-index: 1000;
+}
+
+.flabtn input {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.flabtn a {
+    position: relative;
+    z-index: 2;
+    display: block;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background: #009688;
+    color: #fff;
+    transition: background 0.5s;
+    -o-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+}
+
+.flabtn a:hover {
+    color: #383838;
+    background: #4db6ac;
+}
+
+.flabtn [data-action=open] {
+    display: inline-block;
+}
+
+.flabtn [data-action=close] {
+    display: none;
+}
+
+.flabtn ul {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+.flabtn input:checked~ul {
+    visibility: visible;
+}
+
+.flabtn ul li {
+    display: inline-block;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.flabtn [tooltip]::before {
+    position: absolute;
+    content: attr(tooltip);
+    visibility: hidden;
+    opacity: 0;
+    padding: 0 10px;
+    white-space: nowrap;
+    background: rgba(140, 198, 63, 0.8);
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.flabtn [tooltip]:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flabtn [tooltip][data-tooltip=show]::before {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.flabtn [data-role][tooltip][data-tooltip=show]::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flabtn input:checked~ul li [tooltip][data-tooltip=show]::before {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+/* ========================
+    Shape
+========================= */
+
+
+/* circle */
+
+.flabtn.-circle a {
+    border-radius: 50%;
+}
+
+
+/* ellipse */
+
+.flabtn.-ellipse a {
+    border-radius: 25% 75%;
+}
+
+
+/* square */
+
+.flabtn.-square a {
+    border-radius: 0;
+}
+
+
+/* round square */
+
+.flabtn.-rsquare a {
+    border-radius: 25%;
+}
+
+
+/* ========================
+    Size
+========================= */
+
+
+/* small - main button */
+
+.flabtn.-small a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+
+/* medium - main button */
+
+.flabtn.-medium a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+}
+
+
+/* large - main button */
+
+.flabtn.-large a {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 28px;
+}
+
+
+/* small - sub-buttons */
+
+.flabtn.-small ul a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.flabtn.-small [tooltip]::before {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+
+/* medium - sub-buttons */
+
+.flabtn.-medium ul a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.flabtn.-medium [tooltip]::before {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+
+/* large - sub-buttons */
+
+.flabtn.-large ul a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.flabtn.-large [tooltip]::before {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
+/* ========================
+    Position
+========================= */
+
+
+/* left */
+
+.flabtn.-left {
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.flabtn.-left .flabtn-first {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    bottom: 100%;
+}
+
+.flabtn.-left .flabtn-second {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    top: 100%;
+}
+
+.flabtn.-left [tooltip]::before {
+    left: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+
+/* right */
+
+.flabtn.-right {
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.flabtn.-right .flabtn-first {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    bottom: 100%;
+}
+
+.flabtn.-right .flabtn-second {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    top: 100%;
+}
+
+.flabtn.-right [tooltip]::before {
+    right: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+
+/* bottom right */
+
+.flabtn.-bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.flabtn.-bottom-right [tooltip][data-role]::before {
+    right: 100%;
+    bottom: 100%;
+}
+
+.flabtn.-bottom-right .flabtn-first {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    bottom: 100%;
+}
+
+.flabtn.-bottom-right .flabtn-first [tooltip]::before {
+    right: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+.flabtn.-bottom-right .flabtn-second {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 100%;
+}
+
+.flabtn.-bottom-right .flabtn-second [tooltip]::before {
+    right: 100%;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+
+/* top right */
+
+.flabtn.-top-right {
+    top: 40px;
+    right: 20px;
+}
+
+.flabtn.-top-right [tooltip][data-role]::before {
+    right: 100%;
+    top: 100%;
+}
+
+.flabtn.-top-right .flabtn-first {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    top: 100%;
+}
+
+.flabtn.-top-right .flabtn-first [tooltip]::before {
+    right: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+.flabtn.-top-right .flabtn-second {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 100%;
+}
+
+.flabtn.-top-right .flabtn-second [tooltip]::before {
+    right: 100%;
+    top: 100%;
+    margin-top: 5px;
+}
+
+
+/* top left */
+
+.flabtn.-top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.flabtn.-top-left [tooltip][data-role]::before {
+    left: 100%;
+    top: 100%;
+}
+
+.flabtn.-top-left .flabtn-first {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    top: 100%;
+}
+
+.flabtn.-top-left .flabtn-first [tooltip]::before {
+    left: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+.flabtn.-top-left .flabtn-second {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.flabtn.-top-left .flabtn-second [tooltip]::before {
+    left: 100%;
+    top: 100%;
+    margin-top: 5px;
+}
+
+
+/* bottom left */
+
+.flabtn.-bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.flabtn.-bottom-left [tooltip][data-role]::before {
+    left: 100%;
+    bottom: 100%;
+}
+
+.flabtn.-bottom-left .flabtn-first {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    bottom: 100%;
+}
+
+.flabtn.-bottom-left .flabtn-first [tooltip]::before {
+    left: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+.flabtn.-bottom-left .flabtn-second {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.flabtn.-bottom-left .flabtn-second [tooltip]::before {
+    left: 100%;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+
+/* bottom center */
+
+.flabtn.-bottom-center {
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.flabtn.-bottom-center [tooltip][data-role]::before {
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.flabtn.-bottom-center .flabtn-first {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 100%;
+}
+
+.flabtn.-bottom-center .flabtn-first [tooltip]::before {
+    right: 0;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+.flabtn.-bottom-center .flabtn-second {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.flabtn.-bottom-center .flabtn-second [tooltip]::before {
+    left: 0;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+
+/* top center */
+
+.flabtn.-top-center {
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.flabtn.-top-center [tooltip][data-role]::before {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 5px;
+}
+
+.flabtn.-top-center .flabtn-first {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 100%;
+}
+
+.flabtn.-top-center .flabtn-first [tooltip]::before {
+    right: 0;
+    top: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 5px;
+}
+
+.flabtn.-top-center .flabtn-second {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.flabtn.-top-center .flabtn-second [tooltip]::before {
+    left: 100%;
+    top: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 5px;
+}
+
+
+/* ========================
+    Colors
+========================= */
+
+
+/* white */
+
+.flabtn a[data-color*=white] {
+    color: #fff;
+}
+
+.flabtn a[data-color*=WHITE],
+.flabtn a[data-color*=white]:hover,
+.flabtn input:hover+a[data-color*=white] {
+    background-color: #fff;
+}
+
+.flabtn a[data-color*=WHITE]:hover,
+.flabtn input:hover+a[data-color*=WHITE] {
+    color: #fff;
+}
+
+.flabtn a[data-color*=grey] {
+    color: #808080;
+}
+
+
+/* grey */
+
+.flabtn a[data-color*=GREY],
+.flabtn a[data-color*=grey]:hover,
+.flabtn input:hover+a[data-color*=grey] {
+    background-color: #808080;
+}
+
+.flabtn a[data-color*=GREY]:hover,
+.flabtn input:hover+a[data-color*=GREY] {
+    color: #808080;
+}
+
+.flabtn input:hover+a[data-color*=grey] {
+    background-color: #808080;
+}
+
+
+/* black */
+
+.flabtn a[data-color*=black] {
+    color: #000;
+}
+
+.flabtn a[data-color*=BLACK],
+.flabtn a[data-color*=black]:hover,
+.flabtn input:hover+a[data-color*=black] {
+    background-color: #000;
+}
+
+.flabtn a[data-color*=BLACK]:hover,
+.flabtn input:hover+a[data-color*=BLACK] {
+    color: #000;
+}
+
+
+/* red */
+
+.flabtn a[data-color*=red] {
+    color: #e3001b;
+}
+
+.flabtn a[data-color*=RED],
+.flabtn a[data-color*=red]:hover,
+.flabtn input:hover+a[data-color*=red] {
+    background-color: #e3001b;
+}
+
+.flabtn a[data-color*=RED]:hover,
+.flabtn input:hover+a[data-color*=RED] {
+    color: #e3001b;
+}
+
+
+/* orange */
+
+.flabtn a[data-color*=orange] {
+    color: #f60;
+}
+
+.flabtn a[data-color*=ORANGE],
+.flabtn a[data-color*=orange]:hover,
+.flabtn input:hover+a[data-color*=orange] {
+    background-color: #f60;
+}
+
+.flabtn a[data-color*=ORANGE]:hover,
+.flabtn input:hover+a[data-color*=ORANGE] {
+    color: #f60;
+}
+
+
+/* yellow */
+
+.flabtn a[data-color*=yellow] {
+    color: #ffcc01;
+}
+
+.flabtn a[data-color*=YELLOW],
+.flabtn a[data-color*=yellow]:hover,
+.flabtn input:hover+a[data-color*=yellow] {
+    background-color: #ffcc01;
+}
+
+.flabtn a[data-color*=YELLOW]:hover,
+.flabtn input:hover+a[data-color*=YELLOW] {
+    color: #ffcc01;
+}
+
+
+/* lime */
+
+.flabtn a[data-color*=lime] {
+    color: #b1c903;
+}
+
+.flabtn a[data-color*=LIME],
+.flabtn a[data-color*=lime]:hover,
+.flabtn input:hover+a[data-color*=lime] {
+    background-color: #b1c903;
+}
+
+.flabtn a[data-color*=LIME]:hover,
+.flabtn input:hover+a[data-color*=LIME] {
+    color: #b1c903;
+}
+
+
+/* green */
+
+.flabtn a[data-color*=green] {
+    color: #8cc63f;
+}
+
+.flabtn a[data-color*=GREEN],
+.flabtn a[data-color*=green]:hover,
+.flabtn input:hover+a[data-color*=green] {
+    background-color: #8cc63f;
+}
+
+.flabtn a[data-color*=GREEN]:hover,
+.flabtn input:hover+a[data-color*=GREEN] {
+    color: #8cc63f;
+}
+
+
+/* cyan */
+
+.flabtn a[data-color*=cyan] {
+    color: #00b1e5;
+}
+
+.flabtn a[data-color*=CYAN],
+.flabtn a[data-color*=cyan]:hover,
+.flabtn input:hover+a[data-color*=cyan] {
+    background-color: #00b1e5;
+}
+
+.flabtn a[data-color*=CYAN]:hover,
+.flabtn input:hover+a[data-color*=CYAN] {
+    color: #00b1e5;
+}
+
+
+/* blue */
+
+.flabtn a[data-color*=blue] {
+    color: #0096c9;
+}
+
+.flabtn a[data-color*=BLUE],
+.flabtn a[data-color*=blue]:hover,
+.flabtn input:hover+a[data-color*=blue] {
+    background-color: #0096c9;
+}
+
+.flabtn a[data-color*=BLUE]:hover,
+.flabtn input:hover+a[data-color*=BLUE] {
+    color: #0096c9;
+}
+
+
+/* purple */
+
+.flabtn a[data-color*=purple] {
+    color: #ad007c;
+}
+
+.flabtn a[data-color*=PURPLE],
+.flabtn a[data-color*=purple]:hover,
+.flabtn input:hover+a[data-color*=purple] {
+    background-color: #ad007c;
+}
+
+.flabtn a[data-color*=PURPLE]:hover,
+.flabtn input:hover+a[data-color*=PURPLE] {
+    color: #ad007c;
+}
+
+
+/* purple */
+
+.flabtn a[data-color*=pink] {
+    color: #ea4c89;
+}
+
+.flabtn a[data-color*=PINK],
+.flabtn a[data-color*=pink]:hover,
+.flabtn input:hover+a[data-color*=pink] {
+    background-color: #ea4c89;
+}
+
+.flabtn a[data-color*=PINK]:hover,
+.flabtn input:hover+a[data-color*=PINK] {
+    color: #ea4c89;
+}
+
+
+/* ========================
+    Animations
+========================= */
+
+.flabtn.-scale li {
+    transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -webkit-transform: scale(0.1, 0.1);
+}
+
+.flabtn.-rotate-scale li {
+    transform: rotate(0deg) scale(0.1, 0.1);
+    -o-transform: rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn input:checked~ul li {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flabtn.-rotate input:checked~ul li {
+    transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.flabtn.-scale input:checked~ul li {
+    transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+
+.flabtn.-rotate-scale input:checked~ul li {
+    transform: rotate(360deg) scale(1, 1);
+    -o-transform: rotate(360deg) scale(1, 1);
+    -ms-transform: rotate(360deg) scale(1, 1);
+    -moz-transform: rotate(360deg) scale(1, 1);
+    -webkit-transform: rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-top-right.-translate .flabtn-first li {
+    transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.flabtn.-top-right.-translate .flabtn-second li {
+    transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.flabtn.-top-left.-translate .flabtn-first li {
+    transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.flabtn.-top-left.-translate .flabtn-second li {
+    transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.flabtn.-bottom-left.-translate .flabtn-first li {
+    transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+.flabtn.-bottom-left.-translate .flabtn-second li {
+    transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.flabtn.-bottom-right.-translate .flabtn-first li {
+    transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+.flabtn.-bottom-right.-translate .flabtn-second li {
+    transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.flabtn.-right.-translate .flabtn-first li,
+.flabtn.-left.-translate .flabtn-first li {
+    transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+.flabtn.-right.-translate .flabtn-second li,
+.flabtn.-left.-translate .flabtn-second li {
+    transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.flabtn.-top-center.-translate .flabtn-first li,
+.flabtn.-bottom-center.-translate .flabtn-first li {
+    transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.flabtn.-top-center.-translate .flabtn-second li,
+.flabtn.-bottom-center.-translate .flabtn-second li {
+    transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.flabtn.-top-right.-rotate-translate .flabtn-first li {
+    transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.flabtn.-top-right.-rotate-translate .flabtn-second li {
+    transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.flabtn.-top-left.-rotate-translate .flabtn-first li {
+    transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.flabtn.-top-left.-rotate-translate .flabtn-second li {
+    transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.flabtn.-bottom-left.-rotate-translate .flabtn-first li {
+    transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+.flabtn.-bottom-left.-rotate-translate .flabtn-second li {
+    transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.flabtn.-bottom-right.-rotate-translate .flabtn-first li {
+    transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+.flabtn.-bottom-right.-rotate-translate .flabtn-second li {
+    transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.flabtn.-right.-rotate-translate .flabtn-first li,
+.flabtn.-left.-rotate-translate .flabtn-first li {
+    transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+.flabtn.-right.-rotate-translate .flabtn-second li,
+.flabtn.-left.-rotate-translate .flabtn-second li {
+    transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.flabtn.-top-center.-rotate-translate .flabtn-first li,
+.flabtn.-bottom-center.-rotate-translate .flabtn-first li {
+    transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.flabtn.-top-center.-rotate-translate .flabtn-second li,
+.flabtn.-bottom-center.-rotate-translate .flabtn-second li {
+    transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.flabtn.-top-right.-rotate-translate-scale .flabtn-first li {
+    transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-top-right.-rotate-translate-scale .flabtn-second li {
+    transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn .-top-left.-rotate-translate-scale .flabtn-first li {
+    transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn .-top-left.-rotate-translate-scale .flabtn-second li {
+    transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-left.-rotate-translate-scale .flabtn-first li {
+    transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-left.-rotate-translate-scale .flabtn-second li {
+    transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-right.-rotate-translate-scale .flabtn-first li {
+    transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-right.-rotate-translate-scale .flabtn-second li {
+    transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-right.-rotate-translate-scale .flabtn-first li,
+.flabtn.-left.-rotate-translate-scale .flabtn-first li {
+    transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateY(100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-right.-rotate-translate-scale .flabtn-second li,
+.flabtn.-left.-rotate-translate-scale .flabtn-second li {
+    transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateY(-100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn .-top-center.-rotate-translate-scale .flabtn-first li,
+.flabtn .-bottom-center.-rotate-translate-scale .flabtn-first li {
+    transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateX(100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn .-top-center.-rotate-translate-scale .flabtn-second li,
+.flabtn .-bottom-center.-rotate-translate-scale .flabtn-second li {
+    transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -o-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -ms-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -moz-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+    -webkit-transform: translateX(-100%) rotate(0deg) scale(0.1, 0.1);
+}
+
+.flabtn.-top-right.-translate-scale .flabtn-first li {
+    transform: translateY(-100%) scale(0.1, 0.1);
+    -o-transform: translateY(-100%) scale(0.1, 0.1);
+    -ms-transform: translateY(-100%) scale(0.1, 0.1);
+    -moz-transform: translateY(-100%) scale(0.1, 0.1);
+    -webkit-transform: translateY(-100%) scale(0.1, 0.1);
+}
+
+.flabtn.-top-right.-translate-scale .flabtn-second li {
+    transform: translateX(100%) scale(0.1, 0.1);
+    -o-transform: translateX(100%) scale(0.1, 0.1);
+    -ms-transform: translateX(100%) scale(0.1, 0.1);
+    -moz-transform: translateX(100%) scale(0.1, 0.1);
+    -webkit-transform: translateX(100%) scale(0.1, 0.1);
+}
+
+.flabtn.-top-left.-translate-scale .flabtn-first li {
+    transform: translateY(-100%) scale(0.1, 0.1);
+    -o-transform: translateY(-100%) scale(0.1, 0.1);
+    -ms-transform: translateY(-100%) scale(0.1, 0.1);
+    -moz-transform: translateY(-100%) scale(0.1, 0.1);
+    -webkit-transform: translateY(-100%) scale(0.1, 0.1);
+}
+
+.flabtn.-top-left.-translate-scale .flabtn-second li {
+    transform: translateX(-100%) scale(0.1, 0.1);
+    -o-transform: translateX(-100%) scale(0.1, 0.1);
+    -ms-transform: translateX(-100%) scale(0.1, 0.1);
+    -moz-transform: translateX(-100%) scale(0.1, 0.1);
+    -webkit-transform: translateX(-100%) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-left.-translate-scale .flabtn-first li {
+    transform: translateY(100%) scale(0.1, 0.1);
+    -o-transform: translateY(100%) scale(0.1, 0.1);
+    -ms-transform: translateY(100%) scale(0.1, 0.1);
+    -moz-transform: translateY(100%) scale(0.1, 0.1);
+    -webkit-transform: translateY(100%) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-left.-translate-scale .flabtn-second li {
+    transform: translateX(-100%) scale(0.1, 0.1);
+    -o-transform: translateX(-100%) scale(0.1, 0.1);
+    -ms-transform: translateX(-100%) scale(0.1, 0.1);
+    -moz-transform: translateX(-100%) scale(0.1, 0.1);
+    -webkit-transform: translateX(-100%) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-right.-translate-scale .flabtn-first li {
+    transform: translateY(100%) scale(0.1, 0.1);
+    -o-transform: translateY(100%) scale(0.1, 0.1);
+    -ms-transform: translateY(100%) scale(0.1, 0.1);
+    -moz-transform: translateY(100%) scale(0.1, 0.1);
+    -webkit-transform: translateY(100%) scale(0.1, 0.1);
+}
+
+.flabtn.-bottom-right.-translate-scale .flabtn-second li {
+    transform: translateX(100%) scale(0.1, 0.1);
+    -o-transform: translateX(100%) scale(0.1, 0.1);
+    -ms-transform: translateX(100%) scale(0.1, 0.1);
+    -moz-transform: translateX(100%) scale(0.1, 0.1);
+    -webkit-transform: translateX(100%) scale(0.1, 0.1);
+}
+
+.flabtn.-right.-translate-scale .flabtn-first li,
+.flabtn.-left.-translate-scale .flabtn-first li {
+    transform: translateY(100%) scale(0.1, 0.1);
+    -o-transform: translateY(100%) scale(0.1, 0.1);
+    -ms-transform: translateY(100%) scale(0.1, 0.1);
+    -moz-transform: translateY(100%) scale(0.1, 0.1);
+    -webkit-transform: translateY(100%) scale(0.1, 0.1);
+}
+
+.flabtn.-right.-translate-scale .flabtn-second li,
+.flabtn.-left.-translate-scale .flabtn-second li {
+    transform: translateY(-100%) scale(0.1, 0.1);
+    -o-transform: translateY(-100%) scale(0.1, 0.1);
+    -ms-transform: translateY(-100%) scale(0.1, 0.1);
+    -moz-transform: translateY(-100%) scale(0.1, 0.1);
+    -webkit-transform: translateY(-100%) scale(0.1, 0.1);
+}
+
+.flabtn.-top-center.-translate-scale .flabtn-first li,
+.flabtn.-bottom-center.-translate-scale .flabtn-first li {
+    transform: translateX(100%) scale(0.1, 0.1);
+    -o-transform: translateX(100%) scale(0.1, 0.1);
+    -ms-transform: translateX(100%) scale(0.1, 0.1);
+    -moz-transform: translateX(100%) scale(0.1, 0.1);
+    -webkit-transform: translateX(100%) scale(0.1, 0.1);
+}
+
+.flabtn.-top-center.-translate-scale .flabtn-second li,
+.flabtn.-bottom-center.-translate-scale .flabtn-second li {
+    transform: translateX(-100%) scale(0.1, 0.1);
+    -o-transform: translateX(-100%) scale(0.1, 0.1);
+    -ms-transform: translateX(-100%) scale(0.1, 0.1);
+    -moz-transform: translateX(-100%) scale(0.1, 0.1);
+    -webkit-transform: translateX(-100%) scale(0.1, 0.1);
+}
+
+.flabtn.-top-right.-translate input:checked~.flabtn-first li {
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.flabtn.-top-right.-translate input:checked~.flabtn-second li {
+    transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.flabtn.-top-left.-translate input:checked~.flabtn-first li {
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.flabtn.-top-left.-translate input:checked~.flabtn-second li {
+    transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.flabtn.-bottom-left.-translate input:checked~.flabtn-first li {
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.flabtn.-bottom-left.-translate input:checked~.flabtn-second li {
+    transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.flabtn.-bottom-right.-translate input:checked~.flabtn-first li {
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.flabtn.-bottom-right.-translate input:checked~.flabtn-second li {
+    transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.flabtn.-right.-translate input:checked~.flabtn-first li,
+.flabtn.-left.-translate input:checked~.flabtn-first li {
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.flabtn.-right.-translate input:checked~.flabtn-second li,
+.flabtn.-left.-translate input:checked~.flabtn-second li {
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.flabtn.-top-center.-translate input:checked~.flabtn-first li,
+.flabtn.-bottom-center.-translate input:checked~.flabtn-first li {
+    transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.flabtn.-top-center.-translate input:checked~.flabtn-second li,
+.flabtn.-bottom-center.-translate input:checked~.flabtn-second li {
+    transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.flabtn.-top-right.-rotate-translate input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg);
+    -o-transform: translateY(0) rotate(360deg);
+    -ms-transform: translateY(0) rotate(360deg);
+    -moz-transform: translateY(0) rotate(360deg);
+    -webkit-transform: translateY(0) rotate(360deg);
+}
+
+.flabtn.-top-right.-rotate-translate input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg);
+    -o-transform: translateX(0) rotate(360deg);
+    -ms-transform: translateX(0) rotate(360deg);
+    -moz-transform: translateX(0) rotate(360deg);
+    -webkit-transform: translateX(0) rotate(360deg);
+}
+
+.flabtn.-top-left.-rotate-translate input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg);
+    -o-transform: translateY(0) rotate(360deg);
+    -ms-transform: translateY(0) rotate(360deg);
+    -moz-transform: translateY(0) rotate(360deg);
+    -webkit-transform: translateY(0) rotate(360deg);
+}
+
+.flabtn.-top-left.-rotate-translate input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg);
+    -o-transform: translateX(0) rotate(360deg);
+    -ms-transform: translateX(0) rotate(360deg);
+    -moz-transform: translateX(0) rotate(360deg);
+    -webkit-transform: translateX(0) rotate(360deg);
+}
+
+.flabtn.-bottom-left.-rotate-translate input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg);
+    -o-transform: translateY(0) rotate(360deg);
+    -ms-transform: translateY(0) rotate(360deg);
+    -moz-transform: translateY(0) rotate(360deg);
+    -webkit-transform: translateY(0) rotate(360deg);
+}
+
+.flabtn.-bottom-left.-rotate-translate input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg);
+    -o-transform: translateX(0) rotate(360deg);
+    -ms-transform: translateX(0) rotate(360deg);
+    -moz-transform: translateX(0) rotate(360deg);
+    -webkit-transform: translateX(0) rotate(360deg);
+}
+
+.flabtn.-bottom-right.-rotate-translate input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg);
+    -o-transform: translateY(0) rotate(360deg);
+    -ms-transform: translateY(0) rotate(360deg);
+    -moz-transform: translateY(0) rotate(360deg);
+    -webkit-transform: translateY(0) rotate(360deg);
+}
+
+.flabtn.-bottom-right.-rotate-translate input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg);
+    -o-transform: translateX(0) rotate(360deg);
+    -ms-transform: translateX(0) rotate(360deg);
+    -moz-transform: translateX(0) rotate(360deg);
+    -webkit-transform: translateX(0) rotate(360deg);
+}
+
+.flabtn.-right.-rotate-translate input:checked~.flabtn-first li,
+.flabtn.-left.-rotate-translate input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg);
+    -o-transform: translateY(0) rotate(360deg);
+    -ms-transform: translateY(0) rotate(360deg);
+    -moz-transform: translateY(0) rotate(360deg);
+    -webkit-transform: translateY(0) rotate(360deg);
+}
+
+.flabtn.-right.-rotate-translate input:checked~.flabtn-second li,
+.flabtn.-left.-rotate-translate input:checked~.flabtn-second li {
+    transform: translateY(0) rotate(360deg);
+    -o-transform: translateY(0) rotate(360deg);
+    -ms-transform: translateY(0) rotate(360deg);
+    -moz-transform: translateY(0) rotate(360deg);
+    -webkit-transform: translateY(0) rotate(360deg);
+}
+
+.flabtn.-top-center.-rotate-translate input:checked~.flabtn-first li,
+.flabtn.-bottom-center.-rotate-translate input:checked~.flabtn-first li {
+    transform: translateX(0) rotate(360deg);
+    -o-transform: translateX(0) rotate(360deg);
+    -ms-transform: translateX(0) rotate(360deg);
+    -moz-transform: translateX(0) rotate(360deg);
+    -webkit-transform: translateX(0) rotate(360deg);
+}
+
+.flabtn.-top-center.-rotate-translate input:checked~.flabtn-second li,
+.flabtn.-bottom-center.-rotate-translate input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg);
+    -o-transform: translateX(0) rotate(360deg);
+    -ms-transform: translateX(0) rotate(360deg);
+    -moz-transform: translateX(0) rotate(360deg);
+    -webkit-transform: translateX(0) rotate(360deg);
+}
+
+.flabtn.-top-right.-rotate-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateY(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-top-right.-rotate-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateX(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-top-left.-rotate-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateY(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-top-left.-rotate-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateX(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-bottom-left.-rotate-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateY(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-bottom-left.-rotate-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateX(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-bottom-right.-rotate-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateY(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-bottom-right.-rotate-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateX(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-right.-rotate-translate-scale input:checked~.flabtn-first li,
+.flabtn.-left.-rotate-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateY(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-right.-rotate-translate-scale input:checked~.flabtn-second li,
+.flabtn.-left.-rotate-translate-scale input:checked~.flabtn-second li {
+    transform: translateY(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateY(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateY(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-top-center.-rotate-translate-scale input:checked~.flabtn-first li,
+.flabtn.-bottom-center.-rotate-translate-scale input:checked~.flabtn-first li {
+    transform: translateX(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateX(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-top-center.-rotate-translate-scale input:checked~.flabtn-second li,
+.flabtn.-bottom-center.-rotate-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) rotate(360deg) scale(1, 1);
+    -o-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -ms-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -moz-transform: translateX(0) rotate(360deg) scale(1, 1);
+    -webkit-transform: translateX(0) rotate(360deg) scale(1, 1);
+}
+
+.flabtn.-top-right.-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -webkit-transform: translateY(0) scale(1, 1);
+}
+
+.flabtn.-top-right.-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) scale(1, 1);
+    -o-transform: translateX(0) scale(1, 1);
+    -ms-transform: translateX(0) scale(1, 1);
+    -moz-transform: translateX(0) scale(1, 1);
+    -webkit-transform: translateX(0) scale(1, 1);
+}
+
+.flabtn.-top-left.-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -webkit-transform: translateY(0) scale(1, 1);
+}
+
+.flabtn.-top-left.-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) scale(1, 1);
+    -o-transform: translateX(0) scale(1, 1);
+    -ms-transform: translateX(0) scale(1, 1);
+    -moz-transform: translateX(0) scale(1, 1);
+    -webkit-transform: translateX(0) scale(1, 1);
+}
+
+.flabtn.-bottom-left.-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -webkit-transform: translateY(0) scale(1, 1);
+}
+
+.flabtn.-bottom-left.-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) scale(1, 1);
+    -o-transform: translateX(0) scale(1, 1);
+    -ms-transform: translateX(0) scale(1, 1);
+    -moz-transform: translateX(0) scale(1, 1);
+    -webkit-transform: translateX(0) scale(1, 1);
+}
+
+.flabtn.-bottom-right.-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -webkit-transform: translateY(0) scale(1, 1);
+}
+
+.flabtn.-bottom-right.-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) scale(1, 1);
+    -o-transform: translateX(0) scale(1, 1);
+    -ms-transform: translateX(0) scale(1, 1);
+    -moz-transform: translateX(0) scale(1, 1);
+    -webkit-transform: translateX(0) scale(1, 1);
+}
+
+.flabtn.-right.-translate-scale input:checked~.flabtn-first li,
+.flabtn.-left.-translate-scale input:checked~.flabtn-first li {
+    transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -webkit-transform: translateY(0) scale(1, 1);
+}
+
+.flabtn.-right.-translate-scale input:checked~.flabtn-second li,
+.flabtn.-left.-translate-scale input:checked~.flabtn-second li {
+    transform: translateY(0) scale(1, 1);
+    -o-transform: translateY(0) scale(1, 1);
+    -ms-transform: translateY(0) scale(1, 1);
+    -moz-transform: translateY(0) scale(1, 1);
+    -webkit-transform: translateY(0) scale(1, 1);
+}
+
+.flabtn.-top-center.-translate-scale input:checked~.flabtn-first li,
+.flabtn.-bottom-center.-translate-scale input:checked~.flabtn-first li {
+    transform: translateX(0) scale(1, 1);
+    -o-transform: translateX(0) scale(1, 1);
+    -ms-transform: translateX(0) scale(1, 1);
+    -moz-transform: translateX(0) scale(1, 1);
+    -webkit-transform: translateX(0) scale(1, 1);
+}
+
+.flabtn.-top-center.-translate-scale input:checked~.flabtn-second li,
+.flabtn.-bottom-center.-translate-scale input:checked~.flabtn-second li {
+    transform: translateX(0) scale(1, 1);
+    -o-transform: translateX(0) scale(1, 1);
+    -ms-transform: translateX(0) scale(1, 1);
+    -moz-transform: translateX(0) scale(1, 1);
+    -webkit-transform: translateX(0) scale(1, 1);
+}
+
+
+/* Checked the main button */
+
+.flabtn input:checked~a [data-action=open] {
+    display: none;
+}
+
+.flabtn input:checked~a [data-action=close] {
+    display: inline-block;
+}
+
+.flabtn input:hover+a {
+    color: #383838;
+    background: #4db6ac;
+}
+
+.flabtn input:hover+a[tooltip]::before {
+    visibility: visible;
+    opacity: 1;
+}

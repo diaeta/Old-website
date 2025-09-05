@@ -1,0 +1,36 @@
+# Large files
+*.mhtml
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+
+# Test directories with large files
+Nouveau site/test2/
+Nouveau site/test3/
+Nouveau site/test4/
+Nouveau site/test5/
+Nouveau site/test6/
+
+# Node modules
+node_modules/
+
+# Backup directories
+Backup 23 07 2021/
+
+# Temporary files
+*.tmp
+*.temp
+testsprite_tests/tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Nouveau site/

@@ -1,0 +1,23 @@
+{
+  "name": "diaeta-mcp-servers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cyanheads/git-mcp-server": "2.3.2",
+    "@h16rkim/mcp-fetch-server": "1.1.7",
+    "@kirkdeam/puppeteer-mcp-server": "1.1.0",
+    "@modelcontextprotocol/server-filesystem": "2025.8.21",
+    "@modelcontextprotocol/server-github": "2025.4.8",
+    "@movibe/memory-bank-mcp": "0.4.1",
+    "@playwright/mcp": "0.0.36",
+    "a11y-mcp": "1.0.4"
+  }
+}

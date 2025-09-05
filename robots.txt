@@ -1,0 +1,54 @@
+User-agent: *
+Allow: /
+
+# Block backup and development directories
+Disallow: /Backup 23 07 2021/
+Disallow: /Nouveau site/
+Disallow: /Diaeta.be/
+Disallow: /node_modules/
+Disallow: /bat/
+Disallow: /privacy_fichiers/
+Disallow: /testsprite_tests/
+Disallow: /Drive/
+
+# Block development and configuration files
+Disallow: /*.py
+Disallow: /*.ps1
+Disallow: /*.md
+Disallow: /*.json
+Disallow: /*.txt
+Disallow: /*.log
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /postcss.config.js
+Disallow: /categorized_html_files.json
+
+# Block test and temporary files
+Disallow: /test.html
+Disallow: /test génétique nutrition.html
+Disallow: /indexOld.html
+Disallow: /improved-navigation.html
+Disallow: /menu-test.html
+Disallow: /search-results.html
+Disallow: /under-construction.html
+Disallow: /privacyO.htm
+
+# Allow important public directories
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /fonts/
+Allow: /webfonts/
+Allow: /audio/
+Allow: /video/
+Allow: /EN/
+Allow: /DE/
+Allow: /NL/
+Allow: /AR/
+
+# Sitemap - index covering primary and multilingual sitemaps
+Sitemap: https://diaeta.be/sitemap.xml
+Sitemap: https://diaeta.be/sitemap_index.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
