@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/tmp//**)",
+      "Bash(ls:*)",
+      "Bash(/c/Python313/python:*)",
+      "Bash(cygpath:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git checkout:*)",
+      "Bash(paste - - -)",
+      "Bash(paste:*)",
+      "Bash(git rm:*)",
+      "Bash(chmod:*)",
+      "Bash(bash:*)",
+      "Bash(find:*)",
+      "Bash(test -d .git)",
+      "Read(//c/Users/pierr/Mon Drive (pierre@diaeta.be)/**)",
+      "Read(//c/Users/pierr/**)",
+      "Bash(test:*)",
+      "Bash(for dir in \"/c/Users/pierr/Mon Drive (pierre@diaeta.be)/Diaeta.be/DE\"/diaetassistent-ernaehrungsberater-*/)",
+      "Bash(do echo \"=== $dir ===\")",
+      "Bash(done)",
+      "Bash(for repo in \"/c/Users/pierr/Documents/Archive sites/diaeta-website\" \"/c/Users/pierr/Documents/Archive sites/diaeta-website-master\" \"/c/Users/pierr/Documents/Archive sites/diaeta.be-V2\")",
+      "Bash(do echo \"=== $repo ===\")",
+      "Bash(iconv:*)",
+      "Bash(git add:*)",
+      "Bash(__NEW_LINE__ ls -lh \"NL/dietist-voedingsdeskundige-ukkel/care-happy-medisch-centrum.html\" \"NL/dietist-voedingsdeskundige-koekelberg/chrysalide-centrum.html\" \"NL/dietist-voedingsdeskundige-sint-agatha-berchem/revago-centrum.html\" \"NL/dietist-voedingsdeskundige-sint-pieters-woluwe/mediwoluwe.html\" \"NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/wolu20-medisch-centrum.html\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

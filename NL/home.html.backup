@@ -1,0 +1,1793 @@
+﻿<!DOCTYPE html>
+
+<html class="wide wow-animation scrollTo smoothscroll" lang="nl">
+<head>
+<title>Erkend diÃ«tist en voedingsdeskundige</title>
+<meta charset="utf-8"/>
+<meta content="telephone=yes" name="format-detection"/>
+<meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<meta content="DiÃ«tist, diÃ«tiste, Brussel, diÃ«tetiek, voedingsdeskundige, voeding, consultatie dieet, Elsene, Sint-Pieters-Woluwe, Woluwe-Saint-Pierre, Koekelberg, Ukkel, Braine-l'Alleud en Sint-Agatha-Berchem" name="keywords"/>
+<meta content="Erkend diÃ«tist | DiÃ«tiste | Gecertificeerd voedingsdeskundige voor kinderen en volwassenen in Brussel, Woluwe-Saint-Pierre, Elsene, Koekelberg, Linkebeek, Ukkel, Sint-Pieters-Woluwe, Sint-Agatha-Berchem en Braine l'Alleud." name="description"/>
+<link href="https://diaeta.be/NL/home.html" rel="canonical"/>
+<link href="../images/favicon-32x32.png" rel="icon" type="image/x-icon"/>
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,700,900%7CYesteryear" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&amp;display=swap&amp;family=PT+Sans&amp;display=swap&amp;family=Montserrat&amp;display=swap" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/novi.css" rel="stylesheet"/>
+<link href="../css/flabtn.css" rel="stylesheet">
+<link href="../css/new-menu.css" rel="stylesheet"/>
+<link href="../css/fontawesome-all.min.css" rel="stylesheet"/>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://diaeta.be/NL/home.html#person",
+  "name": "Pierre Abou-Zeid",
+  "jobTitle": "Erkend diÃ«tist-voedingsdeskundige (RIZIV), MONASH gecertificeerd",
+  "image": "https://diaeta.be/images/Pierre.jpg",
+  "url": "https://diaeta.be/NL/home.html",
+  "telephone": "+32 479 35 55 51",
+  "email": "info@diaeta.be",
+  "description": "Erkend diÃ«tist-voedingsdeskundige, gespecialiseerd in gewichtsverlies, diabetes, cholesterol, prikkelbare darmsyndroom en genetische tests. MONASH gecertificeerd voor de Laag FODMAP-aanpak.",
+  "knowsLanguage": ["Frans", "Engels", "Nederlands", "Duits", "Arabisch"],
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Erasmus Hogeschool",
+      "description": "Bachelor in de dieetleer"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "EPFC",
+      "description": "Bachelor in computerprogrammering"
+    }
+  ],
+  "knowsAbout": [
+    "Duurzaam gewichtsverlies",
+    "Diabetesbeheer",
+    "Cholesterolbeheer",
+    "Prikkelbare darmsyndroom",
+    "Laag FODMAP-dieet",
+    "Nutrigenomix genetische tests",
+    "Gepersonaliseerde voeding",
+    "Wetenschappelijke diÃ«tetiek"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Laudinnestraat 94A",
+    "addressLocality": "Vlezenbeek",
+    "postalCode": "1602",
+    "addressCountry": "BE"
+  },
+  "workLocation": [
+    {
+      "@type": "MedicalClinic",
+      "name": "Medisch Centrum Tenbosch-ChÃ¢telain",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Elsene",
+        "postalCode": "1050",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Basili-K-SantÃ©",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Koekelberg",
+        "postalCode": "1081",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Espace Pluridys",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ukkel",
+        "postalCode": "1180",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Mediwoluwe",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sint-Pieters-Woluwe",
+        "postalCode": "1150",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Les Etrimaux",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sint-Pieters-Woluwe",
+        "postalCode": "1150",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "REVAGO Centrum",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sint-Agatha-Berchem",
+        "postalCode": "1082",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Medic Alix",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sint-Pieters-Woluwe",
+        "postalCode": "1150",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Medisch Centrum Wolu20",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sint-Lambrechts-Woluwe",
+        "postalCode": "1200",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Medisch Centrum Niveole",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Laken",
+        "postalCode": "1020",
+        "addressCountry": "BE"
+      }
+    }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Diaeta",
+    "url": "https://diaeta.be",
+    "slogan": "Dieet op maat",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Laudinnestraat 94A",
+      "addressLocality": "Vlezenbeek",
+      "postalCode": "1602",
+      "addressCountry": "BE"
+    },
+    "telephone": "+32 479 35 55 51",
+    "email": "pierre@diaeta.be"
+  },
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "RIZIV",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Rijksinstituut voor Ziekte- en Invaliditeitsverzekering",
+        "url": "https://www.inami.fgov.be"
+      },
+      "credentialNumber": "5-63187-92-601"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "MONASH Certificering",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Monash University",
+        "url": "https://www.monash.edu"
+      },
+      "description": "Gecertificeerd voor de Laag FODMAP-aanpak"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/diaeta.be",
+    "https://www.instagram.com/diaeta.be/"
+  ]
+}
+</script>
+<script src="../js/CalCalorie.js "></script>
+<!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1; "><a href="http://windows.microsoft.com/en-US/internet-explorer/
+        "><img src="../images/ie8-panel/warning_bar_0000_us.jpg " border="0 " height="42 " width="820 " alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today. "></a></div><script src="../js/html5shiv.min.js "></script><![endif]-->
+<script crossorigin="anonymous " src="https://kit.fontawesome.com/d02a233de5.js "></script>
+
+<!-- Cookie Banner CSS -->
+<style>
+       .cookie-banner {
+           position: fixed;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           background: linear-gradient(135deg, #005773 0%, #007a9e 100%);
+           color: white;
+           padding: 20px 0;
+           box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+           z-index: 9999;
+           transform: translateY(100%);
+           transition: transform 0.4s ease-in-out;
+           backdrop-filter: blur(10px);
+           border-top: 2px solid #bfe095;
+       }
+       
+       .cookie-banner.show {
+           transform: translateY(0);
+       }
+       
+       .cookie-banner-content {
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 0 20px;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 20px;
+       }
+       
+       .cookie-banner-text {
+           flex: 1;
+           font-size: 14px;
+           line-height: 1.6;
+       }
+       
+       .cookie-banner-text a {
+           color: #bfe095;
+           text-decoration: underline;
+           font-weight: 500;
+       }
+       
+       .cookie-banner-text a:hover {
+           color: #d6ebba;
+       }
+       
+       .cookie-banner-buttons {
+           display: flex;
+           gap: 12px;
+           flex-shrink: 0;
+       }
+       
+       .cookie-btn {
+           padding: 10px 20px;
+           border: none;
+           border-radius: 6px;
+           font-size: 14px;
+           font-weight: 500;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           text-decoration: none;
+           display: inline-block;
+           text-align: center;
+       }
+       
+       .cookie-btn-primary {
+           background: #bfe095;
+           color: #005773;
+       }
+       
+       .cookie-btn-primary:hover {
+           background: #d6ebba;
+           transform: translateY(-1px);
+       }
+       
+       .cookie-btn-secondary {
+           background: transparent;
+           color: white;
+           border: 2px solid rgba(255, 255, 255, 0.3);
+       }
+       
+       .cookie-btn-secondary:hover {
+           background: rgba(255, 255, 255, 0.1);
+           border-color: rgba(255, 255, 255, 0.5);
+       }
+       
+       .cookie-btn-small {
+           padding: 8px 16px;
+           font-size: 12px;
+       }
+       
+       @media (max-width: 768px) {
+           .cookie-banner-content {
+               flex-direction: column;
+               text-align: center;
+               gap: 15px;
+           }
+           
+           .cookie-banner-buttons {
+               width: 100%;
+               justify-content: center;
+           }
+           
+           .cookie-btn {
+               flex: 1;
+               max-width: 150px;
+           }
+       }
+       
+       .cookie-settings-modal {
+           position: fixed;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background: rgba(0, 0, 0, 0.7);
+           z-index: 10000;
+           display: none;
+           align-items: center;
+           justify-content: center;
+           padding: 20px;
+       }
+       
+       .cookie-settings-modal.show {
+           display: flex;
+       }
+       
+       .cookie-settings-content {
+           background: white;
+           border-radius: 12px;
+           padding: 30px;
+           max-width: 500px;
+           width: 100%;
+           max-height: 80vh;
+           overflow-y: auto;
+           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+       }
+       
+       .cookie-settings-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin-bottom: 20px;
+           padding-bottom: 15px;
+           border-bottom: 2px solid #f0f0f0;
+       }
+       
+       .cookie-settings-title {
+           font-size: 20px;
+           font-weight: 600;
+           color: #005773;
+           margin: 0;
+       }
+       
+       .cookie-settings-close {
+           background: none;
+           border: none;
+           font-size: 24px;
+           cursor: pointer;
+           color: #666;
+           padding: 0;
+           width: 30px;
+           height: 30px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       
+       .cookie-settings-close:hover {
+           color: #005773;
+       }
+       
+       .cookie-category {
+           margin-bottom: 20px;
+           padding: 15px;
+           border: 1px solid #e0e0e0;
+           border-radius: 8px;
+       }
+       
+       .cookie-category-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin-bottom: 10px;
+       }
+       
+       .cookie-category-title {
+           font-weight: 600;
+           color: #333;
+           margin: 0;
+       }
+       
+       .cookie-toggle {
+           position: relative;
+           width: 50px;
+           height: 24px;
+           background: #ccc;
+           border-radius: 12px;
+           cursor: pointer;
+           transition: background 0.3s;
+       }
+       
+       .cookie-toggle.active {
+           background: #bfe095;
+       }
+       
+       .cookie-toggle::after {
+           content: '';
+           position: absolute;
+           top: 2px;
+           left: 2px;
+           width: 20px;
+           height: 20px;
+           background: white;
+           border-radius: 50%;
+           transition: transform 0.3s;
+       }
+       
+       .cookie-toggle.active::after {
+           transform: translateX(26px);
+       }
+       
+       .cookie-category-description {
+           font-size: 14px;
+           color: #666;
+           line-height: 1.5;
+           margin: 0;
+       }
+       
+       .cookie-settings-footer {
+           margin-top: 25px;
+           padding-top: 20px;
+           border-top: 2px solid #f0f0f0;
+           display: flex;
+           gap: 12px;
+           justify-content: flex-end;
+       }
+   </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-176842287-1">
+</script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js ', new Date());
+
+        gtag('config ', 'UA-176842287-1 ');
+    </script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-PXRJFVP"></script>
+</head>
+<body>
+<div class="page-loader page-loader-variant-1">
+<div><img alt="Logo of diaeta, registered dietitian and nutritionist" class="img-fluid" height="330" src="../images/logos/Diaeta.svg" style="margin-top: -20px;margin-left: -18px;" width="330"/>
+<div class="offset-top-41 text-center">
+<div class="spinner"></div>
+</div>
+</div>
+</div>
+<!--Floatbutton-->
+<div class="flabtn -right -medium -circle -scale">
+<input type="checkbox"/>
+<a data-color="GREEN-blue" data-role="main" href="#">
+<i class="fas fa-bars" data-action="open"></i>
+<i class="fas fa-times" data-action="close"></i>
+</a>
+<ul class="flabtn-first">
+<li><a data-color="BLUE-green" data-tooltip="show" href="dietist-voedingsdeskundige/appointment.html" tooltip="Appointment"><i class="fas fa-calendar-alt"></i></a></li>
+<li><a data-color="BLUE-green" data-tooltip="show" href="#tarifs" tooltip="Tarieven"><i class="fas fa-euro-sign"></i></a></li>
+<li><a data-color="BLUE-green" data-tooltip="show" href="#cabinet" tooltip="Onze praktijken"><i class="fas fa-clinic-medical"></i></a></li>
+</ul>
+<ul class="flabtn-second">
+<li><a data-color="BLUE-green" data-tooltip="show" href="nutrigenomica-nutrigenetica/genetic test.html" tooltip="Genetic testing"><i class="fas fa-dna"></i></a></li>
+<li><a data-color="BLUE-green" data-tooltip="show" href="contact.html" tooltip="Contact"><i class="far fa-envelope"></i></a></li>
+<li><a data-color="BLUE-green" data-tooltip="show" href="tel:+32 479.35.55.51" tooltip="Call us"><i class="fas fa-phone"></i></a></li>
+</ul>
+</div>
+<div class="page text-center">
+<header class="section page-head">
+<nav class="navbar">
+<div class="container">
+<a class="navbar-brand" href="home.html">
+<img alt="Logo of diaeta, Registered dietitian and certified nutritionist" height="100" itemprop="logo" src="../images/logos/Diaeta.svg" style="margin-left: -15px;" width="100"/>
+</a>
+<button aria-label="Toggle navigation" class="navbar-toggler" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html">De diÃ«tist</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button">
+                            Consultatie
+                        </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#cabinet">Onze praktijken</a></li>
+<li><a class="dropdown-item" href="dietist-voedingsdeskundige-en-dietetiek/consultatie.html">Verloop van de consultatie</a></li>
+<li><a class="dropdown-item" href="dietist-voedingsdeskundige-en-dietetiek/werkwijze.html">Onze methode</a></li>
+<li><a class="dropdown-item" href="#tarifs">Tarieven</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button">
+                            Diensten
+                        </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="diabetes.html">Diabetesbegeleiding</a></li>
+<li><a class="dropdown-item" href="nutrigenomica-nutrigenetica/genetische-test.html">Genetische testen</a></li>
+<li><a class="dropdown-item" href="dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html">Prikkelbare darmsyndroom</a></li>
+<li><a class="dropdown-item" href="dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html">Gewichtsverlies</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="#Calculette">BMI-calculator</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Nederlands
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../index.html">FranÃ§ais</a></li>
+                            <li><a class="dropdown-item" href="../NL/home.html">Nederlands</a></li>
+                            <li><a class="dropdown-item" href="../EN/home.html">English</a></li>
+                            <li><a class="dropdown-item" href="../DE/home.html">Deutsch</a></li>
+                        </ul>
+                    </li>
+<li class="nav-item">
+<a class="btn btn-primary" href="dietist-voedingsdeskundige/afspraak.html">Afspraak boeken</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<section class="section parallax-container bg-black" data-parallax-img="../images/Pierre.jpg">
+<div class="parallax-content bg-overlay-gray-darkest context-dark">
+<div class="container">
+<div class="section-124 section-xs-110 section-cover row justify-content-center align-items-sm-end">
+<div class="col-xl-12">
+<!-- Quote Simple-->
+<hr class="hr hr-gradient"/>
+<div class="text-center">
+<h1>Gewichtsverlies | Diabetes | Cholesterol | Prikkelbare Darmsyndroom (PDS) | Voedselintoleranties</h1>
+<h1>Voor adolescenten en volwassenen</h1>
+<h1 class="nothingfont text-right">Uw specialist</h1>
+</div>
+<hr class="hr hr-gradient"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section style="background-color: #f0f8ff; padding: 30px 0; border-top: 5px solid #8cc63f;">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8 text-center">
+<h2 style="color: #8cc63f; margin-bottom: 20px;">Videoconsultatie voor Prikkelbare Darmsyndroom</h2>
+<p style="margin-bottom: 25px;">Lijdt u aan het prikkelbare darmsyndroom? Ontdek onze videoconsultaties voor persoonlijke begeleiding zonder uw huis te verlaten.</p>
+<a class="btn" href="dietist-voedingsdeskundige/afspraak.html" style="background-color: #005773; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Plan uw consultatie</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section-66 section-sm-0" id="home-section-welcome">
+<div class="container">
+<div class="row justify-content-sm-center justify-content-md-start">
+<div class="col-sm-10 col-md-6 section-image-aside section-image-aside-right text-left">
+<div class="section-image-aside-img d-none d-md-block" style="background-image: url(../images/skins/WL.jpg)"></div>
+<div class="section-image-aside-body section-sm-66 inset-md-right-30">
+<div>
+<img alt="Lose weight in an effective way" class="img-fluid" height="150" src="../images/logos/Diaeta.svg" style="margin-top: -20px;margin-left: -18px;" width="150"/>
+</div>
+<div>
+<h2> Afvallen?</h2>
+</div>
+<div class="offset-top-10">
+<p class="nothingfont">Afvallen is Ã©Ã©n ding, op gewicht blijven is iets anders!</p>
+<p>Heeft u besloten om af te vallen of probeert u gewicht te verliezen, maar lukt het niet?</p>
+<p>Weet dat buikvet verliezen, dijvet verliezen, snel diÃ«ten, snel afvallen, ... fenomenen zijn die moeilijk te beheersen zijn en afhangen van een veelheid aan factoren.
+                                </p>
+<p>Gewichtsverlies is een zeer complex, dynamisch en niet-lineair proces dat vaardigheden en expertise vereist die alleen de diÃ«tist of diÃ«tist-voedingsdeskundige bezit. Afhankelijk van uw levensstijl,
+                                  zal de diÃ«tist of diÃ«tist-voedingsdeskundige het te volgen dieet of de voedseltherapie bepalen, om dit dieet of deze therapie zo min mogelijk beperkend te maken en te voorkomen dat het een obstakel wordt.</p>
+<div class="offset-top-34"><a class="btn btn-blue btn-icon btn-icon-left" data-custom-scroll-to="careers-start " href="dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html"><span class="novi-icon icon mdi mdi-information-outline"></span>Lees meer</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row justify-content-sm-center justify-content-md-end offset-top-0">
+<div class="col-sm-10 col-md-6 section-image-aside section-image-aside-left text-left">
+<div class="section-image-aside-img d-none d-md-block" style="background-image: url(../images/skins/IBS.jpg) "></div>
+<div class="section-image-aside-body offset-top-41 offset-md-top-0 section-sm-66 inset-md-left-50">
+<div>
+<img alt="Registered dietitian and nutritionist specialised in the irritable bowel syndrome (IBS)" class="img-fluid" height="150 " src="../images/logos/diaeta.svg " style="margin-top: -20px;margin-left: -18px; " width="150 "/>
+</div>
+<div class="offset-top-10">
+<h2>Prikkelbare Darmsyndroom (PDS)</h2>
+<p class="nothingfont">Het laag FODMAP-dieet, RESULTATEN al na 2 weken!</p>
+</div>
+<div class="offset-top-20">
+<p>Het prikkelbare darmsyndroom is een veel voorkomende maag-darmaandoening. Het wordt gekenmerkt door constipatie, diarree of een combinatie van beide, door
+								een opgeblazen gevoel in de buik, uitzetting, overmatige winderigheid en een dringende noodzaak om naar het toilet te gaan. Deze symptomen zijn niet altijd allemaal aanwezig bij mensen
+								die lijden aan het prikkelbare darmsyndroom.</p>
+<p>De symptomen worden vaak veroorzaakt door suikers die FODMAP's worden genoemd. Daarom is een FODMAP- of laag-FODMAP-dieet gericht op het verminderen of elimineren van de symptomen in 80% van de gevallen.</p>
+<p>Een laag FODMAP-dieet moet worden gevolgd onder toezicht van een diÃ«tist | gespecialiseerde en ervaren diÃ«tist-voedingsdeskundige. Dankzij mijn
+								opleiding aan de universiteit van MONASH, de universiteit die het laag FODMAP-dieet heeft ingevoerd, kan ik u in alle veiligheid begeleiden.</p>
+</div>
+<div class="offset-top-34">
+<h3>Videoconsultaties</h3>
+<p>We bieden nu videoconsultaties aan voor persoonlijke begeleiding vanuit uw eigen huis. Profiteer van het deskundige advies van onze erkende diÃ«tist/voedingsdeskundige, gespecialiseerd in het laag FODMAP-dieet en opgeleid aan de Monash Universiteit.</p>
+<p>Neem contact met ons op om uw videoconsultatie te plannen en uw reis naar een betere spijsvertering te beginnen.</p>
+<div class="offset-top-20">
+<a class="btn btn-blue btn-icon btn-icon-left" href="dietist-voedingsdeskundige/afspraak.html">
+<span class="novi-icon icon mdi mdi-video-outline"></span>Plan uw consultatie
+                                    </a>
+</div>
+</div>
+<div class="offset-top-34"><a class="btn btn-blue btn-icon btn-icon-left" data-custom-scroll-to="careers-start " href="dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html"><span class="novi-icon icon mdi mdi-information-outline"></span>Lees meer</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row justify-content-sm-center justify-content-md-start offset-top-0">
+<div class="col-sm-10 col-md-6 section-image-aside section-image-aside-right text-left">
+<div class="section-image-aside-img d-none d-md-block" style="background-image: url(../images/skins/blood-pressure.jpg) "></div>
+<div class="section-image-aside-body offset-top-41 offset-md-top-0 section-sm-66 inset-md-right-30">
+<div>
+<img alt="Diaeta, tailor-made dietary advice from a dietician/dietician-nutritionist" class="img-fluid" height="150 " src="../images/logos/diaeta.svg " style="margin-top: -20px;margin-left: -18px; " width="150 "/>
+</div>
+<div class="offset-top-10">
+<h2>Hoge bloeddruk en cholesterol</h2>
+<p class="nothingfont">Vermijd witte giffen, vetten, suikers en zout!</p>
+</div>
+<div class="offset-top-20">
+<p>Hoge bloeddruk is een ernstige aandoening die vaak de "stille moordenaar" wordt genoemd omdat veel mensen
+								eraan lijden zonder het te weten. Na verloop van tijd kunnen mensen die niet worden behandeld voor hoge bloeddruk erg ziek worden of zelfs overlijden.</p>
+<p>Hoge bloeddruk kan levensbedreigende ziekten veroorzaken zoals nierproblemen, beroertes, hartfalen, blindheid en hartaanvallen.</p>
+<p>Hoge bloedcholesterolwaarden worden sterk in verband gebracht met een verhoogd risico op hartaandoeningen.</p>
+</div>
+<p>De grootste invloed op het cholesterolgehalte in het bloed is de mix van vetten en koolhydraten in uw dieet, niet de hoeveelheid cholesterol die u via voedsel binnenkrijgt. Vraag uw diÃ«tist / voedingsdeskundige om advies.</p>
+</div>
+</div>
+</div>
+<div class="row justify-content-sm-center justify-content-md-end offset-top-0">
+<div class="col-sm-10 col-md-6 section-image-aside section-image-aside-left text-left">
+<div class="section-image-aside-img d-none d-md-block" style="background-image: url(../images/skins/DM2.jpg) "></div>
+<div class="section-image-aside-body offset-top-41 offset-md-top-0 section-sm-66 inset-md-left-50">
+<div>
+<img alt="Diaeta, tailor-made dietary advice from a dietician / nutritionist" class="img-fluid" height="150 " src="../images/logos/diaeta.svg " style="margin-top: -20px;margin-left: -18px; " width="150 "/>
+</div>
+<div class="offset-top-10">
+<h2>Diabetes type 2</h2>
+<p class="nothingfont">Diabetes is een levensstijlprobleem!</p>
+</div>
+<div class="offset-top-20">
+<p>Voeding en lichaamsbeweging zijn belangrijke onderdelen van een gezond leven met diabetes. Een gezond dieet volgen en actief zijn kan u helpen uw bloedsuikerspiegel op een normaal niveau te houden. Wat u kiest om te eten, hoeveel u eet
+								en wanneer u eet zijn allemaal belangrijk om uw bloedsuikerspiegel binnen het aanbevolen bereik te houden.</p>
+<p>Actiever worden en veranderingen aanbrengen in wat u eet en drinkt kan in het begin moeilijk lijken. U vindt het misschien gemakkelijker om te beginnen met
+								kleine veranderingen en hulp te krijgen van uw diÃ«tist - voedingsdeskundige.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></div>
+
+<!-- Light Parallax Section-->
+<section class="section parallax-container" data-parallax-img="https://nutrigenomix.com/storage//pages/home-intro.jpg">
+<div class="parallax-content section-98 section-sm-124 bg-overlay-white">
+<div class="container">
+<div class="row justify-content-md-center">
+<div class="col-md-10">
+<h1>Genetische tests voor gepersonaliseerde voeding</h1>
+<hr class="divider bg-mantis"/>
+<div class="row text-lg-left offset-top-50 offset-xl-top-66">
+<div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0">
+<!-- Icon Box Type 3-->
+<div class="unit align-items-center unit-spacing-xs unit-xs flex-sm-row text-center text-sm-left">
+<div class="unit-left"><span class="icon novi-icon text-middle icon-sm text-dollar-bill fa fa-heartbeat"></span></div>
+<div class="unit-body">
+<h4 class="text-uppercase font-weight-bold">Gezondheid en gewicht</h4>
+</div>
+</div>
+<p class="offset-top-20 text-center text-sm-left">Verschillende studies hebben aangetoond dat mensen die voedingsadvies krijgen op basis van hun genetica, in vergelijking met algemeen advies, meer gewicht verliezen en het vooral langer behouden.</p>
+</div>
+<div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 offset-top-50 offset-lg-top-0">
+<!-- Icon Box Type 3-->
+<div class="unit align-items-center unit-spacing-xs unit-xs flex-sm-row text-center text-sm-left">
+<div class="unit-left"><span class="icon novi-icon text-middle icon-sm text-dollar-bill mdi mdi-bike"></span></div>
+<div class="unit-body">
+<h4 class="text-uppercase font-weight-bold">Sport</h4>
+</div>
+</div>
+<p class="offset-top-20 text-center text-sm-left">Eet slimmer, train harder en herstel sneller.</p>
+<p class="offset-top-20 text-center text-sm-left">Ontdek hoe uw genen invloed kunnen hebben op: uw herstel, risico op blessures, motivatie, pijntolerantie, trainingsprestaties, ...</p>
+</div>
+<div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 offset-top-50 offset-lg-top-0">
+<!-- Icon Box Type 3-->
+<div class="unit align-items-center unit-spacing-xs unit-xs flex-sm-row text-center text-sm-left">
+<div class="unit-left"><span class="icon novi-icon text-middle icon-sm text-dollar-bill mdi mdi-baby"></span></div>
+<div class="unit-body">
+<h4 class="text-uppercase font-weight-bold">Vruchtbaarheid</h4>
+</div>
+</div>
+<p class="offset-top-20 text-center text-sm-left">Onderzoek toont aan dat de voedingstoestand van vrouwen en mannen de vruchtbaarheid kan beÃ¯nvloeden. We weten ook dat specifieke variaties in onze genen kunnen verklaren waarom sommigen van ons anders reageren dan anderen op dezelfde voedingsmiddelen, dranken en supplementen die we consumeren.</p>
+</div>
+</div>
+<div class="offset-top-34"><a class="btn btn-blue btn-icon btn-icon-left" data-custom-scroll-to="careers-start " href="nutrigenomica-nutrigenetica/genetische-test.html"><span class="novi-icon icon mdi mdi-information-outline"></span>Lees meer</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section parallax-container bg-white" data-parallax-img="../images/dieteticienbg.jpg">
+<div class="parallax-content section-98 section-sm-110 bg-overlay-gray-darkest context-dark">
+<div class="container">
+<div class="row justify-content-md-center">
+<div class="col-md-10">
+<h1>De diÃ«tist en diÃ«tetiek</h1>
+<hr class="divider bg-mantis"/>
+<p><span data-novi-id="28">Hoe kunnen we dagelijks voedsel en gezondheid combineren? Hoe kunnen we de eetgewoonten identificeren die onze gezondheid, onze vitaliteit en ons evenwicht schaden? De eerste keuze is vooral om de tijd te nemen om informatie te krijgen en advies in te winnen bij een<a href="dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html"><span>erkend diÃ«tist / voedingsdeskundige.</span></a>
+</span><br/><br/>
+<span data-novi-id="28">DiÃ«tisten - voedingsdeskundigen geven advies op maat over gezonde en evenwichtige voeding en een levensstijl die geschikt is voor mensen van alle leeftijden, gezond of ziek. <a href="dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html"><span>DiÃ«tetiek</span></a>
+                        geeft antwoorden aan mensen die niet meer weten wat ze moeten eten om gezonder te leven. DiÃ«tetiek is gewijd aan de problemen van voeding en de ontwikkeling van diÃ«ten die zijn aangepast aan de gezondheidstoestand van individuen. DiÃ«tetiek is een kwestie van hygiÃ«ne voor gezonde proefpersonen en therapeutisch voor zieke proefpersonen.
+                         De diÃ«tist | diÃ«tist - voedingsdeskundige werkt nauw samen met uw arts om ervoor te zorgen dat u de juiste voeding krijgt: afgestemd op uw aandoening, uw behandeling en natuurlijk uw persoonlijke voorkeuren.
+                        </span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section novi-background section-66 bg-white">
+<div class="container">
+<h2>Zorg voor je lichaam, het is de enige plek waar je moet leven.</h2>
+<hr class="divider divider-md bg-mantis"/>
+<div class="row justify-content-sm-center">
+<div class="col-md-8">
+<!-- Quote Simple-->
+<hr class="hr hr-gradient">
+<div class="h3 text-center text-italic p h3 text-center font-italic">
+<q>We begeleiden u gedurende het hele proces.
+                         We zullen samenwerken om optimale resultaten te bereiken. Het doel is niet om u een strikt dieet op te leggen, maar eerder een geleidelijke aanpassing van uw dieet en uw levensstijl.
+                         Het doel is dat u leert om zelf een gezond dieet te beheren dat is aangepast aan uw lichaam en uw behoeften en dit voor een leven lang.</q>
+<p><button class="btn btn-green" onclick="window.location.href='dietist-voedingsdeskundige-en-dietetiek/werkwijze.html' ; ">Mijn werkwijze</button>
+</p>
+</div>
+<hr class="hr hr-gradient">
+</hr></hr></div>
+</div>
+</div>
+</section>
+<section class="section novi-background section-66 context-dark bg-acapulco bg-blue-blue">
+<div class="container">
+<div class="row justify-content-sm-center align-items-sm-center no-gutters grid-group-md">
+<div class="col-lg-7 col-xxl-9 text-center">
+<h2 class="" data-novi-id="3 "><span class="big" data-novi-id="9 ">Consultaties</span></h2>
+</div>
+</div>
+</div>
+</section>
+<section class="section novi-background section-98 section-md-110 bg-blue-blue" id="cabinet">
+<div itemprop="address">
+<div class="container">
+<div class="row justify-content-sm-center">
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-elsene/tenbosch-chatelain-medisch-centrum.html">
+<div>
+<h3 data-novi-id="35">Elsene</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Medisch Centrum Tenbosch-ChÃ¢telain</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">13.00 - 18.00 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">donderdag en zaterdag</span></li>
+</ul>
+</div>
+</a>
+</div>
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-koekelberg/bsk.html">
+<div>
+<h3 data-novi-id="35">Koekelberg</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Basili-K-SantÃ©</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">09.00 - 12.00 / 13.00 - 21.00 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">zaterdag / vrijdag</span></li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+<div class="row justify-content-sm-center">
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-sint-pieters-woluwe/dietist-voedingsdeskundige-sint-pieters-woluwe.html">
+<div>
+<h3 data-novi-id="34">Sint-Pieters-Woluwe</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Les Etrimaux</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">12.30 - 16.30 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">maandag</span></li>
+</ul>
+</div>
+</a>
+</div>
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-ukkel/espacepluridys.html">
+<div>
+<h3 data-novi-id="34">Ukkel</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Espace Pluridys</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">14.00 - 20.00 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">woensdag</span></li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+<div class="row justify-content-sm-center">
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-sint-agatha-berchem/dietist-voedingsdeskundige-sint-agatha-berchem.html">
+<div>
+<h3 data-novi-id="35">Sint-Agatha-Berchem</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">REVAGO</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">14.00 - 20.00 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">dinsdag</span></li>
+</ul>
+</div>
+</a>
+</div>
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-etterbeek/mediwoluwe.html">
+<div>
+<h3 data-novi-id="35">Woluwe-Saint-Pierre</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Mediwoluwe</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">11.00 - 21.00 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">maandag</span></li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+<div class="row justify-content-sm-center">
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-sint-pieters-woluwe/medic-alix.html">
+<div>
+<h3 data-novi-id="34">Sint-Pieters-Woluwe</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Medic Alix</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">14.00 - 20.00 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">Dinsdag</span></li>
+</ul>
+</div>
+</a>
+</div>
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-sint-lambrechts-woluwe/dietist-voedingsdeskundige-sint-lambrechts-woluwe.html">
+<div>
+<h3 data-novi-id="35">Sint-Lambrechts-Woluwe</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Medisch Centrum Wolu20</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">1.30 PM - 8.00 PM</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">Donderdag</span></li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+<div class="row justify-content-sm-center">
+<div class="col-md-6">
+<a class="post-vacation text-left" href="dietist-voedingsdeskundige-laken/niveole-medisch-centrum.html">
+<div>
+<h3 data-novi-id="35">Laken</h3>
+</div>
+<div class="post-meta offset-top-10">
+<ul class="list-inline list-inline-sm p">
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-map-marker text-picton-blue">Medisch Centrum Niveole</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-clock text-picton-blue">14.00 - 20.00 uur</span></li>
+<li class="list-inline-item"><span class="text-middle icon-xxs novi-icon mdi mdi-calendar text-picton-blue">Vrijdag</span></li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section novi-background section-66 context-dark" style="background-color: rgb(255, 255, 255); background-image: none; ">
+<div class="container">
+<div class="row justify-content-sm-center align-items-sm-center no-gutters grid-group-md"></div>
+</div>
+</section>
+<section class="section novi-background section-66 section-md-bottom-124" id="tarifs" style="background-color: rgb(255, 255, 255); background-image: none; ">
+<div class="container">
+<h1><span data-novi-id="8 ">Tarieven</span></h1>
+<div class="divider bg-blue-gray"></div>
+<div class="row justify-content-sm-center align-items-sm-end offset-top-66">
+<div class="col-lg-6 text-left">
+<ul class="box-pricing box-pricing-type-1 list-unstyled">
+<li class="box-pricing-item">
+<div class="box-pricing-title text-uppercase text-spacing-120">
+<div class="box-pricing-name font-weight-bold"><span data-novi-id="1 ">Eerste consultatie</span></div>
+<div class="box-pricing-dots"></div>
+<div class="box-pricing-price h5 font-weight-bold"><span data-novi-id="1 ">â‚¬80.00</span></div>
+</div>
+<div class="box-pricing-desc text-dark offset-top-10"><span data-novi-id="1 ">+/- 60 min</span></div>
+</li>
+<li class="box-pricing-item">
+<div class="box-pricing-title text-uppercase text-spacing-120">
+<div class="box-pricing-name font-weight-bold"><span data-novi-id="1 ">Eerste dieetopvolging</span></div>
+<div class="box-pricing-dots"></div>
+<div class="box-pricing-price h5 font-weight-bold"><span data-novi-id="1 ">â‚¬80.00</span></div>
+</div>
+<div class="box-pricing-desc text-dark offset-top-10"><span data-novi-id="1 ">+/- 40 min</span></div>
+</li>
+<li class="box-pricing-item">
+<div class="box-pricing-title text-uppercase text-spacing-120">
+<div class="box-pricing-name font-weight-bold"><span data-novi-id="1 ">Dieetopvolging</span></div>
+<div class="box-pricing-dots"></div>
+<div class="box-pricing-price h5 font-weight-bold"><span data-novi-id="1 ">â‚¬50.00</span></div>
+</div>
+<div class="box-pricing-desc text-dark offset-top-10"><span data-novi-id="1 ">+/- 30 min</span></div>
+</li>
+<li class="box-pricing-item">
+<div class="box-pricing-title text-uppercase text-spacing-120">
+<div class="box-pricing-name font-weight-bold"><span data-novi-id="1 ">Genetische test</span></div>
+<div class="box-pricing-dots"></div>
+<div class="box-pricing-price h5 font-weight-bold"><span data-novi-id="1 ">â‚¬275.00</span></div>
+</div>
+<div class="box-pricing-desc text-dark offset-top-10"><span data-novi-id="1 ">Resultaten worden binnen 6 weken verstrekt</span></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="row justify-content-sm-center align-items-sm-end offset-top-66">
+<div class="col-lg-6 text-center">
+<button class="btn btn-blue" onclick="window.location.href='dietist-voedingsdeskundige-en-dietetiek/consultatie.html';">Verloop van de consultaties</button>
+</div>
+</div>
+</div>
+</section>
+<section class="section novi-background section-66 section-top-50 bg-blue-blue section-triangle section-triangle-bottom context-dark">
+<div class="container">
+<h2><span class="big">BMI en energiebehoeften</span></h2>
+<p>Bereken uw Body Mass Index en uw dagelijkse energiebehoefte</p>
+</div><svg class="svg-triangle-bottom" version="1.1" xmlns="http://www.w3.org/2000/svg "><defs><lineargradient id="grad3" x1="0% " x2="100%" y1="0%" y2="0%"><stop offset="0%" style="stop-color:rgb(0,150,201);stop-opacity:1"></stop><stop offset="100% " style="stop-color:rgb(0,150,201);stop-opacity:1"></stop></lineargradient></defs><polyline fill="url(#grad3)" points="0,0 60,0 29,29"></polyline></svg></section>
+<section class="section novi-background section-50 section-sm-top-110 section-sm-bottom-98 section-mock-up bg-white" id="Calculette">
+<div class="container">
+<div class="row justify-content-sm-center">
+<div class="col-lg-10">
+<form class="rd-mailform text-left" onsubmit="return calculeIMC();">
+<div class="row">
+<div class="input-group mb-3">
+<div class="input-group-prepend"><span class="input-group-text">Lengte</span></div><input aria-label="Lengte in cm" class="form-control" id="taille" max="270" min="54" required="" type="number"/>
+<div class="input-group-append"><span class="input-group-text">cm</span></div>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"><span class="input-group-text">Leeftijd</span></div><input aria-label="Leeftijd" class="form-control" id="age" max="150" min="18" required="" type="number"/>
+<div class="input-group-append"><span class="input-group-text">years</span></div>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"><span class="input-group-text">Gewicht</span></div><input aria-label="Gewicht in kg" class="form-control" id="poids" max="300" min="1" required="" type="number"/>
+<div class="input-group-append"><span class="input-group-text">Kg</span></div>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"><label class="input-group-text" for="inputGroupSelect02">Sex</label></div><select class="custom-select" id="inputGroupSelect02"><option value="1">Female</option><option value="2">Male</option></select></div>
+<div class="input-group mb-3">
+<div class="input-group-prepend"><label class="input-group-text" for="inputGroupSelect01">Physical activity</label></div><select class="custom-select" id="inputGroupSelect01"><option value="1">Sedentary</option><option value="2">Active</option><option value="3">Very active</option></select></div>
+<button class="btn btn-lg btn-block btn-outline-info" type="submit">Bereken</button>
+<div id="imcresults"></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="section novi-background section-66 section-sm-0" style="background-color: rgb(22, 154, 204); ">
+<div class="container">
+<div class="row justify-content-sm-center justify-content-md-start"></div>
+<div class="row justify-content-sm-center justify-content-md-end offset-top-0"></div>
+<div class="row justify-content-sm-center justify-content-md-start offset-top-0"></div>
+<div class="row justify-content-sm-center justify-content-md-end offset-top-0"></div>
+</div>
+</section>
+<!-- Page Footer-->
+<!-- Default footer-->
+<footer class="modern-footer">
+<!-- Main Footer Content -->
+<div class="footer-main">
+<div class="container">
+<div class="footer-grid">
+<!-- Brand Section -->
+<div class="footer-brand-section">
+<div class="footer-logo">
+<img alt="Diaeta - Diëtist Voedingsdeskundige" class="footer-logo-img" src="../images/logos/diaeta.svg"/>
+</div>
+</div>
+<!-- Offices Section -->
+<div class="footer-offices-section">
+<h4 class="footer-section-title">
+<i class="fas fa-clinic-medical"></i>
+                            Onze praktijken
+                        </h4>
+<div class="offices-carousel">
+<div class="office-slide active">
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Elsene</h5>
+<p>Medisch Centrum Tenbosch-ChÃ¢telain<br/>1050 - Elsene</p>
+</div>
+</div>
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Koekelberg</h5>
+<p>Basili-K-SantÃ©<br/>1081 - Koekelberg</p>
+</div>
+</div>
+</div>
+<div class="office-slide">
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Ukkel</h5>
+<p>Espace Pluridys<br/>1180 - Ukkel</p>
+</div>
+</div>
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Sint-Pieters-Woluwe</h5>
+<p>Mediwoluwe<br/>1150 - Sint-Pieters-Woluwe</p>
+</div>
+</div>
+</div>
+<div class="office-slide">
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Sint-Pieters-Woluwe</h5>
+<p>Les Etrimaux<br/>1150 - Sint-Pieters-Woluwe</p>
+</div>
+</div>
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Sint-Agatha-Berchem</h5>
+<p>REVAGO<br/>1082 - Sint-Agatha-Berchem</p>
+</div>
+</div>
+</div>
+<div class="office-slide">
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Sint-Pieters-Woluwe</h5>
+<p>Medic Alix<br/>1150 - Sint-Pieters-Woluwe</p>
+</div>
+</div>
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Sint-Lambrechts-Woluwe</h5>
+<p>Medisch Centrum Wolu20<br/>1200 - Sint-Lambrechts-Woluwe</p>
+</div>
+</div>
+</div>
+<div class="office-slide">
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
+<h5>Laken</h5>
+<p>Medisch Centrum Niveole<br/>1020 - Laken</p>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-controls">
+<button class="carousel-btn prev" onclick="changeOfficeSlide(-1)">
+<i class="fas fa-chevron-left"></i>
+</button>
+<div class="carousel-dots">
+<span class="dot active" onclick="currentOfficeSlide(1)"></span>
+<span class="dot" onclick="currentOfficeSlide(2)"></span>
+<span class="dot" onclick="currentOfficeSlide(3)"></span>
+<span class="dot" onclick="currentOfficeSlide(4)"></span>
+<span class="dot" onclick="currentOfficeSlide(5)"></span>
+</div>
+<button class="carousel-btn next" onclick="changeOfficeSlide(1)">
+<i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<!-- Services Section -->
+<div class="footer-services-section">
+<h4 class="footer-section-title">
+<i class="fas fa-heart"></i>
+                            Onze specialisaties
+                        </h4>
+<div class="services-grid">
+<div class="service-item">
+<div class="service-icon">
+<i class="fas fa-weight"></i>
+</div>
+<span>Gewichtsverlies</span>
+</div>
+<div class="service-item">
+<div class="service-icon">
+<i class="fas fa-syringe"></i>
+</div>
+<span>Diabetes</span>
+</div>
+<div class="service-item">
+<div class="service-icon">
+<i class="fas fa-heartbeat"></i>
+</div>
+<span>Cholesterol</span>
+</div>
+<div class="service-item">
+<div class="service-icon">
+<i class="fas fa-stomach"></i>
+</div>
+<span>Prikkelbare Darmsyndroom</span>
+</div>
+<div class="service-item">
+<div class="service-icon">
+<i class="fas fa-leaf"></i>
+</div>
+<span>Laag FODMAP-dieet</span>
+</div>
+<div class="service-item">
+<div class="service-icon">
+<i class="fas fa-baby"></i>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Section -->
+<div class="footer-contact-section">
+<h4 class="footer-section-title">
+<i class="fas fa-address-card"></i>
+                            Contacteer ons
+                        </h4>
+<div class="contact-info">
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-phone"></i>
+</div>
+<div class="contact-details">
+<h5>Telefoon</h5>
+<a href="tel:+32479355551">+32 479 35 55 51</a>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<div class="contact-details">
+<h5>Email</h5>
+<a href="mailto:info@diaeta.be">info@diaeta.be</a>
+</div>
+</div>
+</div>
+<div class="cta-section">
+<a class="cta-button" href="dietist-voedingsdeskundige/afspraak.html">
+<i class="fas fa-calendar-alt"></i>
+                                Boek een afspraak
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="container">
+<div class="footer-bottom-content">
+<div class="copyright">
+<p>Â© <span class="copyright-year"></span> DIAETA. Alle rechten voorbehouden.</p>
+</div>
+<div class="footer-links">
+<a href="privacy.html">Privacybeleid</a>
+<a href="cookies.html">Cookiebeleid</a>
+<a href="legal.html">Juridische kennisgeving</a>
+<a href="terms.html">Gebruiksvoorwaarden</a>
+<a href="#" onclick="manageCookieConsent(); return false;">Cookie-instellingen</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Modern Footer CSS -->
+<style>
+        .modern-footer {
+            background: linear-gradient(135deg, #005773 0%, #007a9e 50%, #005773 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .modern-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #bfe095, #d6ebba, #bfe095);
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .footer-main {
+            padding: 60px 0 40px;
+            position: relative;
+        }
+
+        .footer-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* Brand Section */
+        .footer-brand-section {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footer-logo-img {
+            width: 120px;
+            height: 120px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .footer-logo:hover .footer-logo-img {
+            transform: scale(1.1);
+        }
+
+        .footer-brand-text h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+            background: linear-gradient(45deg, #bfe095, #d6ebba);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-brand-text p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #bfe095, #d6ebba);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-link:hover::before {
+            opacity: 1;
+        }
+
+        .social-link i {
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(191, 224, 149, 0.3);
+        }
+
+        /* Offices Section */
+        .footer-offices-section {
+            position: relative;
+        }
+
+        .footer-section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #bfe095;
+        }
+
+        .footer-section-title i {
+            font-size: 20px;
+        }
+
+        .offices-carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+
+        .office-slide {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .office-slide.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .office-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .office-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: #bfe095;
+            transform: translateX(5px);
+        }
+
+        .office-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #bfe095, #d6ebba);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #005773;
+            font-size: 16px;
+        }
+
+        .office-info h5 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #bfe095;
+        }
+
+        .office-info p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        .carousel-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .carousel-btn {
+            width: 35px;
+            height: 35px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-btn:hover {
+            background: #bfe095;
+            color: #005773;
+            transform: scale(1.1);
+        }
+
+        .carousel-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: #bfe095;
+            transform: scale(1.2);
+        }
+
+        /* Services Section */
+        .footer-services-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .service-icon {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(45deg, #bfe095, #d6ebba);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #005773;
+            font-size: 14px;
+        }
+
+        .service-item span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .footer-contact-section {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #bfe095, #d6ebba);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #005773;
+            font-size: 16px;
+        }
+
+        .contact-details h5 {
+            margin: 0 0 5px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #bfe095;
+        }
+
+        .contact-details a,
+        .contact-details p {
+            margin: 0;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: #bfe095;
+        }
+
+        .cta-section {
+            margin-top: auto;
+        }
+
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 15px 20px;
+            background: linear-gradient(45deg, #bfe095, #d6ebba);
+            color: #005773;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(191, 224, 149, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(191, 224, 149, 0.4);
+            color: #005773;
+            text-decoration: none;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .copyright p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #bfe095;
+            transition: width 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #bfe095;
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer-main {
+                padding: 40px 0 30px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .carousel-controls {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+<!-- Footer JavaScript -->
+<script>
+        let currentOfficeSlideIndex = 1;
+        const totalOfficeSlides = 5;
+
+        function showOfficeSlide(n) {
+            const slides = document.querySelectorAll('.office-slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show current slide
+            if (slides[n - 1]) slides[n - 1].classList.add('active');
+            if (dots[n - 1]) dots[n - 1].classList.add('active');
+        }
+
+        function changeOfficeSlide(n) {
+            currentOfficeSlideIndex += n;
+            
+            if (currentOfficeSlideIndex > totalOfficeSlides) {
+                currentOfficeSlideIndex = 1;
+            }
+            if (currentOfficeSlideIndex < 1) {
+                currentOfficeSlideIndex = totalOfficeSlides;
+            }
+            
+            showOfficeSlide(currentOfficeSlideIndex);
+        }
+
+        function currentOfficeSlide(n) {
+            currentOfficeSlideIndex = n;
+            showOfficeSlide(currentOfficeSlideIndex);
+        }
+
+        // Auto-advance slides every 5 seconds
+        setInterval(() => {
+            changeOfficeSlide(1);
+        }, 5000);
+
+        // Initialize first slide
+        document.addEventListener('DOMContentLoaded', function() {
+            showOfficeSlide(1);
+        });
+    </script>
+<div class="snackbars" id="form-output-global "></div>
+<script src="../js/core.min.js "></script>
+<script src="../js/script.js "></script>
+<script src="../js/cookie-banner.js"></script>
+<!-- New menu JavaScript -->
+<script src="../js/new-menu.js"></script>
+</body>
+</html>
+
