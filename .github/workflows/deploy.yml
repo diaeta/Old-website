@@ -1,29 +1,33 @@
-name: Deploy via SFTP
-
+name: Deploy to Combell via SSH (rsync)
 on:
   push:
-    branches: [ "master" ]   # or remove this block to run on every branch
-  workflow_dispatch:
-
-permissions:
-  contents: read  # recommended for actions/checkout
+    branches: [ "main" ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
-        with:
-          server: ${{ secrets.SFTP_SERVER }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }} # or use ssh_private_key instead
-          port: 22
-          local_path: "./*"                      # upload repo contents (non-dotfiles)
-          remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
-          sftp_only: false                       # let the action create remote dir if needed
-          delete_remote_files: false
-          # rsyncArgs: "--exclude=node_modules --exclude=.git --exclude=.github"  # optional
+      - name: Prepare SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.COMBELL_SSH_KEY }}
+          SSH_HOST: ${{ secrets.COMBELL_SSH_HOST }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+
+      - name: Sync site (repo → ~/www/)
+        env:
+          SSH_USER: ${{ secrets.COMBELL_SSH_USER }}
+          SSH_HOST: ${{ secrets.COMBELL_SSH_HOST }}
+        run: |
+          rsync -az --delete \
+            --exclude ".git*" \
+            --exclude ".github/" \
+            --exclude "node_modules/" \
+            ./ $SSH_USER@$SSH_HOST:~/www/
