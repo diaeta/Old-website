@@ -1,0 +1,48 @@
+stages: [deploy]
+
+# 1) Preview changes safely (manual)
+preflight_dry_run:
+  stage: deploy
+  image: alpine:3.20
+  before_script:
+    - apk add --no-cache lftp
+  script: |
+    lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER" -e "
+      set ftp:passive-mode true;
+      set ftp:ssl-force true;
+      set ftp:ssl-protect-data true;
+      set ssl:verify-certificate yes;
+      mirror --reverse --parallel=2 \
+             --exclude-glob .git* \
+             --exclude-glob node_modules/ \
+             --exclude-glob .github/ \
+             --exclude-glob .gitlab/ \
+             --dry-run \
+             \"$LOCAL_DIR\" \"$SERVER_DIR\";
+      bye"
+  rules:
+    - when: manual
+      allow_failure: false
+
+# 2) Real deploy (auto on main)
+deploy_ftps:
+  stage: deploy
+  image: alpine:3.20
+  before_script:
+    - apk add --no-cache lftp
+  script: |
+    lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER" -e "
+      set ftp:passive-mode true;
+      set ftp:ssl-force true;
+      set ftp:ssl-protect-data true;
+      set ssl:verify-certificate yes;
+      mirror --reverse --delete --parallel=4 \
+             --exclude-glob .git* \
+             --exclude-glob node_modules/ \
+             --exclude-glob .github/ \
+             --exclude-glob .gitlab/ \
+             \"$LOCAL_DIR\" \"$SERVER_DIR\";
+      bye"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: on_success
