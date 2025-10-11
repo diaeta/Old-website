@@ -24,7 +24,16 @@
       "Bash(do echo \"=== $repo ===\")",
       "Bash(iconv:*)",
       "Bash(git add:*)",
-      "Bash(__NEW_LINE__ ls -lh \"NL/dietist-voedingsdeskundige-ukkel/care-happy-medisch-centrum.html\" \"NL/dietist-voedingsdeskundige-koekelberg/chrysalide-centrum.html\" \"NL/dietist-voedingsdeskundige-sint-agatha-berchem/revago-centrum.html\" \"NL/dietist-voedingsdeskundige-sint-pieters-woluwe/mediwoluwe.html\" \"NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/wolu20-medisch-centrum.html\")"
+      "Bash(__NEW_LINE__ ls -lh \"NL/dietist-voedingsdeskundige-ukkel/care-happy-medisch-centrum.html\" \"NL/dietist-voedingsdeskundige-koekelberg/chrysalide-centrum.html\" \"NL/dietist-voedingsdeskundige-sint-agatha-berchem/revago-centrum.html\" \"NL/dietist-voedingsdeskundige-sint-pieters-woluwe/mediwoluwe.html\" \"NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/wolu20-medisch-centrum.html\")",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(npx playwright:*)",
+      "Bash(npm search:*)",
+      "Bash(npm root:*)",
+      "Bash(mcp-server-playwright:*)",
+      "Bash(lighthouse-mcp:*)",
+      "Bash(accessibility-mcp:*)"
     ],
     "deny": [],
     "ask": []

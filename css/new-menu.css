@@ -129,32 +129,32 @@
   border-color: #0056b3 !important;
 }
 
-/* Desktop layout (≥1560px) */
-@media (min-width: 1560px) {
+/* Desktop layout (≥1200px) */
+@media (min-width: 1200px) {
   .navbar-toggler {
     display: none !important;
   }
-  
+
   .navbar-collapse {
     display: flex !important;
   }
-  
+
   .navbar-nav {
     flex-direction: row !important;
   }
-  
+
   .dropdown-menu {
     position: absolute !important;
     display: none !important;
   }
-  
+
   .dropdown:hover .dropdown-menu {
     display: block !important;
   }
 }
 
-/* Mobile / tablet layout (0-1559px) */
-@media (max-width: 1559px) {
+/* Mobile / tablet layout (0-1199px) */
+@media (max-width: 1199px) {
   .navbar-toggler {
     display: block !important;
   }

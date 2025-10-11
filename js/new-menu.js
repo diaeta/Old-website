@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
         newToggle.removeAttribute('aria-expanded');
         
         newToggle.addEventListener('click', function(e) {
-          if (window.innerWidth < 1560) {
+          if (window.innerWidth < 1200) {
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
@@ -104,7 +104,7 @@ window.addEventListener('load', function() {
     
     // Handle window resize
     window.addEventListener('resize', function() {
-      if (window.innerWidth >= 1560) {
+      if (window.innerWidth >= 1200) {
         // Reset mobile menu state on desktop
         if (navbarCollapse) {
           navbarCollapse.classList.remove('show');
