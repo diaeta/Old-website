@@ -1,7 +1,7 @@
 name: Deploy to Combell via SSH (rsync)
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master" ]  # change if your default branch differs
 
 jobs:
   deploy:
@@ -11,23 +11,38 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Prepare SSH
+      - name: Write SSH key from base64
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.COMBELL_SSH_KEY }}
-          SSH_HOST: ${{ secrets.COMBELL_SSH_HOST }}
+          KEY_B64: ${{ secrets.COMBELL_SSH_KEY_B64 }}
         run: |
           install -m 700 -d ~/.ssh
-          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          echo "$KEY_B64" | base64 -d > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+          ssh-keygen -lf ~/.ssh/id_ed25519  # sanity check
 
-      - name: Sync site (repo → ~/www/)
+      - name: Trust host key
+        env:
+          SSH_HOST: ${{ secrets.COMBELL_SSH_HOST }}
+        run: |
+          ssh-keyscan -T 5 -H "$SSH_HOST" >> ~/.ssh/known_hosts
+
+      - name: Smoke test SSH
         env:
           SSH_USER: ${{ secrets.COMBELL_SSH_USER }}
           SSH_HOST: ${{ secrets.COMBELL_SSH_HOST }}
         run: |
-          rsync -az --delete \
+          ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes $SSH_USER@$SSH_HOST "echo CONNECTED && pwd"
+
+      - name: Deploy with rsync over SSH
+        env:
+          SSH_USER: ${{ secrets.COMBELL_SSH_USER }}
+          SSH_HOST: ${{ secrets.COMBELL_SSH_HOST }}
+        run: |
+          # First run WITHOUT --delete to avoid nuking files you still need on the server.
+          # After you confirm, add --delete for clean syncs.
+          rsync -az \
             --exclude ".git*" \
             --exclude ".github/" \
             --exclude "node_modules/" \
-            ./ $SSH_USER@$SSH_HOST:~/www/
+            -e "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
+            ./ $SSH_USER@$SSH_HOST:www/
