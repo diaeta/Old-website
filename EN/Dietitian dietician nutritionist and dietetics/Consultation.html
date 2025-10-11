@@ -411,11 +411,11 @@
 <i class="fas fa-chevron-left"></i>
 </button>
 <div class="carousel-dots">
-<span class="dot active" onclick="currentOfficeSlide(1)"></span>
-<span class="dot" onclick="currentOfficeSlide(2)"></span>
-<span class="dot" onclick="currentOfficeSlide(3)"></span>
-<span class="dot" onclick="currentOfficeSlide(4)"></span>
-<span class="dot" onclick="currentOfficeSlide(5)"></span>
+<span class="dot active" onclick="showOfficeSlide(1)"></span>
+<span class="dot" onclick="showOfficeSlide(2)"></span>
+<span class="dot" onclick="showOfficeSlide(3)"></span>
+<span class="dot" onclick="showOfficeSlide(4)"></span>
+<span class="dot" onclick="showOfficeSlide(5)"></span>
 </div>
 <button class="carousel-btn next" onclick="changeOfficeSlide(1)">
 <i class="fas fa-chevron-right"></i>
@@ -931,10 +931,10 @@
                 currentOfficeSlide = totalOfficeSlides;
             }
             
-            currentOfficeSlide(currentOfficeSlide);
+            showOfficeSlide(currentOfficeSlide);
         }
 
-        function currentOfficeSlide(n) {
+        function showOfficeSlide(n) {
             currentOfficeSlide = n;
             
             // Hide all slides
@@ -964,7 +964,7 @@
 
         // Initialize carousel
         document.addEventListener('DOMContentLoaded', function() {
-            currentOfficeSlide(1);
+            showOfficeSlide(1);
             
             // Set copyright year
             const yearElement = document.querySelector('.copyright-year');
