@@ -24,9 +24,10 @@ preflight_dry_run:
       fi
     - chmod 700 ~/.ssh && chmod 644 ~/.ssh/known_hosts
   script:
-    - RSYNC_SRC="public/"   # ← change to your site folder: e.g., 'dist/' or './'
+    - RSYNC_SRC="./"   # local source in the repo/workspace (NOT the server folder)
     - echo "Dry-run from $RSYNC_SRC to ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}"
     - rsync -az --delete --dry-run --itemize-changes \
+        --exclude='.git/' --exclude='.gitlab/' --exclude='.github/' --exclude='node_modules/' \
         -e "ssh -p ${SSH_PORT:-22}" \
         "$RSYNC_SRC" "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}"
 
@@ -50,8 +51,9 @@ deploy_production:
       fi
     - chmod 700 ~/.ssh && chmod 644 ~/.ssh/known_hosts
   script:
-    - RSYNC_SRC="public/"   # ← change to your site folder
+    - RSYNC_SRC="./"   # change to dist/ or public/ later if needed
     - echo "Deploying from $RSYNC_SRC to ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}"
     - rsync -az --delete \
+        --exclude='.git/' --exclude='.gitlab/' --exclude='.github/' --exclude='node_modules/' \
         -e "ssh -p ${SSH_PORT:-22}" \
         "$RSYNC_SRC" "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}"
