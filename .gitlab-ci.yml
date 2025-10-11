@@ -4,7 +4,7 @@ concurrency:
   group: "deploy-production"
   cancel_pending: true
 
-# Preview changes (manual dry run)
+# Manual preview (dry-run)
 preflight_dry_run:
   stage: deploy
   image: alpine:3.20
@@ -24,19 +24,20 @@ preflight_dry_run:
       fi
     - chmod 700 ~/.ssh && chmod 644 ~/.ssh/known_hosts
   script:
-    - RSYNC_SRC="./"   # local source in the repo/workspace (NOT the server folder)
+    # LOCAL source in the repo workspace (not the server folder!)
+    - RSYNC_SRC="./"   # change to 'dist/' or 'public/' later if needed
     - echo "Dry-run from $RSYNC_SRC to ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}"
     - rsync -az --delete --dry-run --itemize-changes \
         --exclude='.git/' --exclude='.gitlab/' --exclude='.github/' --exclude='node_modules/' \
         -e "ssh -p ${SSH_PORT:-22}" \
         "$RSYNC_SRC" "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}"
 
-# Real deploy on main
+# Real deploy (auto on master or main)
 deploy_production:
   stage: deploy
   image: alpine:3.20
   rules:
-    - if: '$CI_COMMIT_BRANCH == "main"'
+    - if: '$CI_COMMIT_BRANCH =~ /^(master|main)$/'
       when: on_success
   before_script:
     - apk add --no-cache openssh-client rsync
@@ -51,7 +52,7 @@ deploy_production:
       fi
     - chmod 700 ~/.ssh && chmod 644 ~/.ssh/known_hosts
   script:
-    - RSYNC_SRC="./"   # change to dist/ or public/ later if needed
+    - RSYNC_SRC="./"   # change to your build folder if you have one
     - echo "Deploying from $RSYNC_SRC to ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}"
     - rsync -az --delete \
         --exclude='.git/' --exclude='.gitlab/' --exclude='.github/' --exclude='node_modules/' \
