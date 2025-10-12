@@ -38,11 +38,24 @@ jobs:
           SSH_USER: ${{ secrets.COMBELL_SSH_USER }}
           SSH_HOST: ${{ secrets.COMBELL_SSH_HOST }}
         run: |
-          # First run WITHOUT --delete to avoid nuking files you still need on the server.
-          # After you confirm, add --delete for clean syncs.
-          rsync -az \
+          # Sync and delete files that were removed from git
+          rsync -azv \
+            --delete \
+            --delete-excluded \
             --exclude ".git*" \
             --exclude ".github/" \
             --exclude "node_modules/" \
+            --exclude "mcp-servers/" \
+            --exclude "scripts/" \
+            --exclude ".byterover/" \
+            --exclude ".claude/" \
+            --exclude ".cursor/" \
+            --exclude ".roo/" \
+            --exclude ".vscode/" \
+            --exclude "*.bak" \
+            --exclude "*.backup" \
+            --exclude "*.tmp" \
+            --exclude ".DS_Store" \
+            --exclude "Thumbs.db" \
             -e "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
             ./ $SSH_USER@$SSH_HOST:www/

@@ -33,7 +33,12 @@
       "Bash(npm root:*)",
       "Bash(mcp-server-playwright:*)",
       "Bash(lighthouse-mcp:*)",
-      "Bash(accessibility-mcp:*)"
+      "Bash(accessibility-mcp:*)",
+      "Bash(cat:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(rm:*)",
+      "Bash(awk:*)",
+      "Bash(for dir in dieteticien-* diététicien-*)"
     ],
     "deny": [],
     "ask": []
