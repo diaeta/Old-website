@@ -25,179 +25,506 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://diaeta.be/DE/home.html#person",
-  "name": "Pierre Abou-Zeid",
-  "jobTitle": "Ernährungsberater Diätassistent (INAMI), MONASH Zertifiziert",
-  "image": "https://diaeta.be/images/Pierre.jpg",
-  "url": "https://diaeta.be/DE/home.html",
-  "telephone": "+32 479 35 55 51",
-  "email": "pierre@diaeta.be",
-  "description": "Von INAMI akkreditierter Ernährungsberater Diätassistent, spezialisiert auf Gewichtsverlust, Diabetes, Cholesterin, Reizdarmsyndrom und Gentests. MONASH zertifiziert für Low FODMAP Ansatz.",
-  "knowsLanguage": ["Französisch", "Englisch", "Niederländisch", "Deutsch", "Arabisch"],
-  "alumniOf": [
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Erasmus Hogeschool",
-      "description": "Bachelor in Diätwissenschaften"
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "EPFC",
-      "description": "Bachelor in Computerprogrammierung"
-    }
-  ],
-  "knowsAbout": [
-    "Nachhaltiger Gewichtsverlust",
-    "Diabetes-Management",
-    "Cholesterin-Management",
-    "Reizdarmsyndrom",
-    "Low FODMAP Diät",
-    "Nutrigenomix Gentests",
-    "Personalisierte Ernährung",
-    "Wissenschaftliche Diätetik"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Laudinnestraat 94A",
-    "addressLocality": "Vlezenbeek",
-    "postalCode": "1602",
-    "addressCountry": "BE"
-  },
-  "workLocation": [
-    {
-      "@type": "MedicalClinic",
-      "name": "Espace Pluridys Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Dieweg 99",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
-        "addressCountry": "BE"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "Care Happy Medical and Paramedical Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue Montjoie 33A",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
-        "addressCountry": "BE"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "Chrysalide Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue de Berchem-Sainte-Agathe 10",
-        "addressLocality": "Koekelberg",
-        "postalCode": "1081",
-        "addressCountry": "BE"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "Tenbosch-Châtelain Medical Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rue Tenbosch 85",
-        "addressLocality": "Ixelles",
-        "postalCode": "1050",
-        "addressCountry": "BE"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "REVAGO Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue du Roi Albert 187",
-        "addressLocality": "Berchem-Sainte-Agathe",
-        "postalCode": "1082",
-        "addressCountry": "BE"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "Mediwoluwe",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue de Broqueville 9",
-        "addressLocality": "Woluwe-Saint-Pierre",
-        "postalCode": "1150",
-        "addressCountry": "BE"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "Wolu20 Medical Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue Marcel Thiry 20",
-        "addressLocality": "Woluwe-Saint-Lambert",
-        "postalCode": "1200",
-        "addressCountry": "BE"
-      }
-    },
-    {
-      "@type": "MedicalClinic",
-      "name": "Niveole Medical Center",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue de la Nivéole 53",
-        "addressLocality": "Laken",
-        "postalCode": "1020",
-        "addressCountry": "BE"
-      }
-    }
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Diaeta",
-    "url": "https://diaeta.be",
-    "slogan": "Maßgeschneiderte Diät",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Laudinnestraat 94A",
-      "addressLocality": "Vlezenbeek",
-      "postalCode": "1602",
-      "addressCountry": "BE"
-    },
-    "telephone": "+32 479 35 55 51",
-    "email": "pierre@diaeta.be"
-  },
-  "hasCredential": [
-    {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "INAMI",
-      "recognizedBy": {
-        "@type": "Organization",
-        "name": "National Institute for Health and Disability Insurance",
-        "url": "https://www.inami.fgov.be"
-      },
-      "credentialNumber": "5-63187-92-601"
-    },
-    {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "MONASH Zertifizierung",
-      "recognizedBy": {
-        "@type": "Organization",
-        "name": "Monash University",
-        "url": "https://www.monash.edu"
-      },
-      "description": "Zertifiziert für Low FODMAP Ansatz"
-    }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/diaeta.be",
-    "https://www.instagram.com/diaeta.be/"
-  ]
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": [
+                "MedicalBusiness",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#MedicalBusiness",
+            "name": "Diaeta",
+            "url": "https://diaeta.be/",
+            "image": "https://diaeta.be/images/Pierre.jpg",
+            "logo": "https://diaeta.be/images/logos/diaeta.svg",
+            "description": "Anerkannter Ernährungsberater in Brüssel. Individuelle Beratungen für Gewichtsverlust, Diabetes, Cholesterin und Reizdarmsyndrom.",
+            "telephone": "+32 479 35 55 51",
+            "email": "info@diaeta.be",
+            "priceRange": "EUR 50 - 275",
+            "slogan": "Ernährung nach Maß",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Laudinnestraat 94A",
+                "addressLocality": "Vlezenbeek",
+                "postalCode": "1602",
+                "addressCountry": "BE"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "21:00"
+                }
+            ],
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Brüssel"
+                },
+                {
+                    "@type": "City",
+                    "name": "Ixelles"
+                },
+                {
+                    "@type": "City",
+                    "name": "Koekelberg"
+                },
+                {
+                    "@type": "City",
+                    "name": "Uccle"
+                },
+                {
+                    "@type": "City",
+                    "name": "Woluwe-Saint-Pierre"
+                }
+            ],
+            "medicalSpecialty": [
+                "Nutrition",
+                "Endocrinology",
+                "WeightLossMedicine"
+            ],
+            "sameAs": [
+                "https://www.facebook.com/diaeta.be",
+                "https://www.instagram.com/diaeta.be/"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Ernährungsleistungen",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@id": "https://diaeta.be/#service-weight-loss"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@id": "https://diaeta.be/#service-diabetes"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@id": "https://diaeta.be/#service-cholesterol"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@id": "https://diaeta.be/#service-ibs"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@id": "https://diaeta.be/#service-fodmap"
+                        }
+                    }
+                ]
+            },
+            "potentialAction": [
+                {
+                    "@type": "ScheduleAction",
+                    "name": "Termin buchen",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://diaeta.be/DE/diaetologe-diaetassistent-ernaehrungswissenschaftler/termin.html",
+                        "inLanguage": "de-BE",
+                        "actionPlatform": [
+                            "http://schema.org/DesktopWebPlatform",
+                            "http://schema.org/IOSPlatform",
+                            "http://schema.org/AndroidPlatform"
+                        ]
+                    },
+                    "result": {
+                        "@type": "MedicalAppointment",
+                        "name": "Ernährungsberatung"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://diaeta.be/DE/#website",
+            "name": "Diaeta - Dietitian Nutritionist",
+            "url": "https://diaeta.be/DE/",
+            "description": "Anerkannter Ernährungsberater in Brüssel. Individuelle Beratungen für Gewichtsverlust, Diabetes, Cholesterin und Reizdarmsyndrom.",
+            "inLanguage": "de-BE",
+            "publisher": {
+                "@type": "Organization",
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://diaeta.be/DE/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://diaeta.be/DE/home.html#person",
+            "name": "Pierre Abou-Zeid",
+            "jobTitle": "Anerkannter Ernährungsberater (INAMI), MONASH zertifiziert",
+            "image": "https://diaeta.be/images/Pierre.jpg",
+            "url": "https://diaeta.be/DE/home.html",
+            "telephone": "+32 479 35 55 51",
+            "email": "info@diaeta.be",
+            "description": "Anerkannter Ernährungsberater in Brüssel. Individuelle Beratungen für Gewichtsverlust, Diabetes, Cholesterin und Reizdarmsyndrom.",
+            "knowsLanguage": [
+                "Deutsch",
+                "Französisch",
+                "Englisch",
+                "Niederländisch",
+                "Arabisch"
+            ],
+            "alumniOf": [
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Erasmus Hogeschool",
+                    "description": "Bachelor in Diätetik"
+                },
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "EPFC",
+                    "description": "Bachelor in Informatikprogrammierung"
+                }
+            ],
+            "knowsAbout": [
+                "Nachhaltiger Gewichtsverlust",
+                "Diabetesmanagement",
+                "Cholesterinmanagement",
+                "Reizdarmsyndrom",
+                "Low-FODMAP-Ernährung",
+                "Nutrigenomix-Gentests",
+                "Personalisierte Ernährung",
+                "Wissenschaftliche Diätetik"
+            ],
+            "worksFor": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "affiliation": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Laudinnestraat 94A",
+                "addressLocality": "Vlezenbeek",
+                "postalCode": "1602",
+                "addressCountry": "BE"
+            },
+            "workLocation": [
+                {
+                    "@id": "https://diaeta.be/#clinic-ixelles"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-koekelberg"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-uccle-pluridys"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-uccle-carehappy"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-berchem"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-woluwe"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-woluwe-alix"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-woluwe-lambert"
+                },
+                {
+                    "@id": "https://diaeta.be/#clinic-laeken"
+                }
+            ],
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "INAMI",
+                    "recognizedBy": {
+                        "@type": "Organization",
+                        "name": "National Institute for Health and Disability Insurance",
+                        "url": "https://www.inami.fgov.be"
+                    },
+                    "credentialNumber": "5-63187-92-601"
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "MONASH Certification",
+                    "recognizedBy": {
+                        "@type": "Organization",
+                        "name": "Monash University",
+                        "url": "https://www.monash.edu"
+                    },
+                    "description": "Certified for Low FODMAP approach"
+                }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/diaeta.be",
+                "https://www.instagram.com/diaeta.be/"
+            ]
+        },
+        {
+            "@type": "Service",
+            "@id": "https://diaeta.be/#service-weight-loss",
+            "name": "Gewichtsreduktion",
+            "serviceType": "Ernährungstherapie",
+            "provider": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Brüssel"
+            }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://diaeta.be/#service-diabetes",
+            "name": "Diabetesbetreuung",
+            "serviceType": "Ernährungstherapie",
+            "provider": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Brüssel"
+            }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://diaeta.be/#service-cholesterol",
+            "name": "Cholesterinmanagement",
+            "serviceType": "Ernährungstherapie",
+            "provider": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Brüssel"
+            }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://diaeta.be/#service-ibs",
+            "name": "Reizdarmsyndrom",
+            "serviceType": "Verdauungsberatung",
+            "provider": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Brüssel"
+            }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://diaeta.be/#service-fodmap",
+            "name": "Low-FODMAP-Coaching",
+            "serviceType": "Ernährungstherapie",
+            "provider": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Brüssel"
+            }
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-ixelles",
+            "name": "Tenbosch-Châtelain Medical Center",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rue Tenbosch 85",
+                "addressLocality": "Ixelles",
+                "postalCode": "1050",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-koekelberg",
+            "name": "Chrysalide Center",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Avenue de Berchem-Sainte-Agathe 10",
+                "addressLocality": "Koekelberg",
+                "postalCode": "1081",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-uccle-pluridys",
+            "name": "Espace Pluridys",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Dieweg 99",
+                "addressLocality": "Uccle",
+                "postalCode": "1180",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-uccle-carehappy",
+            "name": "Care Happy Medical and Paramedical Center",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Avenue Montjoie 33A",
+                "addressLocality": "Uccle",
+                "postalCode": "1180",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-berchem",
+            "name": "REVAGO Center",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Avenue du Roi Albert 187",
+                "addressLocality": "Berchem-Sainte-Agathe",
+                "postalCode": "1082",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-woluwe",
+            "name": "Mediwoluwe",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Avenue de Broqueville 9",
+                "addressLocality": "Woluwe-Saint-Pierre",
+                "postalCode": "1150",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-woluwe-alix",
+            "name": "Medic Alix",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Avenue Prince Baudouin 127",
+                "addressLocality": "Woluwe-Saint-Pierre",
+                "postalCode": "1150",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-woluwe-lambert",
+            "name": "Wolu20 Medical Center",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Avenue Marcel Thiry 20",
+                "addressLocality": "Woluwe-Saint-Lambert",
+                "postalCode": "1200",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        },
+        {
+            "@type": [
+                "MedicalClinic",
+                "Dietitian"
+            ],
+            "@id": "https://diaeta.be/#clinic-laeken",
+            "name": "Niveole Medical Center",
+            "parentOrganization": {
+                "@id": "https://diaeta.be/#MedicalBusiness"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Avenue de la Nivéole 53",
+                "addressLocality": "Laeken",
+                "postalCode": "1020",
+                "addressCountry": "BE"
+            },
+            "telephone": "+32 479 35 55 51",
+            "medicalSpecialty": "Nutrition"
+        }
+    ]
 }
-</script>
+</script></script>
 <script src="../js/CalCalorie.js "></script>
 <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1; "><a href="https://windows.microsoft.com/en-US/internet-explorer/
         "><img src="../images/ie8-panel/warning_bar_0000_us.jpg " border="0 " height="42 " width="820 " alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today. "></a></div><script src="../js/html5shiv.min.js "></script><![endif]-->
