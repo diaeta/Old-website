@@ -82,7 +82,7 @@ function generateSitemap() {
   htmlFiles.forEach(file => {
     // Convert file path to URL
     let url = file
-      .replace(/^\.[\/]/, '') // Remove leading ./
+      .replace(/^\.[\\/]/, '') // Remove leading ./
       .replace(/\/g, '/') // Convert backslashes to forward slashes
       .replace(/ /g, '%20'); // Encode spaces
 
