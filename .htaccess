@@ -1,3 +1,97 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.diaeta\.be [NC]
-RewriteRule ^(.*)$ https://diaeta.be/$1 [L,R=301]
+# DIAETA.BE - Apache Configuration
+# Generated: October 12, 2025
+
+# ==============================================================================
+# REDIRECTS - Fix broken links and old bookmarks
+# ==============================================================================
+
+# Redirect home.html to index.html
+Redirect 301 /home.html /index.html
+
+# Redirect language-specific index pages to home pages
+Redirect 301 /NL/index.html /NL/home.html
+Redirect 301 /EN/index.html /EN/home.html
+Redirect 301 /DE/index.html /DE/home.html
+
+# Redirect root legal pages to English versions
+Redirect 301 /terms.html /EN/terms.html
+Redirect 301 /legal.html /EN/legal.html
+
+# ==============================================================================
+# URL ENCODING & CHARACTER HANDLING
+# ==============================================================================
+
+# Enable UTF-8 encoding
+AddDefaultCharset UTF-8
+
+# ==============================================================================
+# SECURITY HEADERS
+# ==============================================================================
+
+# Prevent clickjacking
+Header always set X-Frame-Options "SAMEORIGIN"
+
+# Enable XSS protection
+Header always set X-XSS-Protection "1; mode=block"
+
+# Prevent MIME type sniffing
+Header always set X-Content-Type-Options "nosniff"
+
+# Referrer policy
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# ==============================================================================
+# PERFORMANCE OPTIMIZATION
+# ==============================================================================
+
+# Enable compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+
+  # CSS and JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # HTML
+  ExpiresByType text/html "access plus 1 day"
+</IfModule>
+
+# ==============================================================================
+# ERROR DOCUMENTS
+# ==============================================================================
+
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# ==============================================================================
+# FORCE HTTPS (Uncomment when SSL is configured)
+# ==============================================================================
+
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ==============================================================================
+# PREVENT DIRECTORY LISTING
+# ==============================================================================
+
+Options -Indexes
+
+# ==============================================================================
+# PROTECT SENSITIVE FILES
+# ==============================================================================
+
+<FilesMatch "\.(git|gitignore|htaccess|htpasswd|env|md|json|lock)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
