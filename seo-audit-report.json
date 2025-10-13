@@ -1,0 +1,412 @@
+{
+  "timestamp": "2025-10-13T09:19:23.335Z",
+  "summary": {
+    "totalHtmlFiles": 105,
+    "totalSitemapUrls": 104,
+    "missingCanonical": 0,
+    "missingHreflang": 96,
+    "missingMetaDescription": 0,
+    "missingTitle": 0,
+    "orphanedUrls": 0,
+    "missingFromSitemap": 1
+  },
+  "issues": {
+    "brokenLinks": [],
+    "missingCanonical": [],
+    "duplicateContent": [],
+    "missingHreflang": [
+      {
+        "file": "conditions-generales.html",
+        "count": 2
+      },
+      {
+        "file": "contact.html",
+        "count": 2
+      },
+      {
+        "file": "cookies.html",
+        "count": 2
+      },
+      {
+        "file": "DE/contact.html",
+        "count": 2
+      },
+      {
+        "file": "DE/cookies.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Diabetes.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler/Gewichtsverlust/Abnehmen-und-Gewichtsverlust.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler/Reizdarmsyndrom/FODMAP-arme-Diät.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler/Termin.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Berchem-Sainte-Agathe/Ernährungsberater-Berchem-Sainte-Agathe.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Ixelles/Ernährungsberater-Ixelles.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Koekelberg/chrysalide-center.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Koekelberg/Ernährungsberater-Koekelberg.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Laken/Ernährungsberater-Laken.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Laken/niveole-medical-center.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Uccle/care-happy-medical-center.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Uccle/Ernährungsberater-Uccle.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Uccle/espacepluridys.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-und-Diätetik/Arbeitsmethode.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-und-Diätetik/beratung.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-und-Diätetik/Der-Ernährungsberater-und-Diätetik.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-Woluwe-Saint-Lambert/Ernährungsberater-Woluwe-Saint-Lambert.html",
+        "count": 2
+      },
+      {
+        "file": "DE/home.html",
+        "count": 2
+      },
+      {
+        "file": "DE/legal.html",
+        "count": 2
+      },
+      {
+        "file": "DE/Nutrigenomik-Nutrigenetik/Gentest.html",
+        "count": 2
+      },
+      {
+        "file": "DE/privacy.html",
+        "count": 2
+      },
+      {
+        "file": "DE/terms.html",
+        "count": 2
+      },
+      {
+        "file": "diabète.html",
+        "count": 2
+      },
+      {
+        "file": "dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/diététicien woluwe saint lambert.html",
+        "count": 2
+      },
+      {
+        "file": "diététicien-diététicienne-nutritionniste/perdre du poids et Maigrir/Diététcien Diététicienne Nutritionniste Perte de poids.html",
+        "count": 2
+      },
+      {
+        "file": "diététicien-diététicienne-nutritionniste/syndrome du colon irritable/régime pauvre en FODMAP.html",
+        "count": 2
+      },
+      {
+        "file": "diététicien-diététicienne-nutritionniste-Berchem-Sainte-Agathe/diaeta-berchem-sainte-agathe.html",
+        "count": 2
+      },
+      {
+        "file": "diététicien-diététicienne-nutritionniste-laken/niveole-medical-center.html",
+        "count": 2
+      },
+      {
+        "file": "diététicien-diététicienne-nutritionniste-uccle/care-happy-medical-center.html",
+        "count": 2
+      },
+      {
+        "file": "diététicien-diététicienne-nutritionniste-uccle/espacepluridys.html",
+        "count": 2
+      },
+      {
+        "file": "diététique/Consultation/Consultation.html",
+        "count": 2
+      },
+      {
+        "file": "diététique/diététicien-nutritionniste-diététique.html",
+        "count": 2
+      },
+      {
+        "file": "diététique/méthode-de-travail.html",
+        "count": 2
+      },
+      {
+        "file": "EN/contact.html",
+        "count": 2
+      },
+      {
+        "file": "EN/cookies.html",
+        "count": 2
+      },
+      {
+        "file": "EN/diabetes.html",
+        "count": 2
+      },
+      {
+        "file": "EN/Dietitian dietician nutritionist and dietetics/Consultation.html",
+        "count": 2
+      },
+      {
+        "file": "EN/Dietitian dietician nutritionist and dietetics/The dietitian and dietetics.html",
+        "count": 2
+      },
+      {
+        "file": "EN/Dietitian dietician nutritionist and dietetics/working method.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian dietician nutritionist Berchem-Sainte-Agathe/dietitian dietician nutritionist Berchem-Sainte-Agathe.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian dietician nutritionist Ixelles/Tenbosch-Châtelain medical center.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian dietician nutritionist Koekelberg/chrysalide-center.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian dietician nutritionist laken/niveole-medical-center.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian dietician nutritionist Uccle/care-happy-medical-center.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian dietician nutritionist Uccle/espacepluridys.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian dietician nutritionist Woluwe Saint Lambert/Dietitian Woluwe Saint Lambert.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian-dietician-nutritionist/appointment.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian-dietician-nutritionist/irritable bowel syndrome/low FODMAP diet.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian-dietician-nutritionist/irritable-bowel-syndrome/low-fodmap-diet.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian-dietician-nutritionist/weight loss/losing weight and weight loss.html",
+        "count": 2
+      },
+      {
+        "file": "EN/dietitian-dietician-nutritionist/weight-loss/losing-weight-and-weight-loss.html",
+        "count": 2
+      },
+      {
+        "file": "EN/legal.html",
+        "count": 2
+      },
+      {
+        "file": "EN/nutrigenomics nutrigenetics/genetic test.html",
+        "count": 2
+      },
+      {
+        "file": "EN/privacy.html",
+        "count": 2
+      },
+      {
+        "file": "EN/terms.html",
+        "count": 2
+      },
+      {
+        "file": "fonts/flaticon.html",
+        "count": 2
+      },
+      {
+        "file": "mentions-legales.html",
+        "count": 2
+      },
+      {
+        "file": "NL/algemene-voorwaarden.html",
+        "count": 2
+      },
+      {
+        "file": "NL/contact.html",
+        "count": 2
+      },
+      {
+        "file": "NL/cookies.html",
+        "count": 2
+      },
+      {
+        "file": "NL/diabetes.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige/afspraak.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-elsene/dietist-voedingsdeskundige-elsene.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-elsene/tenbosch-chatelain-medisch-centrum.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-en-dietetiek/werkwijze.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-koekelberg/chrysalide-centrum.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-koekelberg/dietist-voedingsdeskundige-koekelberg.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-laken/dietist-voedingsdeskundige-laken.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-laken/niveole-medisch-centrum.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-sint-agatha-berchem/dietist-voedingsdeskundige-sint-agatha-berchem.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-sint-agatha-berchem/revago-centrum.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/dietist-voedingsdeskundige-sint-lambrechts-woluwe.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/wolu20-medisch-centrum.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-sint-pieters-woluwe/mediwoluwe.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-ukkel/care-happy-medisch-centrum.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-ukkel/dietist-voedingsdeskundige-ukkel.html",
+        "count": 2
+      },
+      {
+        "file": "NL/dietist-voedingsdeskundige-ukkel/espacepluridys.html",
+        "count": 2
+      },
+      {
+        "file": "NL/home.html",
+        "count": 2
+      },
+      {
+        "file": "NL/juridische-kennisgeving.html",
+        "count": 2
+      },
+      {
+        "file": "NL/legal.html",
+        "count": 2
+      },
+      {
+        "file": "NL/nutrigenomica-nutrigenetica/genetische-test.html",
+        "count": 2
+      },
+      {
+        "file": "NL/privacy.html",
+        "count": 2
+      },
+      {
+        "file": "NL/terms.html",
+        "count": 2
+      },
+      {
+        "file": "nutrigenomics.html",
+        "count": 2
+      },
+      {
+        "file": "politique-cookies.html",
+        "count": 2
+      },
+      {
+        "file": "politique-de-confidentialite.html",
+        "count": 2
+      },
+      {
+        "file": "privacy.html",
+        "count": 2
+      }
+    ],
+    "invalidPaths": [],
+    "redirectIssues": [],
+    "missingMetaDescription": [],
+    "missingTitle": [],
+    "orphanedUrls": [],
+    "missingFromSitemap": [
+      "fonts/flaticon.html"
+    ]
+  }
+}

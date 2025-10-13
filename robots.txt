@@ -6,10 +6,12 @@ Disallow: /Backup 23 07 2021/
 Disallow: /Nouveau site/
 Disallow: /Diaeta.be/
 Disallow: /node_modules/
+Disallow: /mcp-servers/
 Disallow: /bat/
 Disallow: /privacy_fichiers/
 Disallow: /testsprite_tests/
 Disallow: /Drive/
+Disallow: /.git/
 
 # Block development and configuration files
 Disallow: /*.py
@@ -33,6 +35,9 @@ Disallow: /search-results.html
 Disallow: /under-construction.html
 Disallow: /privacyO.htm
 
+# Block resource reference pages
+Disallow: /fonts/flaticon.html
+
 # Allow important public directories
 Allow: /images/
 Allow: /css/
@@ -49,6 +54,3 @@ Allow: /AR/
 # Sitemap - index covering primary and multilingual sitemaps
 Sitemap: https://diaeta.be/sitemap.xml
 Sitemap: https://diaeta.be/sitemap_index.xml
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1

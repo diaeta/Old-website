@@ -1,0 +1,108 @@
+{
+  "ok": [
+    {
+      "url": "https://diaeta.be/DE/Diabetes.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Berchem-Sainte-Agathe/Ern%C3%A4hrungsberater-Berchem-Sainte-Agathe.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Ixelles/Ern%C3%A4hrungsberater-Ixelles.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Koekelberg/Ern%C3%A4hrungsberater-Koekelberg.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Koekelberg/chrysalide-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Laken/Ern%C3%A4hrungsberater-Laken.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Laken/niveole-medical-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Uccle/Ern%C3%A4hrungsberater-Uccle.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Uccle/care-happy-medical-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Uccle/espacepluridys.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Woluwe-Saint-Lambert/Ern%C3%A4hrungsberater-Woluwe-Saint-Lambert.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-Woluwe-Saint-Pierre/mediwoluwe.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-und-Di%C3%A4tetik/Arbeitsmethode.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-und-Di%C3%A4tetik/Der-Ern%C3%A4hrungsberater-und-Di%C3%A4tetik.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-und-Di%C3%A4tetik/beratung.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler/Gewichtsverlust/Abnehmen-und-Gewichtsverlust.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler/Reizdarmsyndrom/FODMAP-arme-Di%C3%A4t.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler/Termin.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/Nutrigenomik-Nutrigenetik/Gentest.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/contact.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
+  "redirects": [],
+  "errors": [],
+  "notFound": [],
+  "forbidden": []
+}
