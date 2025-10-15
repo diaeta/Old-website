@@ -41,57 +41,63 @@ window.addEventListener('load', function() {
       const dropdownMenu = dropdown.querySelector('.dropdown-menu');
 
       if (dropdownToggle && dropdownMenu) {
-        // Remove any existing event listeners and attributes
-        const newToggle = dropdownToggle.cloneNode(true);
-        dropdownToggle.parentNode.replaceChild(newToggle, dropdownToggle);
+        // Remove Bootstrap attributes without cloning
+        dropdownToggle.removeAttribute('data-bs-toggle');
+        dropdownToggle.removeAttribute('aria-expanded');
 
-        // Remove any Bootstrap attributes
-        newToggle.removeAttribute('data-bs-toggle');
-        newToggle.removeAttribute('aria-expanded');
-
-        // Use event delegation on the dropdown container for better control
-        dropdown.addEventListener('click', function(e) {
+        // Handle dropdown toggle clicks
+        dropdownToggle.addEventListener('click', function(e) {
           if (window.innerWidth < 1200) {
-            // Check if click is on a dropdown item (language link)
-            const clickedItem = e.target.closest('.dropdown-item');
+            e.preventDefault();
+            e.stopPropagation();
 
-            if (clickedItem) {
-              // Clicked on a language link - allow navigation
-              // Don't prevent default, just close menus
-              dropdown.classList.remove('show');
-              dropdownMenu.classList.remove('show');
-              if (navbarCollapse) {
-                navbarCollapse.classList.remove('show');
+            const isAlreadyOpen = dropdown.classList.contains('show');
+
+            // First, close all open dropdowns
+            dropdowns.forEach(function(d) {
+              d.classList.remove('show');
+              const menu = d.querySelector('.dropdown-menu');
+              if (menu) {
+                menu.classList.remove('show');
               }
-              return; // Let the link navigate normally
-            }
+            });
 
-            // Check if click is on the toggle
-            const clickedToggle = e.target.closest('.dropdown-toggle');
-
-            if (clickedToggle) {
-              // Clicked on the toggle - toggle the dropdown
-              e.preventDefault();
-              e.stopPropagation();
-
-              const isAlreadyOpen = dropdown.classList.contains('show');
-
-              // First, close all open dropdowns
-              dropdowns.forEach(function(d) {
-                d.classList.remove('show');
-                const menu = d.querySelector('.dropdown-menu');
-                if (menu) {
-                  menu.classList.remove('show');
-                }
-              });
-
-              // If the clicked one wasn't already open, open it.
-              if (!isAlreadyOpen) {
-                dropdown.classList.add('show');
-                dropdownMenu.classList.add('show');
-              }
+            // If the clicked one wasn't already open, open it.
+            if (!isAlreadyOpen) {
+              dropdown.classList.add('show');
+              dropdownMenu.classList.add('show');
             }
           }
+        });
+
+        // Explicitly handle dropdown item clicks to ensure navigation works
+        const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
+        dropdownItems.forEach(function(item) {
+          // Remove any existing click handlers by cloning
+          const newItem = item.cloneNode(true);
+          item.parentNode.replaceChild(newItem, item);
+
+          // Add click handler that ensures navigation
+          newItem.addEventListener('click', function(e) {
+            if (window.innerWidth < 1200) {
+              // Do NOT prevent default - let the link navigate
+              e.stopPropagation(); // Stop event from bubbling to dropdown
+
+              // Get the href and navigate manually if needed
+              const href = this.getAttribute('href');
+              if (href && href !== '#') {
+                // Close menus first for better UX
+                dropdown.classList.remove('show');
+                dropdownMenu.classList.remove('show');
+                if (navbarCollapse) {
+                  navbarCollapse.classList.remove('show');
+                }
+
+                // Navigate to the URL
+                window.location.href = href;
+              }
+            }
+          });
         });
       }
     });
