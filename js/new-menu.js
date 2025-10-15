@@ -54,9 +54,9 @@ window.addEventListener('load', function() {
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
-            
+
             const isAlreadyOpen = dropdown.classList.contains('show');
-            
+
             // First, close all open dropdowns
             dropdowns.forEach(function(d) {
               d.classList.remove('show');
@@ -72,6 +72,22 @@ window.addEventListener('load', function() {
               dropdownMenu.classList.add('show');
             }
           }
+        });
+
+        // Handle clicks on dropdown items (language links) - allow navigation
+        const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
+        dropdownItems.forEach(function(item) {
+          item.addEventListener('click', function(e) {
+            if (window.innerWidth < 1200) {
+              // Don't prevent default - allow navigation
+              // Just close the dropdown and mobile menu for better UX
+              dropdown.classList.remove('show');
+              dropdownMenu.classList.remove('show');
+              if (navbarCollapse) {
+                navbarCollapse.classList.remove('show');
+              }
+            }
+          });
         });
       }
     });
