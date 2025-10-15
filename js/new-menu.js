@@ -133,6 +133,20 @@ window.addEventListener('load', function() {
               dropdown.classList.add('show');
               dropdownMenu.classList.add('show');
               console.log('Dropdown opened');
+
+              // Debug: Check if dropdown items are visible
+              setTimeout(function() {
+                const items = dropdownMenu.querySelectorAll('.dropdown-item');
+                console.log('Dropdown items found:', items.length);
+                console.log('Dropdown menu display:', window.getComputedStyle(dropdownMenu).display);
+                console.log('Dropdown menu visibility:', window.getComputedStyle(dropdownMenu).visibility);
+                console.log('Dropdown menu opacity:', window.getComputedStyle(dropdownMenu).opacity);
+                console.log('Dropdown menu z-index:', window.getComputedStyle(dropdownMenu).zIndex);
+                console.log('Dropdown menu pointer-events:', window.getComputedStyle(dropdownMenu).pointerEvents);
+                items.forEach(function(item, idx) {
+                  console.log('Item', idx, ':', item.textContent.trim(), 'Display:', window.getComputedStyle(item).display, 'Pointer-events:', window.getComputedStyle(item).pointerEvents);
+                });
+              }, 100);
             } else {
               console.log('Dropdown closed');
             }
