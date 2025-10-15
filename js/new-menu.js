@@ -1,4 +1,5 @@
 console.log('=== NEW-MENU.JS LOADED ===');
+alert('NEW-MENU.JS IS LOADED! Check console for details.');
 
 // ULTRA-AGGRESSIVE FIX: Intercept using BOTH capture phase click AND mousedown/touchstart
 function forceNavigateToDropdownItem(e) {
