@@ -230,7 +230,13 @@
     margin: 0.5rem 0 !important;
     width: 100% !important;
   }
-  
+
+  /* CRITICAL: Disable the ::before pseudo-element in mobile - it blocks clicks! */
+  .nav-item.dropdown::before {
+    content: none !important;
+    display: none !important;
+  }
+
   .dropdown-menu {
     position: static !important;
     display: none !important;
