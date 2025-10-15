@@ -1,16 +1,61 @@
+// CRITICAL FIX: Intercept dropdown item clicks at document level using capture phase
+// This runs BEFORE any other handlers and forces navigation to work
+document.addEventListener('click', function(e) {
+  // Only in mobile mode
+  if (window.innerWidth >= 1200) return;
+
+  // Check if a dropdown item was clicked
+  const clickedItem = e.target.closest('.dropdown-item');
+  if (!clickedItem) return;
+
+  // Check if it's inside a dropdown menu
+  const dropdownMenu = clickedItem.closest('.dropdown-menu');
+  if (!dropdownMenu) return;
+
+  const href = clickedItem.getAttribute('href');
+  console.log('Dropdown item clicked in mobile mode:', href);
+
+  if (href && href !== '#' && href !== '') {
+    // Prevent any other handlers from interfering
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+
+    console.log('Forcing navigation to:', href);
+
+    // Close all menus immediately
+    document.querySelectorAll('.dropdown').forEach(function(d) {
+      d.classList.remove('show');
+    });
+    document.querySelectorAll('.dropdown-menu').forEach(function(m) {
+      m.classList.remove('show');
+    });
+    const collapse = document.querySelector('.navbar-collapse');
+    if (collapse) {
+      collapse.classList.remove('show');
+    }
+
+    // Force navigation after a tiny delay to ensure menus close
+    setTimeout(function() {
+      console.log('Navigating now...');
+      window.location.href = href;
+    }, 50);
+  }
+}, true); // TRUE = capture phase, runs before bubble phase handlers
+
 // Wait for all scripts to load and then initialize our new menu
 window.addEventListener('load', function() {
   // Small delay to ensure all other scripts are processed
   setTimeout(function() {
     console.log('Initializing new menu...');
-    
+
     // Disable any old rd-navbar functionality
     const oldNavbar = document.querySelector('.rd-navbar-wrap');
     if (oldNavbar) {
       oldNavbar.style.display = 'none';
       oldNavbar.style.visibility = 'hidden';
     }
-    
+
     // Disable Bootstrap dropdown functionality
     if (window.bootstrap && window.bootstrap.Dropdown) {
       // Remove Bootstrap dropdown event listeners
@@ -18,7 +63,7 @@ window.addEventListener('load', function() {
         element.removeAttribute('data-bs-toggle');
       });
     }
-    
+
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     const dropdowns = document.querySelectorAll('.dropdown');
@@ -51,6 +96,8 @@ window.addEventListener('load', function() {
             e.preventDefault();
             e.stopPropagation();
 
+            console.log('Dropdown toggle clicked');
+
             const isAlreadyOpen = dropdown.classList.contains('show');
 
             // First, close all open dropdowns
@@ -66,39 +113,14 @@ window.addEventListener('load', function() {
             if (!isAlreadyOpen) {
               dropdown.classList.add('show');
               dropdownMenu.classList.add('show');
+              console.log('Dropdown opened');
+            } else {
+              console.log('Dropdown closed');
             }
           }
         });
 
-        // Explicitly handle dropdown item clicks to ensure navigation works
-        const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
-        dropdownItems.forEach(function(item) {
-          // Remove any existing click handlers by cloning
-          const newItem = item.cloneNode(true);
-          item.parentNode.replaceChild(newItem, item);
-
-          // Add click handler that ensures navigation
-          newItem.addEventListener('click', function(e) {
-            if (window.innerWidth < 1200) {
-              // Do NOT prevent default - let the link navigate
-              e.stopPropagation(); // Stop event from bubbling to dropdown
-
-              // Get the href and navigate manually if needed
-              const href = this.getAttribute('href');
-              if (href && href !== '#') {
-                // Close menus first for better UX
-                dropdown.classList.remove('show');
-                dropdownMenu.classList.remove('show');
-                if (navbarCollapse) {
-                  navbarCollapse.classList.remove('show');
-                }
-
-                // Navigate to the URL
-                window.location.href = href;
-              }
-            }
-          });
-        });
+        // Note: Dropdown item clicks are handled by the capture phase handler at the top of this file
       }
     });
     
