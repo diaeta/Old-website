@@ -39,55 +39,59 @@ window.addEventListener('load', function() {
     dropdowns.forEach(function(dropdown) {
       const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
       const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-      
+
       if (dropdownToggle && dropdownMenu) {
         // Remove any existing event listeners and attributes
         const newToggle = dropdownToggle.cloneNode(true);
         dropdownToggle.parentNode.replaceChild(newToggle, dropdownToggle);
-        
+
         // Remove any Bootstrap attributes
         newToggle.removeAttribute('data-bs-toggle');
         newToggle.removeAttribute('aria-expanded');
-        
-        newToggle.addEventListener('click', function(e) {
+
+        // Use event delegation on the dropdown container for better control
+        dropdown.addEventListener('click', function(e) {
           if (window.innerWidth < 1200) {
-            e.preventDefault();
-            e.stopPropagation();
-            e.stopImmediatePropagation();
+            // Check if click is on a dropdown item (language link)
+            const clickedItem = e.target.closest('.dropdown-item');
 
-            const isAlreadyOpen = dropdown.classList.contains('show');
-
-            // First, close all open dropdowns
-            dropdowns.forEach(function(d) {
-              d.classList.remove('show');
-              const menu = d.querySelector('.dropdown-menu');
-              if (menu) {
-                menu.classList.remove('show');
-              }
-            });
-
-            // If the clicked one wasn't already open, open it.
-            if (!isAlreadyOpen) {
-              dropdown.classList.add('show');
-              dropdownMenu.classList.add('show');
-            }
-          }
-        });
-
-        // Handle clicks on dropdown items (language links) - allow navigation
-        const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
-        dropdownItems.forEach(function(item) {
-          item.addEventListener('click', function(e) {
-            if (window.innerWidth < 1200) {
-              // Don't prevent default - allow navigation
-              // Just close the dropdown and mobile menu for better UX
+            if (clickedItem) {
+              // Clicked on a language link - allow navigation
+              // Don't prevent default, just close menus
               dropdown.classList.remove('show');
               dropdownMenu.classList.remove('show');
               if (navbarCollapse) {
                 navbarCollapse.classList.remove('show');
               }
+              return; // Let the link navigate normally
             }
-          });
+
+            // Check if click is on the toggle
+            const clickedToggle = e.target.closest('.dropdown-toggle');
+
+            if (clickedToggle) {
+              // Clicked on the toggle - toggle the dropdown
+              e.preventDefault();
+              e.stopPropagation();
+
+              const isAlreadyOpen = dropdown.classList.contains('show');
+
+              // First, close all open dropdowns
+              dropdowns.forEach(function(d) {
+                d.classList.remove('show');
+                const menu = d.querySelector('.dropdown-menu');
+                if (menu) {
+                  menu.classList.remove('show');
+                }
+              });
+
+              // If the clicked one wasn't already open, open it.
+              if (!isAlreadyOpen) {
+                dropdown.classList.add('show');
+                dropdownMenu.classList.add('show');
+              }
+            }
+          }
         });
       }
     });
