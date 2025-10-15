@@ -1,0 +1,9 @@
+Raison,Source,Validation,Pages
+Introuvable (404),Site Web,Non commencé,91
+Page avec redirection,Site Web,Non commencé,60
+Page en double sans URL canonique sélectionnée par l'utilisateur,Site Web,Non commencé,8
+Bloquée en raison d'une interdiction d'accès (403),Site Web,Non commencé,3
+Autre page avec balise canonique correcte,Site Web,Non commencé,3
+"Explorée, actuellement non indexée",Systèmes Google,Non commencé,11
+Page en double : Google n'a pas choisi la même URL canonique que l'utilisateur,Systèmes Google,Non commencé,1
+"Détectée, actuellement non indexée",Systèmes Google,Sans objet,0

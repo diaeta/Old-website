@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-15T18:16:40.454Z",
+  "results": {
+    "passed": [
+      "✓ 404.html error page exists",
+      "✓ RewriteEngine is enabled",
+      "✓ 404 error document configured",
+      "✓ Sitemap specified in robots.txt",
+      "✓ HTML files not blocked in robots.txt",
+      "✓ 106/106 HTML files have canonical URLs",
+      "✓ Sitemap is valid with 104 URLs",
+      "✓ No duplicate URLs in sitemap",
+      "✓ 106/106 files have title tags",
+      "✓ 106/106 files have viewport meta tags"
+    ],
+    "failed": [],
+    "warnings": [
+      "⚠ Only 105/106 files have meta descriptions"
+    ]
+  },
+  "stats": {
+    "totalHtmlFiles": 106,
+    "filesWithCanonical": 106,
+    "filesWithTitle": 106,
+    "filesWithDescription": 105,
+    "filesWithViewport": 106
+  }
+}

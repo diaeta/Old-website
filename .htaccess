@@ -5,17 +5,31 @@
 # REDIRECTS - Fix broken links and old bookmarks
 # ==============================================================================
 
-# Redirect home.html to index.html
-Redirect 301 /home.html /index.html
+# Enable RewriteEngine for more complex redirects
+RewriteEngine On
 
-# Redirect language-specific index pages to home pages
-Redirect 301 /NL/index.html /NL/home.html
-Redirect 301 /EN/index.html /EN/home.html
-Redirect 301 /DE/index.html /DE/home.html
+# Remove .html extension (clean URLs)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)/?$ $1.html [L]
 
-# Redirect root legal pages to English versions
-Redirect 301 /terms.html /EN/terms.html
-Redirect 301 /legal.html /EN/legal.html
+# Handle old URLs that might be indexed
+# Redirect old dietitian pages to new structure
+RewriteRule ^dietitian-(.*)$ /EN/dietitian%20dietician%20nutritionist%20$1 [R=301,L]
+RewriteRule ^dieteticien-(.*)$ /diététicien-diététicienne-nutritionniste-$1 [R=301,L]
+
+# Fix common 404 patterns and handle URL encoding
+RewriteRule ^EN/dietitian-dietician-nutritionist-Ixelles/(.*)$ /EN/dietitian%20dietician%20nutritionist%20Ixelles/$1 [R=301,L,NE]
+RewriteRule ^NL/dietist-(.*)$ /NL/dietist-voedingsdeskundige-$1 [R=301,L]
+
+# Handle spaces in URLs (redirect non-encoded to encoded)
+RewriteCond %{REQUEST_URI} ^(.*)\ (.*)$
+RewriteRule . %1\%20%2 [R=301,L,NE]
+
+# Fix common misspellings and variations
+RewriteRule ^dieteticien/(.*)$ /diététicien-diététicienne-nutritionniste/$1 [R=301,L]
+RewriteRule ^nutritionist/(.*)$ /EN/dietitian%20dietician%20nutritionist/$1 [R=301,L,NE]
 
 # ==============================================================================
 # URL ENCODING & CHARACTER HANDLING
@@ -91,7 +105,14 @@ Options -Indexes
 # PROTECT SENSITIVE FILES
 # ==============================================================================
 
-<FilesMatch "\.(git|gitignore|htaccess|htpasswd|env|md|json|lock)$">
+# Only block truly sensitive files
+<FilesMatch "\.(htaccess|htpasswd|env|lock|git)$">
   Order allow,deny
   Deny from all
 </FilesMatch>
+
+# Block access to configuration directories
+<DirectoryMatch "^\.">
+  Order allow,deny
+  Deny from all
+</DirectoryMatch>

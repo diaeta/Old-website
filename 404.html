@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>404 - Page non trouvée | Diaeta.be</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .error-container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 40px;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 120px;
+            color: #1e40af;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .error-message {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .error-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #1e40af;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #1e3a8a;
+        }
+        .btn-secondary {
+            background-color: #6b7280;
+        }
+        .btn-secondary:hover {
+            background-color: #4b5563;
+        }
+        .language-links {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #e5e7eb;
+        }
+        .language-links h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .lang-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+    <link rel="canonical" href="https://diaeta.be/404.html">
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-message">Page non trouvée</h1>
+        <p class="error-description">
+            Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+            Veuillez vérifier l'URL ou utiliser les liens ci-dessous pour naviguer sur notre site.
+        </p>
+
+        <div class="button-group">
+            <a href="/" class="btn">Accueil</a>
+            <a href="/contact.html" class="btn btn-secondary">Contact</a>
+            <a href="/rendez-vous.html" class="btn btn-secondary">Prendre rendez-vous</a>
+        </div>
+
+        <div class="language-links">
+            <h3>Cette page est disponible en:</h3>
+            <div class="lang-buttons">
+                <a href="/EN/home.html" class="btn btn-secondary">English</a>
+                <a href="/NL/home.html" class="btn btn-secondary">Nederlands</a>
+                <a href="/DE/home.html" class="btn btn-secondary">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Track 404 errors in analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'error_404', {
+                'page_location': window.location.href,
+                'page_referrer': document.referrer
+            });
+        }
+    </script>
+
+</body></html>

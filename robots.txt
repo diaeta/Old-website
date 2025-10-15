@@ -13,12 +13,11 @@ Disallow: /testsprite_tests/
 Disallow: /Drive/
 Disallow: /.git/
 
-# Block development and configuration files
+# Block only script and configuration files
 Disallow: /*.py
 Disallow: /*.ps1
-Disallow: /*.md
-Disallow: /*.json
-Disallow: /*.txt
+Disallow: /*.sh
+Disallow: /*.js
 Disallow: /*.log
 Disallow: /package.json
 Disallow: /package-lock.json
