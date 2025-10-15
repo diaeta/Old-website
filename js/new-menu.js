@@ -1,42 +1,25 @@
-console.log('=== NEW-MENU.JS LOADED ===');
-alert('NEW-MENU.JS IS LOADED! Check console for details.');
-
-// ULTRA-AGGRESSIVE FIX: Intercept using BOTH capture phase click AND mousedown/touchstart
-function forceNavigateToDropdownItem(e) {
-  console.log('Event detected:', e.type, 'Width:', window.innerWidth);
-
+// Intercept dropdown item clicks in mobile mode using capture phase
+// This ensures navigation works even if other scripts interfere
+function handleDropdownItemClick(e) {
   // Only in mobile mode
-  if (window.innerWidth >= 1200) {
-    console.log('Desktop mode, skipping');
-    return;
-  }
+  if (window.innerWidth >= 1200) return;
 
   // Check if a dropdown item was clicked
   const clickedItem = e.target.closest('.dropdown-item');
-  console.log('Clicked element:', e.target, 'Closest dropdown-item:', clickedItem);
-
   if (!clickedItem) return;
 
   // Check if it's inside a dropdown menu
   const dropdownMenu = clickedItem.closest('.dropdown-menu');
-  if (!dropdownMenu) {
-    console.log('Not in dropdown menu');
-    return;
-  }
+  if (!dropdownMenu) return;
 
   const href = clickedItem.getAttribute('href');
-  console.log('!!! DROPDOWN ITEM DETECTED IN MOBILE MODE !!!');
-  console.log('Href:', href);
-
   if (href && href !== '#' && href !== '') {
     // Prevent any other handlers from interfering
     e.preventDefault();
     e.stopPropagation();
     e.stopImmediatePropagation();
 
-    console.log('>>> FORCING NAVIGATION TO:', href);
-
-    // Close all menus immediately
+    // Close all menus
     document.querySelectorAll('.dropdown').forEach(function(d) {
       d.classList.remove('show');
     });
@@ -48,25 +31,20 @@ function forceNavigateToDropdownItem(e) {
       collapse.classList.remove('show');
     }
 
-    // Force navigation immediately
-    console.log('>>> NAVIGATING NOW TO:', href);
+    // Navigate to the URL
     window.location.href = href;
-  } else {
-    console.log('Invalid href:', href);
   }
 }
 
-// Add listeners for click, mousedown, AND touchstart
-document.addEventListener('click', forceNavigateToDropdownItem, true);
-document.addEventListener('mousedown', forceNavigateToDropdownItem, true);
-document.addEventListener('touchstart', forceNavigateToDropdownItem, true);
-console.log('=== EVENT LISTENERS ATTACHED ===');
+// Add capture phase listeners for click, mousedown, and touchstart
+document.addEventListener('click', handleDropdownItemClick, true);
+document.addEventListener('mousedown', handleDropdownItemClick, true);
+document.addEventListener('touchstart', handleDropdownItemClick, true);
 
 // Wait for all scripts to load and then initialize our new menu
 window.addEventListener('load', function() {
   // Small delay to ensure all other scripts are processed
   setTimeout(function() {
-    console.log('Initializing new menu...');
 
     // Disable any old rd-navbar functionality
     const oldNavbar = document.querySelector('.rd-navbar-wrap');
@@ -115,8 +93,6 @@ window.addEventListener('load', function() {
             e.preventDefault();
             e.stopPropagation();
 
-            console.log('Dropdown toggle clicked');
-
             const isAlreadyOpen = dropdown.classList.contains('show');
 
             // First, close all open dropdowns
@@ -128,27 +104,10 @@ window.addEventListener('load', function() {
               }
             });
 
-            // If the clicked one wasn't already open, open it.
+            // If the clicked one wasn't already open, open it
             if (!isAlreadyOpen) {
               dropdown.classList.add('show');
               dropdownMenu.classList.add('show');
-              console.log('Dropdown opened');
-
-              // Debug: Check if dropdown items are visible
-              setTimeout(function() {
-                const items = dropdownMenu.querySelectorAll('.dropdown-item');
-                console.log('Dropdown items found:', items.length);
-                console.log('Dropdown menu display:', window.getComputedStyle(dropdownMenu).display);
-                console.log('Dropdown menu visibility:', window.getComputedStyle(dropdownMenu).visibility);
-                console.log('Dropdown menu opacity:', window.getComputedStyle(dropdownMenu).opacity);
-                console.log('Dropdown menu z-index:', window.getComputedStyle(dropdownMenu).zIndex);
-                console.log('Dropdown menu pointer-events:', window.getComputedStyle(dropdownMenu).pointerEvents);
-                items.forEach(function(item, idx) {
-                  console.log('Item', idx, ':', item.textContent.trim(), 'Display:', window.getComputedStyle(item).display, 'Pointer-events:', window.getComputedStyle(item).pointerEvents);
-                });
-              }, 100);
-            } else {
-              console.log('Dropdown closed');
             }
           }
         });
@@ -200,7 +159,5 @@ window.addEventListener('load', function() {
         });
       }
     });
-    
-    console.log('New menu initialized successfully');
   }, 1000); // Increased delay to ensure all scripts are loaded
 });
