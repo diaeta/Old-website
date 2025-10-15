@@ -1,19 +1,31 @@
-// CRITICAL FIX: Intercept dropdown item clicks at document level using capture phase
-// This runs BEFORE any other handlers and forces navigation to work
-document.addEventListener('click', function(e) {
+console.log('=== NEW-MENU.JS LOADED ===');
+
+// ULTRA-AGGRESSIVE FIX: Intercept using BOTH capture phase click AND mousedown/touchstart
+function forceNavigateToDropdownItem(e) {
+  console.log('Event detected:', e.type, 'Width:', window.innerWidth);
+
   // Only in mobile mode
-  if (window.innerWidth >= 1200) return;
+  if (window.innerWidth >= 1200) {
+    console.log('Desktop mode, skipping');
+    return;
+  }
 
   // Check if a dropdown item was clicked
   const clickedItem = e.target.closest('.dropdown-item');
+  console.log('Clicked element:', e.target, 'Closest dropdown-item:', clickedItem);
+
   if (!clickedItem) return;
 
   // Check if it's inside a dropdown menu
   const dropdownMenu = clickedItem.closest('.dropdown-menu');
-  if (!dropdownMenu) return;
+  if (!dropdownMenu) {
+    console.log('Not in dropdown menu');
+    return;
+  }
 
   const href = clickedItem.getAttribute('href');
-  console.log('Dropdown item clicked in mobile mode:', href);
+  console.log('!!! DROPDOWN ITEM DETECTED IN MOBILE MODE !!!');
+  console.log('Href:', href);
 
   if (href && href !== '#' && href !== '') {
     // Prevent any other handlers from interfering
@@ -21,7 +33,7 @@ document.addEventListener('click', function(e) {
     e.stopPropagation();
     e.stopImmediatePropagation();
 
-    console.log('Forcing navigation to:', href);
+    console.log('>>> FORCING NAVIGATION TO:', href);
 
     // Close all menus immediately
     document.querySelectorAll('.dropdown').forEach(function(d) {
@@ -35,13 +47,19 @@ document.addEventListener('click', function(e) {
       collapse.classList.remove('show');
     }
 
-    // Force navigation after a tiny delay to ensure menus close
-    setTimeout(function() {
-      console.log('Navigating now...');
-      window.location.href = href;
-    }, 50);
+    // Force navigation immediately
+    console.log('>>> NAVIGATING NOW TO:', href);
+    window.location.href = href;
+  } else {
+    console.log('Invalid href:', href);
   }
-}, true); // TRUE = capture phase, runs before bubble phase handlers
+}
+
+// Add listeners for click, mousedown, AND touchstart
+document.addEventListener('click', forceNavigateToDropdownItem, true);
+document.addEventListener('mousedown', forceNavigateToDropdownItem, true);
+document.addEventListener('touchstart', forceNavigateToDropdownItem, true);
+console.log('=== EVENT LISTENERS ATTACHED ===');
 
 // Wait for all scripts to load and then initialize our new menu
 window.addEventListener('load', function() {
