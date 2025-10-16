@@ -1,0 +1,120 @@
+# DIAETA.BE - Apache Configuration
+# Generated: October 16, 2025
+# FIXED VERSION - More compatible with various server configurations
+
+# ==============================================================================
+# REDIRECTS - Fix broken links and old bookmarks
+# ==============================================================================
+
+# Enable RewriteEngine for more complex redirects
+RewriteEngine On
+
+# Remove .html extension (clean URLs)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)/?$ $1.html [L]
+
+# Handle old URLs that might be indexed
+# Redirect old dietitian pages to new structure
+RewriteRule ^dietitian-(.*)$ /EN/dietitian%20dietician%20nutritionist%20$1 [R=301,L]
+RewriteRule ^dieteticien-(.*)$ /diététicien-diététicienne-nutritionniste-$1 [R=301,L]
+
+# Fix common 404 patterns and handle URL encoding
+RewriteRule ^EN/dietitian-dietician-nutritionist-Ixelles/(.*)$ /EN/dietitian%20dietician%20nutritionist%20Ixelles/$1 [R=301,L,NE]
+RewriteRule ^NL/dietist-(.*)$ /NL/dietist-voedingsdeskundige-$1 [R=301,L]
+
+# Fix common misspellings and variations
+RewriteRule ^dieteticien/(.*)$ /diététicien-diététicienne-nutritionniste/$1 [R=301,L]
+RewriteRule ^nutritionist/(.*)$ /EN/dietitian%20dietician%20nutritionist/$1 [R=301,L,NE]
+
+# ==============================================================================
+# URL ENCODING & CHARACTER HANDLING
+# ==============================================================================
+
+# Enable UTF-8 encoding
+AddDefaultCharset UTF-8
+
+# ==============================================================================
+# SECURITY HEADERS (Only if mod_headers is available)
+# ==============================================================================
+
+<IfModule mod_headers.c>
+  # Prevent clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Enable XSS protection
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Prevent MIME type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Referrer policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ==============================================================================
+# PERFORMANCE OPTIMIZATION
+# ==============================================================================
+
+# Enable compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+
+  # CSS and JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # HTML
+  ExpiresByType text/html "access plus 1 day"
+</IfModule>
+
+# ==============================================================================
+# ERROR DOCUMENTS
+# ==============================================================================
+
+ErrorDocument 404 /404.html
+
+# ==============================================================================
+# PREVENT DIRECTORY LISTING
+# ==============================================================================
+
+Options -Indexes
+
+# ==============================================================================
+# PROTECT SENSITIVE FILES (Compatible with Apache 2.2 and 2.4)
+# ==============================================================================
+
+# For Apache 2.4+
+<IfModule mod_authz_core.c>
+  <FilesMatch "\.(htaccess|htpasswd|env|lock|git)$">
+    Require all denied
+  </FilesMatch>
+
+  <DirectoryMatch "^\.">
+    Require all denied
+  </DirectoryMatch>
+</IfModule>
+
+# For Apache 2.2 (fallback)
+<IfModule !mod_authz_core.c>
+  <FilesMatch "\.(htaccess|htpasswd|env|lock|git)$">
+    Order allow,deny
+    Deny from all
+  </FilesMatch>
+
+  <DirectoryMatch "^\.">
+    Order allow,deny
+    Deny from all
+  </DirectoryMatch>
+</IfModule>

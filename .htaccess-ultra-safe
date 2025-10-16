@@ -1,0 +1,8 @@
+# ULTRA SAFE .htaccess - NO REWRITE RULES
+# Use this if the site still gives 500 errors
+
+# UTF-8 encoding
+AddDefaultCharset UTF-8
+
+# Prevent directory listing
+Options -Indexes
