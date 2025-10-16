@@ -68,7 +68,8 @@
 .navbar-nav {
   list-style: none !important;
   padding: 0 !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
+  margin-left: 2rem !important;
   display: flex !important;
   align-items: center !important;
 }
