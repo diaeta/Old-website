@@ -19,12 +19,16 @@
 .navbar {
   background-color: #fff !important;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
-  padding: 1rem !important;
+  padding: 1rem 0 !important;
+  position: relative !important;
+  z-index: 1000 !important;
+}
+
+.navbar .container {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  position: relative !important;
-  z-index: 1000 !important;
+  width: 100% !important;
 }
 
 .navbar-brand {
@@ -32,6 +36,7 @@
   font-size: 1.5rem !important;
   color: #333 !important;
   text-decoration: none !important;
+  flex-shrink: 0 !important;
 }
 
 .navbar-toggler {
