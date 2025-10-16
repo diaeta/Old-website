@@ -1,0 +1,171 @@
+{
+  "summary": {
+    "duplicateTitles": 0,
+    "duplicateH1s": 0,
+    "longTitles": 0,
+    "shortTitles": 29,
+    "missingH1": 4,
+    "emptyTitles": 3
+  },
+  "duplicateTitles": [],
+  "duplicateH1s": [],
+  "longTitles": [],
+  "shortTitles": [
+    {
+      "file": "contact.html",
+      "title": "Posez votre question",
+      "length": 20
+    },
+    {
+      "file": "DE/contact.html",
+      "title": "Stellen Sie Ihre Frage",
+      "length": 22
+    },
+    {
+      "file": "DE/cookies.html",
+      "title": "Cookie-Richtlinie - Diaeta",
+      "length": 26
+    },
+    {
+      "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler/Reizdarmsyndrom/FODMAP-arme-Diät.html",
+      "title": "Reizdarmsyndrom (IBS)",
+      "length": 21
+    },
+    {
+      "file": "DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler/Termin.html",
+      "title": "Diaeta - Termin",
+      "length": 15
+    },
+    {
+      "file": "DE/legal.html",
+      "title": "Rechtliche Hinweise - Diaeta",
+      "length": 28
+    },
+    {
+      "file": "DE/terms.html",
+      "title": "Nutzungsbedingungen - Diaeta",
+      "length": 28
+    },
+    {
+      "file": "EN/contact.html",
+      "title": "Ask your question",
+      "length": 17
+    },
+    {
+      "file": "EN/cookies.html",
+      "title": "Cookie Policy - Diaeta",
+      "length": 22
+    },
+    {
+      "file": "EN/Dietitian dietician nutritionist and dietetics/The dietitian and dietetics.html",
+      "title": "The dietitian and dietetics",
+      "length": 27
+    },
+    {
+      "file": "EN/dietitian-dietician-nutritionist/appointment.html",
+      "title": "Diaeta - appointment",
+      "length": 20
+    },
+    {
+      "file": "EN/legal.html",
+      "title": "Legal Notice - Diaeta",
+      "length": 21
+    },
+    {
+      "file": "EN/privacy.html",
+      "title": "Privacy Policy - Diaeta",
+      "length": 23
+    },
+    {
+      "file": "EN/terms.html",
+      "title": "Terms of Service - Diaeta",
+      "length": 25
+    },
+    {
+      "file": "mentions-legales.html",
+      "title": "Mentions Légales - Diaeta",
+      "length": 25
+    },
+    {
+      "file": "NL/algemene-voorwaarden.html",
+      "title": "Algemene voorwaarden | Diaeta",
+      "length": 29
+    },
+    {
+      "file": "NL/contact.html",
+      "title": "Stel uw vraag",
+      "length": 13
+    },
+    {
+      "file": "NL/cookies.html",
+      "title": "Cookiebeleid | Diaeta",
+      "length": 21
+    },
+    {
+      "file": "NL/diabetes.html",
+      "title": "Diabetes | Diaeta",
+      "length": 17
+    },
+    {
+      "file": "NL/dietist-voedingsdeskundige-elsene/dietist-voedingsdeskundige-elsene.html",
+      "title": "Diëtist Elsene | Diaeta",
+      "length": 23
+    },
+    {
+      "file": "NL/dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html",
+      "title": "De diëtist en de diëtetiek",
+      "length": 26
+    },
+    {
+      "file": "NL/dietist-voedingsdeskundige-koekelberg/dietist-voedingsdeskundige-koekelberg.html",
+      "title": "Diëtist Koekelberg | Diaeta",
+      "length": 27
+    },
+    {
+      "file": "NL/dietist-voedingsdeskundige-laken/dietist-voedingsdeskundige-laken.html",
+      "title": "Diëtist Laken | Diaeta",
+      "length": 22
+    },
+    {
+      "file": "NL/dietist-voedingsdeskundige-ukkel/dietist-voedingsdeskundige-ukkel.html",
+      "title": "Diëtist Ukkel | Diaeta",
+      "length": 22
+    },
+    {
+      "file": "NL/dietist-voedingsdeskundige/afspraak.html",
+      "title": "Diaeta - afspraak",
+      "length": 17
+    },
+    {
+      "file": "NL/privacy.html",
+      "title": "Privacybeleid | Diaeta",
+      "length": 22
+    },
+    {
+      "file": "NL/terms.html",
+      "title": "Algemene Voorwaarden - Diaeta",
+      "length": 29
+    },
+    {
+      "file": "politique-cookies.html",
+      "title": "Politique de Cookies - Diaeta",
+      "length": 29
+    },
+    {
+      "file": "rendez-vous.html",
+      "title": "Diaeta - Rendez-vous",
+      "length": 20
+    }
+  ],
+  "missingH1": [
+    "EN/footer_snippet.html",
+    "fonts/flaticon.html",
+    "footer_en_genetic.html",
+    "footer_en_home.html"
+  ],
+  "emptyTitles": [
+    "EN/footer_snippet.html",
+    "footer_en_genetic.html",
+    "footer_en_home.html"
+  ]
+}

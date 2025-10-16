@@ -99,10 +99,431 @@
       "url": "https://diaeta.be/DE/contact.html",
       "status": 200,
       "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/cookies.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/home.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/legal.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/privacy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/DE/terms.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/Dietitian%20dietician%20nutritionist%20and%20dietetics/Consultation.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/Dietitian%20dietician%20nutritionist%20and%20dietetics/The%20dietitian%20and%20dietetics.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/Dietitian%20dietician%20nutritionist%20and%20dietetics/working%20method.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/contact.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/cookies.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/diabetes.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20Berchem-Sainte-Agathe/dietitian%20dietician%20nutritionist%20Berchem-Sainte-Agathe.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20Ixelles/Tenbosch-Ch%C3%A2telain%20medical%20center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20Koekelberg/chrysalide-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20Uccle/care-happy-medical-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20Uccle/espacepluridys.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20Woluwe%20Saint%20Lambert/Dietitian%20Woluwe%20Saint%20Lambert.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20Woluwe%20Saint%20Pierre/mediwoluwe.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian%20dietician%20nutritionist%20laken/niveole-medical-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian-dietician-nutritionist/appointment.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian-dietician-nutritionist/irritable%20bowel%20syndrome/low%20FODMAP%20diet.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian-dietician-nutritionist/irritable-bowel-syndrome/low-fodmap-diet.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian-dietician-nutritionist/weight%20loss/losing%20weight%20and%20weight%20loss.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/dietitian-dietician-nutritionist/weight-loss/losing-weight-and-weight-loss.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/home.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/legal.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/nutrigenomics%20nutrigenetics/genetic%20test.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/privacy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/EN/terms.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/algemene-voorwaarden.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/contact.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/cookies.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/diabetes.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-elsene/dietist-voedingsdeskundige-elsene.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-elsene/tenbosch-chatelain-medisch-centrum.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/werkwijze.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-koekelberg/chrysalide-centrum.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-koekelberg/dietist-voedingsdeskundige-koekelberg.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-laken/dietist-voedingsdeskundige-laken.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-laken/niveole-medisch-centrum.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-sint-agatha-berchem/dietist-voedingsdeskundige-sint-agatha-berchem.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-sint-agatha-berchem/revago-centrum.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/dietist-voedingsdeskundige-sint-lambrechts-woluwe.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-sint-lambrechts-woluwe/wolu20-medisch-centrum.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-sint-pieters-woluwe/mediwoluwe.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-ukkel/care-happy-medisch-centrum.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-ukkel/dietist-voedingsdeskundige-ukkel.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-ukkel/espacepluridys.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/home.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/juridische-kennisgeving.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/legal.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/nutrigenomica-nutrigenetica/genetische-test.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/privacy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/NL/terms.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/conditions-generales.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/contact.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/cookies.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/diab%C3%A8te.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-Berchem-Sainte-Agathe/diaeta-berchem-sainte-agathe.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-Ixelles/centre-medical-tenbosch-chatelain.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-koekelberg/centre-chrysalide.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-laken/niveole-medical-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-uccle/care-happy-medical-center.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-uccle/espacepluridys.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste/perdre%20du%20poids%20et%20Maigrir/Di%C3%A9t%C3%A9tcien%20Di%C3%A9t%C3%A9ticienne%20Nutritionniste%20Perte%20de%20poids.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste/syndrome%20du%20colon%20irritable/r%C3%A9gime%20pauvre%20en%20FODMAP.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9tique/Consultation/Consultation.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9tique/di%C3%A9t%C3%A9ticien-nutritionniste-di%C3%A9t%C3%A9tique.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9tique/m%C3%A9thode-de-travail.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/mentions-legales.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/nutrigenomics.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/politique-cookies.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/politique-de-confidentialite.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/privacy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/rendez-vous.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8"
     }
   ],
   "redirects": [],
   "errors": [],
-  "notFound": [],
+  "notFound": [
+    {
+      "url": "https://diaeta.be/diététicien-diététicienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html",
+      "status": 404,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/diététicien-diététicienne-nutritionniste-woluwe-saint-lambert/di%C3%A9t%C3%A9ticien%20woluwe%20saint%20lambert.html",
+      "status": 404,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://diaeta.be/diététicien-diététicienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html",
+      "status": 404,
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
   "forbidden": []
 }

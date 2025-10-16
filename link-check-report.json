@@ -1,0 +1,252 @@
+{
+  "timestamp": "2025-10-16T22:46:11.165Z",
+  "summary": {
+    "pagesChecked": 21,
+    "linksChecked": 145,
+    "working": 105,
+    "broken": 15,
+    "redirects": 25
+  },
+  "brokenLinks": [
+    {
+      "url": "https://fonts.googleapis.com/",
+      "sourceUrl": "https://diaeta.be/",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://fonts.gstatic.com/",
+      "sourceUrl": "https://diaeta.be/",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://www.googletagmanager.com/",
+      "sourceUrl": "https://diaeta.be/",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/home.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/DE/Ern%C3%83%C2%A4hrungsberater-Di%C3%83%C2%A4tassistentin-di%C3%83%C2%A4tetisch/termin.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/NL/di%C3%ABtist-voedingsdeskundige/afspraak.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9tique/rendez-vous.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige/cookies.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/nutrigenomica-nutrigenetica/genetische-test.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/nutrigenomica-nutrigenetica/genetische-test.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/NL/nutrigenomica-nutrigenetica/Rapport%20genetische%20test%20NL.pdf",
+      "sourceUrl": "https://diaeta.be/NL/nutrigenomica-nutrigenetica/genetische-test.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/contact.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/contact.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/de-dietist-en-dietetiek.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/Consultation.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/werkwijze.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/werkwijze.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/diabetes.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/NL/NL/dietist-voedingsdeskundige/afspraak.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste/perdre-du-poids-et-Maigrir/Di%C3%A9t%C3%A9tcien%20Di%C3%A9t%C3%A9ticienne%20Nutritionniste%20Perte%20de%20poids.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/NL/NL/dietist-voedingsdeskundige/afspraak.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/cookies.html",
+      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/NL/home.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/home.html",
+      "sourceUrl": "https://diaeta.be/EN/home.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/EN/home.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/EN/home.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html",
+      "sourceUrl": "https://diaeta.be/",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html",
+      "sourceUrl": "https://diaeta.be/",
+      "status": 404,
+      "type": "error"
+    },
+    {
+      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "sourceUrl": "https://diaeta.be/DE/home.html",
+      "status": 301,
+      "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/index.html",
+      "sourceUrl": "https://diaeta.be/DE/home.html",
+      "status": 301,
+      "type": "redirect"
+    }
+  ]
+}
