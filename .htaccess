@@ -30,6 +30,24 @@ RewriteRule ^nutritionist/(.*)$ /EN/dietitian%20dietician%20nutritionist/$1 [R=3
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^home\.html$ / [R=301,L]
 
+# ==============================================================================
+# STEP 5: HTTPS & WWW NORMALIZATION (Uncomment when SSL is ready)
+# ==============================================================================
+
+# Force HTTPS (UNCOMMENT these 3 lines when you have SSL certificate)
+# RewriteCond %{HTTPS} !=on
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force WWW version (choose one: www or non-www for consistency)
+# Option 1: Force www (uncomment if you prefer www.diaeta.be)
+# RewriteCond %{HTTP_HOST} ^diaeta\.be [NC]
+# RewriteRule ^(.*)$ https://www.diaeta.be/$1 [L,R=301]
+
+# Option 2: Force non-www (uncomment if you prefer diaeta.be)
+# RewriteCond %{HTTP_HOST} ^www\.diaeta\.be [NC]
+# RewriteRule ^(.*)$ https://diaeta.be/$1 [L,R=301]
+
 # UTF-8 encoding
 AddDefaultCharset UTF-8
 
