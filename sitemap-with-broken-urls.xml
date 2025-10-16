@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <url>
+    <url>
     <loc>https://diaeta.be/DE/Diabetes.html</loc>
     <lastmod>2025-10-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -484,6 +484,24 @@
   </url>
   <url>
     <loc>https://diaeta.be/diab%C3%A8te.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-lambert/diÃ©tÃ©ticien woluwe saint lambert.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html</loc>
     <lastmod>2025-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-10-16T22:46:11.165Z",
+  "timestamp": "2025-10-16T23:07:38.336Z",
   "summary": {
     "pagesChecked": 21,
-    "linksChecked": 145,
-    "working": 105,
+    "linksChecked": 129,
+    "working": 99,
     "broken": 15,
-    "redirects": 25
+    "redirects": 15
   },
   "brokenLinks": [
     {
@@ -25,24 +25,6 @@
       "sourceUrl": "https://diaeta.be/",
       "status": 404,
       "type": "error"
-    },
-    {
-      "url": "https://diaeta.be/index.html",
-      "sourceUrl": "https://diaeta.be/",
-      "status": 301,
-      "type": "redirect"
-    },
-    {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/NL/home.html",
-      "status": 301,
-      "type": "redirect"
-    },
-    {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
-      "status": 301,
-      "type": "redirect"
     },
     {
       "url": "https://diaeta.be/DE/Ern%C3%83%C2%A4hrungsberater-Di%C3%83%C2%A4tassistentin-di%C3%83%C2%A4tetisch/termin.html",
@@ -69,18 +51,6 @@
       "type": "redirect"
     },
     {
-      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige/cookies.html",
-      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/afspraak.html",
-      "status": 404,
-      "type": "error"
-    },
-    {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/NL/nutrigenomica-nutrigenetica/genetische-test.html",
-      "status": 301,
-      "type": "redirect"
-    },
-    {
       "url": "https://diaeta.be/index.html",
       "sourceUrl": "https://diaeta.be/NL/nutrigenomica-nutrigenetica/genetische-test.html",
       "status": 301,
@@ -93,12 +63,6 @@
       "type": "error"
     },
     {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/NL/contact.html",
-      "status": 301,
-      "type": "redirect"
-    },
-    {
       "url": "https://diaeta.be/index.html",
       "sourceUrl": "https://diaeta.be/NL/contact.html",
       "status": 301,
@@ -117,13 +81,7 @@
       "type": "redirect"
     },
     {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html",
-      "status": 301,
-      "type": "redirect"
-    },
-    {
-      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/Consultation.html",
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9tique/Consultation/consultatie.html",
       "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige-en-dietetiek/consultatie.html",
       "status": 404,
       "type": "error"
@@ -153,12 +111,6 @@
       "type": "redirect"
     },
     {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html",
-      "status": 301,
-      "type": "redirect"
-    },
-    {
       "url": "https://diaeta.be/index.html",
       "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/prikkelbare-darm-syndroom/low-fodmap-dieet.html",
       "status": 301,
@@ -177,12 +129,6 @@
       "type": "error"
     },
     {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
-      "status": 301,
-      "type": "redirect"
-    },
-    {
       "url": "https://diaeta.be/index.html",
       "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
       "status": 301,
@@ -190,12 +136,6 @@
     },
     {
       "url": "https://diaeta.be/NL/NL/dietist-voedingsdeskundige/afspraak.html",
-      "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
-      "status": 404,
-      "type": "error"
-    },
-    {
-      "url": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/cookies.html",
       "sourceUrl": "https://diaeta.be/NL/dietist-voedingsdeskundige/gewichtsverlies/afvallen-en-gewichtsverlies.html",
       "status": 404,
       "type": "error"
@@ -213,16 +153,22 @@
       "type": "redirect"
     },
     {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
+      "url": "https://diaeta.be/EN/Dietitian%20dietician%20nutritionist%20and%20dietetics/consultatie.html",
       "sourceUrl": "https://diaeta.be/EN/home.html",
-      "status": 301,
-      "type": "redirect"
+      "status": 404,
+      "type": "error"
     },
     {
       "url": "https://diaeta.be/index.html",
       "sourceUrl": "https://diaeta.be/EN/home.html",
       "status": 301,
       "type": "redirect"
+    },
+    {
+      "url": "https://diaeta.be/di%C3%A9t%C3%A9tique/Consultation/consultatie.html",
+      "sourceUrl": "https://diaeta.be/",
+      "status": 404,
+      "type": "error"
     },
     {
       "url": "https://diaeta.be/di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html",
@@ -235,12 +181,6 @@
       "sourceUrl": "https://diaeta.be/",
       "status": 404,
       "type": "error"
-    },
-    {
-      "url": "https://windows.microsoft.com/en-US/internet-explorer/",
-      "sourceUrl": "https://diaeta.be/DE/home.html",
-      "status": 301,
-      "type": "redirect"
     },
     {
       "url": "https://diaeta.be/index.html",

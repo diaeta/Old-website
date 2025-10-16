@@ -1,19 +1,9 @@
 {
   "missing404": [
     {
-      "url": "https://diaeta.be/dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html",
-      "expectedFile": "dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html",
-      "decodedPath": "dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html"
-    },
-    {
-      "url": "https://diaeta.be/dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/di%C3%A9t%C3%A9ticien%20woluwe%20saint%20lambert.html",
-      "expectedFile": "dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/di%C3%A9t%C3%A9ticien%20woluwe%20saint%20lambert.html",
-      "decodedPath": "dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/diététicien woluwe saint lambert.html"
-    },
-    {
-      "url": "https://diaeta.be/dieteticien-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html",
-      "expectedFile": "dieteticien-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html",
-      "decodedPath": "dieteticien-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html"
+      "url": "https://diaeta.be/",
+      "expectedFile": "",
+      "decodedPath": ""
     }
   ],
   "redirectConflicts": [],
