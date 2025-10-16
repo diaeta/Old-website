@@ -1,0 +1,118 @@
+.consultation-hero {
+  background: linear-gradient(135deg, #e6f6ff 0%, #f9fbff 100%);
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba(0, 150, 201, 0.15);
+  text-align: left;
+}
+
+.consultation-hero .container {
+  max-width: 1100px;
+}
+
+.consultation-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.consultation-hero__eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #0096c9;
+  font-weight: 600;
+}
+
+.consultation-hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw + 1rem, 3.25rem);
+  line-height: 1.2;
+  color: #005773;
+  text-align: left;
+}
+
+.consultation-hero__intro {
+  max-width: 680px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #34515d;
+  margin: 0;
+}
+
+.consultation-hero__highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.consultation-hero__card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 15px 35px rgba(0, 87, 115, 0.08);
+  border: 1px solid rgba(0, 150, 201, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 160px;
+}
+
+.consultation-hero__card strong {
+  font-size: 1.05rem;
+  color: #005773;
+}
+
+.consultation-hero__card span {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #35515c;
+}
+
+.consultation-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.consultation-hero__actions .btn {
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.consultation-hero__secondary {
+  background: transparent;
+  border: 2px solid #0096c9;
+  color: #0096c9 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.consultation-hero__secondary:hover,
+.consultation-hero__secondary:focus {
+  background: #0096c9;
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  .consultation-hero {
+    padding: 3.5rem 0;
+  }
+
+  .consultation-hero__intro {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .consultation-hero {
+    padding: 3rem 0;
+  }
+
+  .consultation-hero__actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
