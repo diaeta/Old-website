@@ -19,7 +19,7 @@
 <link href="https://diaeta.be/EN/dietitian-dietician-nutritionist/weight loss/losing weight and weight loss.html" hreflang="en" rel="alternate">
 <link href="https://diaeta.be/diététicien-diététicienne-nutritionniste/perdre-du-poids-et-Maigrir/Diététcien Diététicienne Nutritionniste Perte de poids.html" hreflang="x-default" rel="alternate">
 <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="../images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="../js/html5shiv.min.js"></script><![endif]-->
-<link href="../../css/consultation-hero.css" rel="stylesheet">
+<link href="../../../css/consultation-hero.css" rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <link href="https://diaeta.be/EN/dietitian-dietician-nutritionist/weight loss/losing weight and weight loss.html" hreflang="en " rel="alternate">
 <!-- <link rel="alternate " hreflang="de " href="https://diaeta.be/DE/home.html " /> -->
@@ -130,7 +130,7 @@
 </ul>
 <ul class="flabtn-second">
 <li><a data-color="BLUE-green" data-tooltip="show" href="../../nutrigenomics nutrigenetics/genetic test.html" tooltip="Genetic testing"><i class="fas fa-dna"></i></a></li>
-<li><a data-color="BLUE-green" data-tooltip="show" href="../contact.html" tooltip="Contact"><i class="far fa-envelope"></i></a></li>
+<li><a data-color="BLUE-green" data-tooltip="show" href="../../contact.html" tooltip="Contact"><i class="far fa-envelope"></i></a></li>
 <li><a data-color="BLUE-green" data-tooltip="show" href="tel:+32 479.35.55.51" tooltip="Call us"><i class="fas fa-phone"></i></a></li>
 </ul>
 </div>
@@ -170,7 +170,27 @@
 <li><a class="dropdown-item" href="losing weight and weight loss.html">Weight loss</a></li>
 </ul>
 </li>
-<li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <i class="fas fa-globe"></i> EN
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../home.html">English</a></li>
+                            <li><a class="dropdown-item" href="../../../diététicien-diététicienne-nutritionniste/perdre-du-poids-et-Maigrir/Diététcien Diététicienne Nutritionniste Perte de poids.html">Français</a></li>
+                            <li><a class="dropdown-item" href="../../../DE/home.html">Deutsch</a></li>
+                            <li><a class="dropdown-item" href="../../../NL/home.html">Nederlands</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-actions">
+                <a class="btn btn-primary" href="../appointment.html">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <section class="consultation-hero">
     <div class="container">
         <div class="consultation-hero__content">
@@ -192,32 +212,13 @@
                 </div>
             </div>
             <div class="consultation-hero__actions">
-                <a class="btn btn-primary" href="../../EN/dietitian-dietician-nutritionist/appointment.html">Book appointment</a>
+                <a class="btn btn-primary" href="../appointment.html">Book appointment</a>
                 <a class="btn consultation-hero__secondary" href="#weightloss-content">Learn more</a>
             </div>
         </div>
     </div>
 </section>
 
-<li class="nav-item"><a class="nav-link" href="../../home.html#Calculette">BMI Calculator</a></li>
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" role="button">
-                            English
-                        </a>
-<ul class="dropdown-menu">
-<li><a class="dropdown-item" href="../../../diététicien-diététicienne-nutritionniste/perdre du poids et Maigrir/Diététcien Diététicienne Nutritionniste Perte de poids.html">Français</a></li>
-<li><a class="dropdown-item" href="../../home.html">English</a></li>
-<li><a class="dropdown-item" href="../../../NL/home.html">Nederlands</a></li>
-<li><a class="dropdown-item" href="../../../DE/home.html">Deutsch</a></li>
-</ul>
-</li>
-<li class="nav-item">
-<a class="btn btn-primary" href="../appointment.html">Book Appointment</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
 <section class="section parallax-container" data-parallax-img="../../../images/logos/Diaeta.svg">
 <div class="parallax-content bg-overlay-gray-darkest context-dark">
 <div class="container">
@@ -235,7 +236,7 @@
 </div>
 </section>
 <!-- Post single intro-->
-<section class="section novi-background section-66">
+<section class="section novi-background section-66" id="weightloss-content">
 <div class="container">
 <div class="row">
 <div class="col-lg-3">
@@ -639,6 +640,7 @@
 <a href="../../cookies.html">Cookie Policy</a>
 <a href="../../legal.html">Legal Notice</a>
 <a href="../../terms.html">Terms of Service</a>
+<a href="#" onclick="manageCookieConsent(); return false;">Cookie settings</a>
 </div>
 </div>
 </div>
@@ -1102,5 +1104,447 @@
 <script src="../../../js/script.js "></script>
 <script src="../../../js/revolution.min.js "></script>
 <script src="../../../js/new-menu.js"></script>
+
+<!-- Cookie Banner -->
+<div class="cookie-banner" id="cookieBanner">
+<div class="cookie-banner-content">
+<div class="cookie-banner-text">
+<p>We use cookies to improve your experience on our website. These cookies help us analyze traffic and personalize content. By continuing to browse, you accept our use of cookies. <a href="../../cookies.html">More information</a></p>
+</div>
+<div class="cookie-banner-buttons">
+<button class="cookie-btn cookie-btn-secondary cookie-btn-small" onclick="openCookieSettings()">Customize</button>
+<button class="cookie-btn cookie-btn-primary" onclick="acceptAllCookies()">Accept all</button>
+</div>
+</div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div class="cookie-settings-modal" id="cookieSettingsModal">
+<div class="cookie-settings-content">
+<div class="cookie-settings-header">
+<h3 class="cookie-settings-title">Cookie settings</h3>
+<button class="cookie-settings-close" onclick="closeCookieSettings()">×</button>
+</div>
+<div class="cookie-category">
+<div class="cookie-category-header">
+<h4 class="cookie-category-title">Essential</h4>
+<div class="cookie-toggle active" style="pointer-events: none;"></div>
+</div>
+<p class="cookie-category-description">These cookies are necessary for the website to function and cannot be disabled. They do not store any personal information.</p>
+</div>
+<div class="cookie-category">
+<div class="cookie-category-header">
+<h4 class="cookie-category-title">Analytics cookies</h4>
+<div class="cookie-toggle" id="analyticsToggle" onclick="toggleCookieCategory('analytics')"></div>
+</div>
+<p class="cookie-category-description">These cookies help us understand how visitors interact with our website by collecting and reporting anonymized information.</p>
+</div>
+<div class="cookie-category">
+<div class="cookie-category-header">
+<h4 class="cookie-category-title">Marketing cookies</h4>
+<div class="cookie-toggle" id="marketingToggle" onclick="toggleCookieCategory('marketing')"></div>
+</div>
+<p class="cookie-category-description">These cookies are used to track visitors across websites to display relevant and engaging advertisements.</p>
+</div>
+<div class="cookie-settings-footer">
+<button class="cookie-btn cookie-btn-secondary" onclick="closeCookieSettings()">Cancel</button>
+<button class="cookie-btn cookie-btn-primary" onclick="saveCookiePreferences()">Save</button>
+</div>
+</div>
+</div>
+
+<!-- Cookie Banner CSS -->
+<style>
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #005773 0%, #007a9e 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+            z-index: 9999;
+            transform: translateY(100%);
+            transition: transform 0.4s ease-in-out;
+            backdrop-filter: blur(10px);
+            border-top: 2px solid #bfe095;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        .cookie-banner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cookie-banner-text {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .cookie-banner-text a {
+            color: #bfe095;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .cookie-banner-text a:hover {
+            color: #d6ebba;
+        }
+
+        .cookie-banner-buttons {
+            display: flex;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .cookie-btn-primary {
+            background: #bfe095;
+            color: #005773;
+        }
+
+        .cookie-btn-primary:hover {
+            background: #d6ebba;
+            transform: translateY(-1px);
+        }
+
+        .cookie-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .cookie-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .cookie-btn-small {
+            padding: 8px 16px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .cookie-banner-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .cookie-banner-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .cookie-btn {
+                flex: 1;
+                max-width: 150px;
+            }
+        }
+
+        .cookie-settings-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cookie-settings-modal.show {
+            display: flex;
+        }
+
+        .cookie-settings-content {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .cookie-settings-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .cookie-settings-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #005773;
+            margin: 0;
+        }
+
+        .cookie-settings-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cookie-settings-close:hover {
+            color: #005773;
+        }
+
+        .cookie-category {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+
+        .cookie-category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cookie-category-title {
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+        }
+
+        .cookie-toggle {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background: #ccc;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cookie-toggle.active {
+            background: #bfe095;
+        }
+
+        .cookie-toggle::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .cookie-toggle.active::after {
+            transform: translateX(26px);
+        }
+
+        .cookie-category-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .cookie-settings-footer {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+        }
+    </style>
+
+<!-- Cookie Banner JavaScript -->
+<script>
+        // Cookie management functions
+        function setCookie(name, value, days) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = name + "=" + value + ";expires=" + expires.toUTCString() + ";path=/";
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function deleteCookie(name) {
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
+        }
+
+        // Cookie banner functions
+        function showCookieBanner() {
+            const banner = document.getElementById('cookieBanner');
+            if (banner) {
+                banner.classList.add('show');
+            }
+        }
+
+        function hideCookieBanner() {
+            const banner = document.getElementById('cookieBanner');
+            if (banner) {
+                banner.classList.remove('show');
+            }
+        }
+
+        function acceptAllCookies() {
+            const preferences = {
+                necessary: true,
+                analytics: true,
+                marketing: true,
+                timestamp: new Date().toISOString()
+            };
+            setCookie('diaeta_cookie_preferences', JSON.stringify(preferences), 365);
+            hideCookieBanner();
+            loadAnalytics();
+        }
+
+        function openCookieSettings() {
+            const modal = document.getElementById('cookieSettingsModal');
+            modal.classList.add('show');
+            hideCookieBanner();
+        }
+
+        function closeCookieSettings() {
+            const modal = document.getElementById('cookieSettingsModal');
+            modal.classList.remove('show');
+
+            // Check if user has already made a choice
+            const preferences = getCookie('diaeta_cookie_preferences');
+            if (!preferences) {
+                showCookieBanner();
+            }
+        }
+
+        function toggleCookieCategory(category) {
+            const toggle = document.getElementById(category + 'Toggle');
+            toggle.classList.toggle('active');
+        }
+
+        function saveCookiePreferences() {
+            const analyticsEnabled = document.getElementById('analyticsToggle').classList.contains('active');
+            const marketingEnabled = document.getElementById('marketingToggle').classList.contains('active');
+
+            const preferences = {
+                necessary: true,
+                analytics: analyticsEnabled,
+                marketing: marketingEnabled,
+                timestamp: new Date().toISOString()
+            };
+
+            setCookie('diaeta_cookie_preferences', JSON.stringify(preferences), 365);
+            closeCookieSettings();
+
+            if (analyticsEnabled) {
+                loadAnalytics();
+            }
+        }
+
+        function loadAnalytics() {
+            // Load Google Analytics if consent is given
+            const preferencesStr = getCookie('diaeta_cookie_preferences');
+            if (preferencesStr) {
+                try {
+                    const preferences = JSON.parse(preferencesStr);
+                    if (preferences.analytics) {
+                        // Google Analytics is already loaded in the head
+                        // Just ensure it's properly configured
+                        if (typeof gtag !== 'undefined') {
+                            gtag('consent', 'update', {
+                                'analytics_storage': 'granted'
+                            });
+                        }
+                    }
+                } catch (e) {
+                    console.log('Error parsing cookie preferences');
+                }
+            }
+        }
+
+        // Initialize cookie banner
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                const preferences = getCookie('diaeta_cookie_preferences');
+
+                if (!preferences) {
+                    // Show banner after a short delay
+                    setTimeout(showCookieBanner, 1000);
+                } else {
+                    // Apply saved preferences
+                    try {
+                        const prefs = JSON.parse(preferences);
+                        if (prefs.analytics) {
+                            loadAnalytics();
+                        }
+                    } catch (e) {
+                        console.log('Error parsing preferences');
+                    }
+                }
+
+                // Close modal when clicking outside
+                const cookieSettingsModal = document.getElementById('cookieSettingsModal');
+                if (cookieSettingsModal) {
+                    cookieSettingsModal.addEventListener('click', function(e) {
+                        if (e.target === this) {
+                            closeCookieSettings();
+                        }
+                    });
+                }
+            } catch (error) {
+                console.log('Cookie banner initialization error:', error);
+            }
+        });
+
+        // Global function to manage cookies (for footer link)
+        window.manageCookieConsent = function() {
+            openCookieSettings();
+        };
+    </script>
 
 </body></html>

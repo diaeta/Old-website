@@ -1491,6 +1491,9 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; <span class="copyright-year"></span> DIAETA. All rights reserved.</p>
+                </div>
                 <div class="footer-links">
                     <a href="privacy.html">Privacy policy</a>
                     <a href="cookies.html">Cookies</a>
@@ -1498,7 +1501,6 @@
                     <a href="terms.html">Terms &amp; conditions</a>
                     <a href="#" onclick="manageCookieConsent(); return false;">Cookie settings</a>
                 </div>
-                <p class="footer-copy">&copy; <span id="current-year"></span> Diaeta. All rights reserved.</p>
             </div>
         </div>
     </div>
@@ -1701,14 +1703,8 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-        }
-
-        @media (max-width: 1024px) {
-            .services-grid {
-                grid-template-columns: 1fr 1fr;
-            }
+            grid-template-columns: 1fr;
+            gap: 10px;
         }
 
         .service-item {
