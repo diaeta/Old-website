@@ -372,19 +372,17 @@
 <p>Medisch Centrum Tenbosch-Châtelain<br>1050 - Elsene</p>
 </div>
 </div>
+<div class="office-card">
+<div class="office-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="office-info">
 <h5>Koekelberg</h5>
 <p>Basili-K-Santé<br>1081 - Koekelberg</p>
 </div>
 </div>
 </div>
-<div class="office-card">
-<div class="office-icon">
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
-</div>
+<div class="office-slide">
 <div class="office-card">
 <div class="office-icon">
 <i class="fas fa-map-marker-alt"></i>
@@ -394,8 +392,6 @@
 <p>Mediwoluwe<br>1150 - Sint-Pieters-Woluwe</p>
 </div>
 </div>
-</div>
-<div class="office-slide">
 <div class="office-card">
 <div class="office-icon">
 <i class="fas fa-map-marker-alt"></i>
@@ -405,6 +401,8 @@
 <p>Les Etrimaux<br>1150 - Sint-Pieters-Woluwe</p>
 </div>
 </div>
+</div>
+<div class="office-slide">
 <div class="office-card">
 <div class="office-icon">
 <i class="fas fa-map-marker-alt"></i>
@@ -414,8 +412,6 @@
 <p>REVAGO<br>1082 - Sint-Agatha-Berchem</p>
 </div>
 </div>
-</div>
-<div class="office-slide">
 <div class="office-card">
 <div class="office-icon">
 <i class="fas fa-map-marker-alt"></i>
@@ -425,6 +421,8 @@
 <p>Medic Alix<br>1150 - Sint-Pieters-Woluwe</p>
 </div>
 </div>
+</div>
+<div class="office-slide">
 <div class="office-card">
 <div class="office-icon">
 <i class="fas fa-map-marker-alt"></i>
@@ -434,8 +432,6 @@
 <p>Medisch Centrum Wolu20<br>1200 - Sint-Lambrechts-Woluwe</p>
 </div>
 </div>
-</div>
-<div class="office-slide">
 <div class="office-card">
 <div class="office-icon">
 <i class="fas fa-map-marker-alt"></i>
@@ -456,7 +452,6 @@
 <span class="dot" onclick="currentOfficeSlide(2)"></span>
 <span class="dot" onclick="currentOfficeSlide(3)"></span>
 <span class="dot" onclick="currentOfficeSlide(4)"></span>
-<span class="dot" onclick="currentOfficeSlide(5)"></span>
 </div>
 <button class="carousel-btn next" onclick="changeOfficeSlide(1)">
 <i class="fas fa-chevron-right"></i>
@@ -1002,7 +997,7 @@
 <!-- Footer JavaScript -->
 <script>
         let currentOfficeSlideIndex = 1;
-        const totalOfficeSlides = 5;
+        const totalOfficeSlides = 4;
 
         function showOfficeSlide(n) {
             const slides = document.querySelectorAll('.office-slide');
