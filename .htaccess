@@ -10,6 +10,26 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^.]+)$ $1.html [L]
 
+# ==============================================================================
+# STEP 4: REDIRECT RULES (Fix 404 errors - Critical for SEO)
+# ==============================================================================
+
+# Handle old dietitian URL patterns (from Google Search Console)
+RewriteRule ^dietitian-(.*)$ /EN/dietitian%20dietician%20nutritionist%20$1 [R=301,L,NE]
+RewriteRule ^dieteticien-(.*)$ /diététicien-diététicienne-nutritionniste-$1 [R=301,L,NE]
+
+# Fix common 404 patterns
+RewriteRule ^EN/dietitian-dietician-nutritionist-Ixelles/(.*)$ /EN/dietitian%20dietician%20nutritionist%20Ixelles/$1 [R=301,L,NE]
+RewriteRule ^NL/dietist-(.*)$ /NL/dietist-voedingsdeskundige-$1 [R=301,L]
+
+# Handle language variations
+RewriteRule ^dieteticien/(.*)$ /diététicien-diététicienne-nutritionniste/$1 [R=301,L]
+RewriteRule ^nutritionist/(.*)$ /EN/dietitian%20dietician%20nutritionist/$1 [R=301,L,NE]
+
+# Redirect index to language-specific home pages
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^home\.html$ / [R=301,L]
+
 # UTF-8 encoding
 AddDefaultCharset UTF-8
 
@@ -108,8 +128,8 @@ Options -Indexes
   # Control referrer information
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
 
-  # Content Security Policy (basic - adjust as needed)
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: http:;"
+  # Content Security Policy (allows necessary external resources)
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://r2cdn.perplexity.ai data:; img-src 'self' data: https: http:;"
 
   # Permissions Policy (replaces Feature-Policy)
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
