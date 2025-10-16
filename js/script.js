@@ -1621,7 +1621,7 @@ $document.ready( function () {
 	 * @description Enables Google ReCaptcha
 	 */
 	if (plugins.captcha.length) {
-		$.getScript("//www.google.com/recaptcha/api.js?onload=onloadCaptchaCallback&render=explicit&hl=en");
+		$.getScript("https://www.google.com/recaptcha/api.js?onload=onloadCaptchaCallback&render=explicit&hl=en");
 	}
 
 	/**
