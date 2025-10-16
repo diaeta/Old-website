@@ -1,38 +1,25 @@
 {
-  "timestamp": "2025-10-16T22:59:34.509Z",
+  "timestamp": "2025-10-16T23:11:58.109Z",
   "summary": {
-    "total": 104,
-    "valid": 98,
-    "redirects": 4,
-    "notFound": 2,
+    "total": 102,
+    "valid": 99,
+    "redirects": 0,
+    "notFound": 3,
     "errors": 0
   },
   "removed": [
     {
-      "url": "https://diaeta.be/EN/dietitian-dietician-nutritionist/irritable-bowel-syndrome/low-fodmap-diet.html",
+      "url": "https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html",
       "reason": "404"
     },
     {
-      "url": "https://diaeta.be/EN/dietitian-dietician-nutritionist/weight-loss/losing-weight-and-weight-loss.html",
+      "url": "https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-lambert/diÃ©tÃ©ticien woluwe saint lambert.html",
+      "reason": "404"
+    },
+    {
+      "url": "https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html",
       "reason": "404"
     }
   ],
-  "fixed": [
-    {
-      "original": "https://diaeta.be/dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html",
-      "final": "https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-lambert/dieteticien-woluwe-saint-lambert.html"
-    },
-    {
-      "original": "https://diaeta.be/dieteticien-dieteticienne-nutritionniste-woluwe-saint-lambert/di%C3%A9t%C3%A9ticien%20woluwe%20saint%20lambert.html",
-      "final": "https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-lambert/diÃ©tÃ©ticien woluwe saint lambert.html"
-    },
-    {
-      "original": "https://diaeta.be/dieteticien-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html",
-      "final": "https://diaeta.be/diÃ©tÃ©ticien-diÃ©tÃ©ticienne-nutritionniste-dieteticienne-nutritionniste-woluwe-saint-pierre/mediwoluwe.html"
-    },
-    {
-      "original": "https://diaeta.be/index.html",
-      "final": "https://diaeta.be/"
-    }
-  ]
+  "fixed": []
 }
