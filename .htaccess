@@ -31,13 +31,13 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^home\.html$ / [R=301,L]
 
 # ==============================================================================
-# STEP 5: HTTPS & WWW NORMALIZATION (Uncomment when SSL is ready)
+# STEP 5: HTTPS & WWW NORMALIZATION
 # ==============================================================================
 
-# Force HTTPS (UNCOMMENT these 3 lines when you have SSL certificate)
-# RewriteCond %{HTTPS} !=on
-# RewriteCond %{HTTP:X-Forwarded-Proto} !https
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force HTTPS (Active - SSL is enabled)
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Force WWW version (choose one: www or non-www for consistency)
 # Option 1: Force www (uncomment if you prefer www.diaeta.be)
