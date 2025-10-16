@@ -20,6 +20,10 @@ RewriteRule ^dieteticien-(.*)$ /diététicien-diététicienne-nutritionniste-$1 
 
 # Fix common 404 patterns
 RewriteRule ^EN/dietitian-dietician-nutritionist-Ixelles/(.*)$ /EN/dietitian%20dietician%20nutritionist%20Ixelles/$1 [R=301,L,NE]
+
+# Fix malformed URLs with repeated "voedingsdeskundige" (from old infinite loop bug)
+RewriteRule ^NL/dietist-(?:voedingsdeskundige-)+(.*)$ /NL/dietist-voedingsdeskundige-$1 [R=301,L]
+
 # Only redirect if URL doesn't already contain dietist-voedingsdeskundige (prevent infinite loop)
 RewriteRule ^NL/dietist-(?!voedingsdeskundige)(.*)$ /NL/dietist-voedingsdeskundige-$1 [R=301,L]
 
