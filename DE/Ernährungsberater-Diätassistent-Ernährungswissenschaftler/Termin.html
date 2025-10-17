@@ -23,7 +23,43 @@
 <link href="../../../css/new-menu.css" rel="stylesheet">
 <link href="../../css/fontawesome-all.min.css" rel="stylesheet">
 <link href="../../css/consultation-hero.css" rel="stylesheet">
-<style>html,body{margin:0;padding:0}#form-output-global{display:none}</style>
+<style>
+    html,body{margin:0;padding:0}
+    #form-output-global{display:none}
+
+    /* DoctorAnytime iframe styling */
+    #defaultiFrame {
+        width: 100%;
+        min-height: 800px;
+        height: auto;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Responsive iframe container */
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 10px;
+        margin: 30px 0;
+    }
+
+    @media (max-width: 768px) {
+        #defaultiFrame {
+            min-height: 600px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #defaultiFrame {
+            min-height: 500px;
+        }
+    }
+</style>
 <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1; "><img src="../images/ie8-panel/warning_bar_0000_us.jpg " border="0 " height="42 " width="820 " alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today. "></div><script src="../js/html5shiv.min.js "></script><![endif]-->
 
 
