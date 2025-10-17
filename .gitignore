@@ -96,3 +96,7 @@ Nouveau site/
 .kiro/steering/byterover-rules.md
 .qoder/rules/byterover-rules.md
 .augment/rules/byterover-rules.md
+
+# Backup files from 404 fixes
+*.backup-404fix
+*.backup-iframe
