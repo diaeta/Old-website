@@ -4,7 +4,6 @@ Allow: /
 # Block backup and development directories
 Disallow: /Backup 23 07 2021/
 Disallow: /Nouveau site/
-Disallow: /Diaeta.be/
 Disallow: /node_modules/
 Disallow: /mcp-servers/
 Disallow: /bat/
@@ -13,7 +12,8 @@ Disallow: /testsprite_tests/
 Disallow: /Drive/
 Disallow: /.git/
 
-# Block only script and configuration files
+# Block script and configuration files (individual files, not /js/ directory)
+# Note: /*.js blocks individual .js files but /js/ directory is allowed below
 Disallow: /*.py
 Disallow: /*.ps1
 Disallow: /*.sh
