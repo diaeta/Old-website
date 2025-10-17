@@ -12,13 +12,24 @@ Disallow: /testsprite_tests/
 Disallow: /Drive/
 Disallow: /.git/
 
-# Block script and configuration files (individual files, not /js/ directory)
-# Note: /*.js blocks individual .js files but /js/ directory is allowed below
-Disallow: /*.py
-Disallow: /*.ps1
-Disallow: /*.sh
-Disallow: /*.js
-Disallow: /*.log
+# Allow important public directories first (takes precedence)
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /fonts/
+Allow: /webfonts/
+Allow: /audio/
+Allow: /video/
+Allow: /EN/
+Allow: /DE/
+Allow: /NL/
+Allow: /AR/
+
+# Block script and configuration files in root directory only
+Disallow: /*.py$
+Disallow: /*.ps1$
+Disallow: /*.sh$
+Disallow: /*.log$
 Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: /postcss.config.js
@@ -36,19 +47,6 @@ Disallow: /privacyO.htm
 
 # Block resource reference pages
 Disallow: /fonts/flaticon.html
-
-# Allow important public directories
-Allow: /images/
-Allow: /css/
-Allow: /js/
-Allow: /fonts/
-Allow: /webfonts/
-Allow: /audio/
-Allow: /video/
-Allow: /EN/
-Allow: /DE/
-Allow: /NL/
-Allow: /AR/
 
 # Sitemap - index covering primary and multilingual sitemaps
 Sitemap: https://diaeta.be/sitemap.xml
