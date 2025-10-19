@@ -20,7 +20,7 @@ function scanFile(filePath) {
     hreflangTags.forEach(match => { const code = match[1]; langCodes[code] = (langCodes[code] || 0) + 1; });
     Object.keys(langCodes).forEach(code => { if (langCodes[code] > 1) results.hreflangMultiple.push({ file: relPath, code, count: langCodes[code] }); });
     if (metaDescMatches.length === 1) {
-      const descMatch = metaDescMatches[0][0].match(/content=["']([^"']+)["']/i);
+      const descMatch = metaDescMatches[0][0].match(/content="([^"]*)"/i) || metaDescMatches[0][0].match(/content='([^']*)'/i);
       if (descMatch && descMatch[1].length > 155) results.metaDesc155.push({ file: relPath, length: descMatch[1].length });
       if (descMatch && descMatch[1].length < 70) results.metaDescUnder70.push({ file: relPath, length: descMatch[1].length });
       const desc = descMatch[1].trim();
