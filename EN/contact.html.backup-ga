@@ -62,7 +62,6 @@
     <link rel="alternate" hreflang="de" href="https://diaeta.be/DE/contact.html">
     <link rel="alternate" hreflang="x-default" href="https://diaeta.be/contact.html">
 
-
 </head>
 <body>
 <div class="page-loader page-loader-variant-1">
@@ -411,10 +410,10 @@
 <p>© <span class="copyright-year"></span> DIAETA. All rights reserved.</p>
 </div>
 <div class="footer-links">
-<a href="privacy.html">Privacy Policy</a>
+<a href="../privacy.html">Privacy Policy</a>
 Cookie Policy
 <a href="mentions-legales.html">Legal Notice</a>
-<a href="terms.html">Terms of Use</a>
+<a href="../terms.html">Terms of Use</a>
 <a href="#" onclick="manageCookieConsent(); return false;">Cookie Settings</a>
 </div>
 </div>
