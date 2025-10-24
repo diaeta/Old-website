@@ -51,3 +51,34 @@ Disallow: /fonts/flaticon.html
 # Sitemap - index covering primary and multilingual sitemaps
 Sitemap: https://diaeta.be/sitemap.xml
 Sitemap: https://diaeta.be/sitemap_index.xml
+
+# ==============================================================================
+# CRAWLER RATE LIMITING (Prevent server overload from aggressive crawlers)
+# ==============================================================================
+
+# Google and Bing (modern search engines) - No crawl delay, use Search Console settings
+User-agent: Googlebot
+User-agent: Bingbot
+Crawl-delay: 0
+
+# Link checking tools and validators (prevent rapid-fire requests)
+User-agent: W3C-checklink
+Crawl-delay: 2
+
+User-agent: broken-link-checker
+Crawl-delay: 2
+
+User-agent: LinkChecker
+Crawl-delay: 2
+
+# Other search engines and crawlers (moderate rate limit)
+User-agent: Yandex
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Crawl-delay: 1
+
+# Aggressive/unknown crawlers (stricter rate limit)
+User-agent: *
+Crawl-delay: 1
+

@@ -66,7 +66,7 @@ RewriteRule ^dieteticien-(.*)$ /diététicien-diététicienne-nutritionniste-$1 
 RewriteRule ^EN/dietitian-dietician-nutritionist-Ixelles/(.*)$ /EN/dietitian%20dietician%20nutritionist%20Ixelles/$1 [R=301,L,NE]
 
 # Fix case sensitivity for Appointment.html
-RewriteRule ^EN/dietitian-dietician-nutritionist/Appointment\.html$ /EN/dietitian-dietician-nutritionist/appointment.html [R=301,L,NC]
+RewriteRule ^EN/dietitian-dietician-nutritionist/Appointment\.html$ /EN/dietitian-dietician-nutritionist/appointment.html [R=301,L]
 
 # Fix contact.html in wrong directory
 RewriteRule ^EN/dietitian-dietician-nutritionist/contact\.html$ /EN/contact.html [R=301,L]
@@ -83,8 +83,11 @@ RewriteRule ^dieteticien/(.*)$ /diététicien-diététicienne-nutritionniste/$1 
 RewriteRule ^nutritionist/(.*)$ /EN/dietitian%20dietician%20nutritionist/$1 [R=301,L,NE]
 RewriteRule ^nutrigenomics%20nutrigenetics/(.*)$ /EN/nutrigenomics%20nutrigenetics/$1 [R=301,L,NE]
 
-# Fix case sensitivity issues for static files
-RewriteRule ^images/logos/diaeta\.svg$ /images/logos/Diaeta.svg [R=301,L,NC]
+# Only redirect if URL contains lowercase "diaeta" (not "Diaeta")
+RewriteCond %{THE_REQUEST} /images/logos/diaeta.svg [NC]
+RewriteCond %{REQUEST_URI} !^/images/logos/Diaeta.svg$
+RewriteRule ^images/logos/diaeta.svg$ /images/logos/Diaeta.svg [R=301,L]
+RewriteRule ^images/logos/diaeta.svg$ /images/logos/Diaeta.svg [R=301,L]
 
 # Redirect index to language-specific home pages
 RewriteRule ^index\.html$ / [R=301,L]
@@ -93,6 +96,23 @@ RewriteRule ^home\.html$ / [R=301,L]
 # ==============================================================================
 # STEP 5: HTTPS & WWW NORMALIZATION
 # ==============================================================================
+
+# ==============================================================================
+# URL ENCODING REDIRECTS (Fix accented character issues)
+# ==============================================================================
+
+# French pages with accented characters (URL-encoded %C3%A9 = é, %C3%A8 = è)
+RewriteRule ^di%C3%A9t%C3%A9tique/(.*)$ /diététique/$1 [R=301,L,NE]
+RewriteRule ^diab%C3%A8te\.html$ /diabète.html [R=301,L,NE]
+RewriteRule ^di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste/(.*)$ /diététicien-diététicienne-nutritionniste/$1 [R=301,L,NE]
+
+# German pages with special characters (URL-encoded %C3%A4 = ä, %C3%BC = ü)
+RewriteRule ^DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-und-Di%C3%A4tetik/(.*)$ /DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-und-Diätetik/$1 [R=301,L,NE]
+RewriteRule ^DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler/(.*)$ /DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler/$1 [R=301,L,NE]
+
+# English pages with special characters in directory names
+RewriteRule ^EN/dietitian%20dietician%20nutritionist%20(.*)$ /EN/dietitian%20dietician%20nutritionist%20$1 [R=301,L,NE]
+
 
 # Force HTTPS (Active - SSL is enabled)
 RewriteCond %{HTTPS} !=on
@@ -212,3 +232,8 @@ Options -Indexes
   # Permissions Policy (replaces Feature-Policy)
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
+# Redirect subdirectory privacy pages to main privacy page
+RewriteRule ^EN/dietitian%20dietician%20nutritionist%20[^/]+/privacy\.html$ /EN/privacy.html [R=301,L,NE]
+RewriteRule ^EN/nutrigenomics%20nutrigenetics/privacy\.html$ /EN/privacy.html [R=301,L,NE]
+RewriteRule ^DE/[^/]+/privacy\.html$ /DE/privacy.html [R=301,L]
+RewriteRule ^NL/[^/]+/privacy\.html$ /NL/privacy.html [R=301,L]
