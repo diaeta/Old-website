@@ -233,6 +233,9 @@ Options -Indexes
   # Control referrer information
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
 
+  # HTTP Strict Transport Security (HSTS) - Force HTTPS for 1 year
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
   # Content Security Policy (allows necessary external resources)
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://r2cdn.perplexity.ai data:; img-src 'self' data: https: http:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://cdn.jsdelivr.net; frame-src 'self' https://www.doctoranytime.be https://www.google.com;"
 
