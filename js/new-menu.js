@@ -95,19 +95,24 @@ window.addEventListener('load', function() {
 
             const isAlreadyOpen = dropdown.classList.contains('show');
 
-            // First, close all open dropdowns
+            // Close all OTHER open dropdowns (not the clicked one)
             dropdowns.forEach(function(d) {
-              d.classList.remove('show');
-              const menu = d.querySelector('.dropdown-menu');
-              if (menu) {
-                menu.classList.remove('show');
+              if (d !== dropdown) {  // Only close if it's not the clicked dropdown
+                d.classList.remove('show');
+                const menu = d.querySelector('.dropdown-menu');
+                if (menu) {
+                  menu.classList.remove('show');
+                }
               }
             });
 
-            // If the clicked one wasn't already open, open it
+            // Toggle the clicked dropdown
             if (!isAlreadyOpen) {
               dropdown.classList.add('show');
               dropdownMenu.classList.add('show');
+            } else {
+              dropdown.classList.remove('show');
+              dropdownMenu.classList.remove('show');
             }
           }
         });
