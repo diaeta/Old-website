@@ -97,6 +97,16 @@ Nouveau site/
 .qoder/rules/byterover-rules.md
 .augment/rules/byterover-rules.md
 
-# Backup files from 404 fixes
+# Backup files from 404 fixes and maintenance
 *.backup-404fix
 *.backup-iframe
+*.backup-*
+*.backup-ga
+*.backup-hreflang
+
+# Audit and analysis reports
+broken-links-report*.txt
+unique-broken-links*.txt
+genuine-broken-links-candidates.txt
+url-encoding-redirects.txt
+categorized_html_files.json
