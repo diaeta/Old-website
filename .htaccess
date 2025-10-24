@@ -93,6 +93,13 @@ RewriteRule ^images/logos/diaeta.svg$ /images/logos/Diaeta.svg [R=301,L]
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^home\.html$ / [R=301,L]
 
+# Redirect subdirectory privacy pages to main privacy page
+RewriteRule ^EN/dietitian%20dietician%20nutritionist%20[^/]+/privacy\.html$ /EN/privacy.html [R=301,L,NE]
+RewriteRule ^EN/dietitian-dietician-nutritionist/privacy\.html$ /EN/privacy.html [R=301,L]
+RewriteRule ^EN/nutrigenomics%20nutrigenetics/privacy\.html$ /EN/privacy.html [R=301,L,NE]
+RewriteRule ^DE/[^/]+/privacy\.html$ /DE/privacy.html [R=301,L]
+RewriteRule ^NL/[^/]+/privacy\.html$ /NL/privacy.html [R=301,L]
+
 # ==============================================================================
 # STEP 5: HTTPS & WWW NORMALIZATION
 # ==============================================================================
@@ -110,8 +117,8 @@ RewriteRule ^di%C3%A9t%C3%A9ticien-di%C3%A9t%C3%A9ticienne-nutritionniste/(.*)$ 
 RewriteRule ^DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler-und-Di%C3%A4tetik/(.*)$ /DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler-und-Diätetik/$1 [R=301,L,NE]
 RewriteRule ^DE/Ern%C3%A4hrungsberater-Di%C3%A4tassistent-Ern%C3%A4hrungswissenschaftler/(.*)$ /DE/Ernährungsberater-Diätassistent-Ernährungswissenschaftler/$1 [R=301,L,NE]
 
-# English pages with special characters in directory names
-RewriteRule ^EN/dietitian%20dietician%20nutritionist%20(.*)$ /EN/dietitian%20dietician%20nutritionist%20$1 [R=301,L,NE]
+# Dutch pages with special characters (URL-encoded %C3%AB = ë)
+RewriteRule ^NL/di%C3%ABtist-voedingsdeskundige-(.*)$ /NL/dietist-voedingsdeskundige-$1 [R=301,L,NE]
 
 
 # Force HTTPS (Active - SSL is enabled)
@@ -232,8 +239,3 @@ Options -Indexes
   # Permissions Policy (replaces Feature-Policy)
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
-# Redirect subdirectory privacy pages to main privacy page
-RewriteRule ^EN/dietitian%20dietician%20nutritionist%20[^/]+/privacy\.html$ /EN/privacy.html [R=301,L,NE]
-RewriteRule ^EN/nutrigenomics%20nutrigenetics/privacy\.html$ /EN/privacy.html [R=301,L,NE]
-RewriteRule ^DE/[^/]+/privacy\.html$ /DE/privacy.html [R=301,L]
-RewriteRule ^NL/[^/]+/privacy\.html$ /NL/privacy.html [R=301,L]
