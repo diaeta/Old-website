@@ -94,9 +94,9 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^home\.html$ / [R=301,L]
 
 # Redirect subdirectory privacy pages to main privacy page
-RewriteRule ^EN/dietitian%20dietician%20nutritionist%20[^/]+/privacy\.html$ /EN/privacy.html [R=301,L,NE]
+RewriteRule ^EN/dietitian\s+dietician\s+nutritionist\s+[^/]+/privacy\.html$ /EN/privacy.html [R=301,L,NE]
 RewriteRule ^EN/dietitian-dietician-nutritionist/privacy\.html$ /EN/privacy.html [R=301,L]
-RewriteRule ^EN/nutrigenomics%20nutrigenetics/privacy\.html$ /EN/privacy.html [R=301,L,NE]
+RewriteRule ^EN/nutrigenomics\s+nutrigenetics/privacy\.html$ /EN/privacy.html [R=301,L,NE]
 RewriteRule ^DE/[^/]+/privacy\.html$ /DE/privacy.html [R=301,L]
 RewriteRule ^NL/[^/]+/privacy\.html$ /NL/privacy.html [R=301,L]
 
