@@ -1,6 +1,9 @@
 # MINIMAL SAFE .htaccess for DIAETA.BE
 # This version removes ALL potentially problematic directives
 
+# Set default directory index files
+DirectoryIndex index.html home.html index.php
+
 # Basic rewrite engine (required for clean URLs)
 RewriteEngine On
 
